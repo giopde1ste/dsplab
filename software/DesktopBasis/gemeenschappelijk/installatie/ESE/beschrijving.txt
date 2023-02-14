@@ -1,0 +1,11 @@
+Dit programma is een cross-platform applicatie van de opleiding Embedded Systems Engineering.
+De applicatie is verkrijgbaar in Mac OS X, Windows,FreeBSD en Linux versies.
+
+De applicatie maakt gebruik van
+ 
+- wxWidgets (http://www.wxwidgets.org) of
+- Qt (http://www.qt.com)
+
+en is volledig gratis te gebruiken.
+
+

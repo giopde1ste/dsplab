@@ -1,0 +1,55 @@
+# @version $Rev: 6343 $
+# @author $Author: oldenburgh $
+
+# @copyright Copyright 2000-2014 Kiwanda Embedded Systemen
+
+# $URL: svn://cirrus.lokaal/software/trunk/debugtools/JLink/jlinkstm32f411gdbinit.gdb $
+# $Id: jlinkstm32f411gdbinit.gdb 6343 2016-01-17 18:32:07Z oldenburgh $
+
+#set print pretty
+set debug remote 0
+set debug serial 0
+
+set print static-members off
+
+## Connect to the remote target via a TCP socket on host:port.
+
+# target op cumulonimbus
+define cbtarget
+        target remote cumulonimbus.lokaal:2331
+        monitor speed auto
+        monitor endian little
+        monitor flash device STM32F411VE
+        monitor flash download = 1
+        monitor flash breakpoints = 1
+        monitor SWO GetSpeedInfo
+# swo monitor op 600 kHz
+        monitor SWO EnableTarget 100000000 600000 0x03 0
+        monitor reset
+end
+
+# target op cumulus
+define cutarget
+        target remote cumulus.lokaal:2331
+        monitor speed auto
+        monitor endian little
+        monitor flash device STM32F411VE
+        monitor flash download = 1
+        monitor flash breakpoints = 1
+        monitor SWO GetSpeedInfo
+# swo monitor op 600 kHz
+        monitor SWO EnableTarget 100000000 600000 0x03 0
+        monitor reset
+end
+
+define reset
+       monitor reset
+end
+
+define res
+       monitor reset
+end
+
+## Set a break point at the beginning of main().
+echo (gdb) break main\n
+break main

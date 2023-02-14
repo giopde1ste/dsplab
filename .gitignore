@@ -1,0 +1,6 @@
+.svn
+.vs
+software/*/out
+software/*/[Bb]uild
+software/*/.idea
+

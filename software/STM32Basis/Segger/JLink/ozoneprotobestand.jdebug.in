@@ -1,0 +1,280 @@
+/*!
+ @file 
+ vanuit CMake genenereerde parameters met betrekking tot de aansturing van Segger Ozone :
+ - De gebruikte microcontroller in het door Segger gehanteerde formaat.
+ - de gebruikte verbinding en het serieele nummer van de gebruikte JLink.
+ - Het pad naar het gebruikte SVD bestand om de microcontroller core te karakteriseren.
+ - Het pad naar het gebruikte SVD bestand om de microcontroller te karakteriseren.
+ 
+ @version $Rev: 5636 $
+ @author $Author: ewout $ 
+ 
+ @copyright Copyright 2018-2022 Kiwanda Embedded Systemen
+
+ $URL: svn://cirrus.lokaal/kiwanda/trunk/Elestor/software/controller/toepassing/h/rtos.h $
+ $Id: rtos.h 8042 2017-04-04 16:45:52Z ewout $
+ ************************************************************************/
+ 
+/*********************************************************************
+*                                                                     
+*       OnProjectLoad                                                 
+*                                                                     
+* Function description                                                
+*   Project load routine. Required.                                   
+*                                                                     
+**********************************************************************
+*/                                                                    
+void OnProjectLoad (void) {
+
+  Project.SetDevice ("@SeggerJLinkControllerID@");
+  Project.SetHostIF ("USB", "@SeggerJLinkID@");
+  Project.SetTargetIF ("@SeggerJLinkProtokol@");
+  Project.SetTIFSpeed ("@SeggerJLinkSnelheid@");
+  Project.AddSvdFile ("@SeggerJLinkCoreSVDNaam@");
+  Project.AddSvdFile ("@SeggerJLinkMicrocontrollerSVDNaam@");
+  Project.SetOSPlugin("FreeRTOSPlugin_CM4.js");
+ /* Voor gebruik Segger embOS : Project.SetOSPlugin("embosPlugin.js");
+  */
+  File.Open ("@CMAKE_RUNTIME_OUTPUT_DIRECTORY@/@UitvoerbaarBestand@");
+}
+
+/*********************************************************************
+*                                                                     
+*      TargetReset                                                    
+*                                                                     
+* Function description                                                
+*   Replaces the default target device reset routine. Optional.       
+*                                                                     
+* Notes                                                               
+*   This example demonstrates the usage when                          
+*   debugging a RAM program on a Cortex-M target device               
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void TargetReset (void) {                                             
+                                                                      
+  unsigned int SP;                                                    
+  unsigned int PC;                                                    
+  unsigned int VectorTableAddr;                                       
+                                                                      
+  Util.Log("Resetting Program.");                                   
+                                                                      
+  Exec.Reset();                                                       
+                                                                      
+  VectorTableAddr = Elf.GetBaseAddr();                                
+                                                                      
+  SP = Target.ReadU32(VectorTableAddr);                               
+  Target.SetReg("SP", SP);                                          
+                                                                      
+  PC = Target.ReadU32(VectorTableAddr + 4);                           
+  Target.SetReg("PC", PC);                                          
+}                                                                     
+*/
+
+/*********************************************************************
+*                                                                     
+*       BeforeTargetReset                                             
+*                                                                     
+* Function description                                                
+*   Event handler routine. Optional.                                  
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void BeforeTargetReset (void) {
+
+Util.Log("Target wordt nu ge-reset.");
+
+}
+*/
+
+/*********************************************************************
+*                                                                     
+*       AfterTargetReset                                              
+*                                                                     
+* Function description                                                
+*   Event handler routine. Optional.                                  
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void AfterTargetReset (void) {
+
+Util.Log("Target is klaar met reset procedure.");
+
+}                                                                     
+*/
+
+/*********************************************************************
+*                                                                     
+*       DebugStart                                                    
+*                                                                     
+* Function description                                                
+*   Replaces the default debug session startup routine. Optional.     
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void DebugStart (void) {                                              
+}                                                                     
+*/
+
+/*********************************************************************
+*                                                                     
+*       TargetConnect                                                 
+*                                                                     
+* Function description                                                
+*   Replaces the default target device connect routine. Optional.     
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void TargetConnect (void) {                                           
+}                                                                     
+*/
+
+/*********************************************************************
+*                                                                     
+*       BeforeTargetConnect                                           
+*                                                                     
+* Function description                                                
+*   Event handler routine. Optional.                                  
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void BeforeTargetConnect (void) {                                     
+}                                                                     
+*/
+
+/*********************************************************************
+*                                                                     
+*       AfterTargetConnect                                            
+*                                                                     
+* Function description                                                
+*   Event handler routine. Optional.                                  
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void AfterTargetConnect (void) {                                      
+}                                                                     
+*/
+
+/*********************************************************************
+*                                                                     
+*       TargetDownload                                                
+*                                                                     
+* Function description                                                
+*   Replaces the default program download routine. Optional.          
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void TargetDownload (void) {                                          
+}                                                                     
+*/
+
+/*********************************************************************
+*                                                                     
+*       BeforeTargetDownload                                          
+*                                                                     
+* Function description                                                
+*   Event handler routine. Optional.                                  
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void BeforeTargetDownload (void) {                                    
+}                                                                     
+*/
+
+/*********************************************************************
+*                                                                     
+*      AfterTargetDownload                                            
+*                                                                     
+* Function description                                                
+*   Event handler routine.                                            
+*                                                                     
+* Notes                                                               
+*   This sample implementation demonstrates the application           
+*   initialization on a Cortex-M target.                              
+*   If no initialization can be done, Target.Reset() may be called.   
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void AfterTargetDownload (void) {                                     
+                                                                      
+  unsigned int SP;                                                    
+  unsigned int PC;                                                    
+  unsigned int VectorTableAddr;                                       
+                                                                      
+  Util.Log("Initializing PC and SP.");                              
+                                                                      
+  VectorTableAddr = Elf.GetBaseAddr();                                
+                                                                      
+  SP = Target.ReadU32(VectorTableAddr);                               
+  Target.SetReg("SP", SP);                                          
+                                                                      
+  PC = Target.ReadU32(VectorTableAddr + 4);                           
+  Target.SetReg("PC", PC);                                          
+}                                                                     
+*/
+
+/*********************************************************************
+*                                                                     
+*       BeforeTargetDisconnect                                        
+*                                                                     
+* Function description                                                
+*   Event handler routine. Optional.                                  
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void BeforeTargetDisconnect (void) {                                  
+}                                                                     
+*/
+
+/*********************************************************************
+*                                                                     
+*       AfterTargetDisconnect                                         
+*                                                                     
+* Function description                                                
+*   Event handler routine. Optional.                                  
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void AfterTargetDisconnect (void) {                                   
+}                                                                     
+*/
+
+/*********************************************************************
+*                                                                     
+*       AfterTargetHalt                                               
+*                                                                     
+* Function description                                                
+*   Event handler routine. Optional.                                  
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void AfterTargetHalt (void) {                                         
+}                                                                     
+*/
+
+/*********************************************************************
+*                                                                     
+*       BeforeTargetResume                                            
+*                                                                     
+* Function description                                                
+*   Event handler routine. Optional.                                  
+*                                                                     
+**********************************************************************
+*/                                                                    
+/*
+void BeforeTargetResume (void) {                                      
+}                                                                     
+*/

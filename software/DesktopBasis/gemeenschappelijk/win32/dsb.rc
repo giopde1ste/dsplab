@@ -1,0 +1,2 @@
+dsbikoon ICON "dsb.ico"
+#include "wx/msw/wx.rc"

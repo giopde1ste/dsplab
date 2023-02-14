@@ -1,0 +1,2 @@
+Dit installatiebestand installeert een applicatie geschreven bij de opleiding Embedded Systems Engineering
+van de Hogeschool van Arnhem en Nijmegen (https://ese.han.nl) .

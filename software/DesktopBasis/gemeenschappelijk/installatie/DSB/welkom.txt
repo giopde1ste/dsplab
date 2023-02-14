@@ -1,0 +1,2 @@
+Dit installatiebestand installeert een demoversie van een practicumopdracht van het HAN
+ESE Digitale signaalbewerking practicum.

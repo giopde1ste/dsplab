@@ -1,0 +1,3 @@
+D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/FatFs_vR0.13a/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/FatFs_vR0.13a/out/build/x64-Debug/CMakeFiles/FatFs_vR0.13a.dir
+D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Third_Party/FatFs_vR0.13a/out/build/x64-Debug/CMakeFiles/edit_cache.dir

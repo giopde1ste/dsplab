@@ -1,0 +1,8 @@
+Copyright 2007-2020 ir drs E.J Boks
+opleiding Embedded Systems Engineering (ESE)
+Hogeschool van Arnhem en Nijmegen
+Arnhem, Nederland
+
+https://ese.han.nl
+email:ewout.boks@han.nl
+telefoon:026-3658181

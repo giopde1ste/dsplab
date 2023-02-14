@@ -1,0 +1,2 @@
+Dit installatiebestand installeert de desktop applikatie voor het regeltechniek practicum (ECSL) 
+De applikatie wordt gebruikt voor onderwijs op het gerbied van regeltechniek.

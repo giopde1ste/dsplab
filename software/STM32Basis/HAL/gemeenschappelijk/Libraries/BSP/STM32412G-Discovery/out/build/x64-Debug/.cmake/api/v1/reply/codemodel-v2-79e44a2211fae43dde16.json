@@ -1,0 +1,55 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "STM32412G-DiscoveryBasis::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-STM32412G-DiscoveryBasis-Debug-12aaeae4586e116b391a.json",
+					"name" : "STM32412G-DiscoveryBasis",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery/out/build/x64-Debug",
+		"source" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

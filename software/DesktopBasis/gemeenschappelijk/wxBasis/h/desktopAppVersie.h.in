@@ -1,0 +1,7 @@
+// the configured options and settings for DesktopAppVersie
+#define DesktopAppVersie wxT("@VERSIENUMMER@")
+#define DesktopAppCopyright wxT("@SchoolCopyright@")
+
+#ifndef GebruikerNaam
+#define GebruikerNaam "@GebruikerNaam@"
+#endif

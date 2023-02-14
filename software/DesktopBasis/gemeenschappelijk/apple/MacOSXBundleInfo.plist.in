@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>de</string>
+	</array>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>Dutch</string>
+	<key>CFBundleExecutable</key>
+	<string>${PROJECT_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string>${ICON_FILE_NAME}</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.han.${PROJECT_NAME}</string>
+	<key>CFBundleLongVersionString</key>
+	<string>${PROJECT_NAME} Version ${VERSIENUMMER}, ${SchoolCopyright}</string>
+	<key>CFBundleName</key>
+	<string>${PROJECT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>${VERSIENUMMER}</string>
+	<key>CFBundleVersion</key>
+	<string>${VERSIEHOOFDNUMMER}.${VERSIEONDERNUMMER}</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>${MacOSXMinimumVersie}</string>
+	<key>NSAppleScriptEnabled</key>
+	<string>No</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>${SchoolCopyright}</string>
+	<key>ServerConfigType</key>
+	<string>prod</string>
+	<key>NSPrincipalClass</key>
+	<string>${PRINCIPAL_CLASS}</string>
+</dict>
+</plist>

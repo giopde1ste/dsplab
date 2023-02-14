@@ -1,0 +1,11 @@
+Dit installatiebestand installeert een demoversie van een practicumopdracht
+van het HAN ESE Digitale signaalbewerking practicum.
+Deze demo heeft als doel de studenten van het vak DSPESEL te tonen welke mogelijke uitkomst
+hun eigen software moet produceren.
+
+============================================================================================
+
+This installation file installs a demo version of a lab assignment
+of the HAN ESE Digital signal processing practical.
+The purpose of this demo is to show the students of the DSPESEL course what possible outcome
+produce their own software.

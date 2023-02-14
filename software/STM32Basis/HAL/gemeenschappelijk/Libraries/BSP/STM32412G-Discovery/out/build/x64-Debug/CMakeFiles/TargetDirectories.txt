@@ -1,0 +1,3 @@
+D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery/out/build/x64-Debug/CMakeFiles/STM32412G-DiscoveryBasis.dir
+D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

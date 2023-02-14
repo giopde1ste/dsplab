@@ -1,0 +1,193 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "CMakeFiles/STM32412G-DiscoveryBasis.dir/./STM32412gDiscovery.obj"
+		},
+		{
+			"path" : "CMakeFiles/STM32412G-DiscoveryBasis.dir/./stm32412g_discovery.obj"
+		},
+		{
+			"path" : "CMakeFiles/STM32412G-DiscoveryBasis.dir/./stm32412g_discovery_audio.obj"
+		},
+		{
+			"path" : "CMakeFiles/STM32412G-DiscoveryBasis.dir/./stm32412g_discovery_eeprom.obj"
+		},
+		{
+			"path" : "CMakeFiles/STM32412G-DiscoveryBasis.dir/./stm32412g_discovery_lcd.obj"
+		},
+		{
+			"path" : "CMakeFiles/STM32412G-DiscoveryBasis.dir/./stm32412g_discovery_qspi.obj"
+		},
+		{
+			"path" : "CMakeFiles/STM32412G-DiscoveryBasis.dir/./stm32412g_discovery_sd.obj"
+		},
+		{
+			"path" : "CMakeFiles/STM32412G-DiscoveryBasis.dir/./stm32412g_discovery_ts.obj"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery/h"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/STM32412G-Discovery/h"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		}
+	],
+	"id" : "STM32412G-DiscoveryBasis::@6890427a1f51a3e7e1df",
+	"name" : "STM32412G-DiscoveryBasis",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "STM32412gDiscovery.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "stm32412g_discovery.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "stm32412g_discovery_audio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "stm32412g_discovery_eeprom.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "stm32412g_discovery_lcd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "stm32412g_discovery_qspi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "stm32412g_discovery_sd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "stm32412g_discovery_ts.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

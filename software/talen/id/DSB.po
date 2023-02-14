@@ -1,0 +1,1624 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DSB\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-24 18:14+0200\n"
+"PO-Revision-Date: 2022-06-24 18:15+0200\n"
+"Last-Translator: \n"
+"Language-Team: ewout@boks.com\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.1\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: STM32Basis\n"
+"X-Poedit-SearchPathExcluded-1: oud\n"
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:46
+msgid ""
+"Please pay attention. The application is already running. Is this your "
+"intention?"
+msgstr "Mohon perhatian. Aplikasi sudah berjalan. Apakah ini niat Anda?"
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:125
+msgid ""
+"The application was initialized to use the system default language, which "
+"has this name:"
+msgstr ""
+"Aplikasi ini diinisialisasi untuk menggunakan bahasa default sistem, yang "
+"memiliki nama ini:"
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:330
+msgid "Unknown"
+msgstr "Tidak diketahui"
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:363
+msgid "The application must now be restarted to activate the new language."
+msgstr "Aplikasi sekarang harus direstart untuk mengaktifkan bahasa baru."
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:364
+msgid "Restart the application."
+msgstr "Mulai ulang aplikasi."
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:383
+msgid "Version : "
+msgstr "Versi: kapan : "
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/grafiekVenster.cpp:812
+msgid "Save the image as a PNG file."
+msgstr "Simpan gambar sebagai file PNG."
+
+#: opdracht2/STUDENT/gemwaarde.cpp:120
+#, c-format
+msgid "Euro %.2lf"
+msgstr "Euro% .2lf"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:152
+msgid "Open\tCtrl+O"
+msgstr "Buka\tCtrl + O"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:154
+msgid "Draw data\tCtrl+T"
+msgstr "Gambar data\tCtrl+T"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:156 opdracht3/STUDENT/signaal.cpp:324
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1029
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:722
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:722
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1236
+msgid "Quit\tCtrl+Q"
+msgstr "Keluar\tCtrl + Q"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:158
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1767
+msgid "File"
+msgstr "Berkas"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:162
+msgid "Standard Moving Average"
+msgstr "Average Moving Average"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:163
+msgid "Exponential Moving Average"
+msgstr "Rata-rata Bergerak Eksponensial"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:167
+msgid "Draw data"
+msgstr "Gambar data"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:234
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4117
+msgid "Open the data file. Please supply a list of one value per line."
+msgstr "Metode desain Chebyshev belum diterapkan."
+
+#: opdracht2/STUDENT/gemwaarde.cpp:249
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4131
+msgid "Could not open :"
+msgstr "Tidak bisa dibuka :"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:274
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4156
+msgid "Error reading the input value :"
+msgstr "Kesalahan membaca nilai masukan:"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:313
+msgid "Assignment 2 : the running average"
+msgstr "Tugas 2: rata-rata berjalan"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:331
+msgid "Averaging control parameter"
+msgstr "Rata-rata parameter kontrol"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:354 opdracht3/STUDENT/signaal.cpp:686
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2107
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:5105
+msgid "Developer"
+msgstr "Pengembang"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:356 opdracht3/STUDENT/signaal.cpp:688
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2109
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:5107
+msgid "Demo version"
+msgstr "Versi demo"
+
+#: opdracht3/STUDENT/signaal.cpp:49
+msgid "FFTW start of calcation"
+msgstr "FFTW memulai kalkulasi"
+
+#: opdracht3/STUDENT/signaal.cpp:52
+msgid "The signal could not be sampled, because"
+msgstr "Sinyal tidak dapat disampel, karena"
+
+#: opdracht3/STUDENT/signaal.cpp:53
+#, c-format
+msgid "the number of samples per period=%d"
+msgstr "jumlah sampel per periode =%d"
+
+#: opdracht3/STUDENT/signaal.cpp:104
+msgid "Not allowed."
+msgstr "Tidak diizinkan."
+
+#: opdracht3/STUDENT/signaal.cpp:108
+#, c-format
+msgid "(SignaalVenster::tekenReeksHandler) Wrong signal choice (%ld)."
+msgstr "(SignaalVenster :: tekenReeksHandler) Pilihan sinyal salah (%ld)."
+
+#: opdracht3/STUDENT/signaal.cpp:135
+msgid "No valid data present in the file!"
+msgstr "Tidak ada data yang valid ada di file mereka!"
+
+#: opdracht3/STUDENT/signaal.cpp:146
+#, c-format
+msgid "Number of values=%d"
+msgstr "Jumlah nilai =% d"
+
+#: opdracht3/STUDENT/signaal.cpp:181
+msgid "Initialisation of the FFT routines resulted in an error"
+msgstr "Inisialisasi rutinitas FFT menghasilkan kesalahan"
+
+#: opdracht3/STUDENT/signaal.cpp:182
+msgid "FFTW Init error"
+msgstr "Kesalahan Init FFTW"
+
+#: opdracht3/STUDENT/signaal.cpp:282
+msgid "Frequency image was constructed."
+msgstr "Gambar frekuensi dibangun."
+
+#: opdracht3/STUDENT/signaal.cpp:316
+msgid "&About"
+msgstr "&Tentang"
+
+#: opdracht3/STUDENT/signaal.cpp:318
+msgid "&Execute FFT\tCtrl+T"
+msgstr "&Jalankan FFT\tCtrl+T"
+
+#: opdracht3/STUDENT/signaal.cpp:320
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1033
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:726
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:726
+msgid "Export the time domain image\tCtrl+R"
+msgstr "Ekspor gambar domain waktu\tCtrl+R"
+
+#: opdracht3/STUDENT/signaal.cpp:322
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1034
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:727
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:727
+msgid "Export the frequency domain image\tCtrl+E"
+msgstr "Ekspor gambar domain frekuensi\tCtrl+E"
+
+#: opdracht3/STUDENT/signaal.cpp:326
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1030
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:723
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:723
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1237
+msgid "Bestand"
+msgstr "Bestand"
+
+#: opdracht3/STUDENT/signaal.cpp:332
+msgid "Signal frequency"
+msgstr "Frekuensi sinyal"
+
+#: opdracht3/STUDENT/signaal.cpp:335
+msgid "Sampling frequency"
+msgstr "Frekuensi pengambilan sampel"
+
+#: opdracht3/STUDENT/signaal.cpp:338
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1191
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1196
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:759
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:759
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1763
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1770
+msgid "Cosine"
+msgstr "Kosinus"
+
+#: opdracht3/STUDENT/signaal.cpp:339
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1136
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:748
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:748
+msgid "Triangle"
+msgstr "Segi tiga"
+
+#: opdracht3/STUDENT/signaal.cpp:340
+msgid "Square"
+msgstr "Kuadrat"
+
+#: opdracht3/STUDENT/signaal.cpp:341
+msgid "Data from file"
+msgstr "Data dari file"
+
+#: opdracht3/STUDENT/signaal.cpp:344
+msgid "Number of periods:"
+msgstr "Jumlah periode:"
+
+#: opdracht3/STUDENT/signaal.cpp:346
+msgid "Show amplitude"
+msgstr "Perlihatkan amplitudo"
+
+#: opdracht3/STUDENT/signaal.cpp:347
+msgid "Show phase"
+msgstr "Tampilkan fase"
+
+#: opdracht3/STUDENT/signaal.cpp:348
+msgid "Dump FFT values"
+msgstr "Nilai DFT FFT"
+
+#: opdracht3/STUDENT/signaal.cpp:349
+msgid "Execute Fast Fourier Transform"
+msgstr "Jalankan Fast Fourier Transform"
+
+#: opdracht3/STUDENT/signaal.cpp:501
+msgid "Assignment 3 DSB Practicum"
+msgstr "Tugas 3 Praktikum DSB"
+
+#: opdracht3/STUDENT/signaal.cpp:502
+msgid "Employ the FFTW library for generating a frequency plot."
+msgstr "Gunakan perpustakaan FFTW untuk menghasilkan plot frekuensi."
+
+#: opdracht3/STUDENT/signaal.cpp:517
+msgid "Open a data file with the signal values in float format)"
+msgstr "Buka file data dengan nilai sinyal dalam format float)"
+
+#: opdracht3/STUDENT/signaal.cpp:520
+msgid "All files (*.*)|*.*"
+msgstr "Semua file (*. *) | *. *"
+
+#: opdracht3/STUDENT/signaal.cpp:532
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1903
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1012
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1012
+msgid "Could not open:"
+msgstr "Tidak bisa dibuka :"
+
+#: opdracht3/STUDENT/signaal.cpp:557
+msgid "Error reading the float data."
+msgstr "Kesalahan membaca data float."
+
+#: opdracht3/STUDENT/signaal.cpp:591
+msgid "Signal sampling and frequency image"
+msgstr "Frekuensi pengambilan sampel (Hz)"
+
+#: opdracht3/STUDENT/signaal.cpp:598
+msgid "FFTW Status : unknown"
+msgstr "Status FFTW: tidak diketahui"
+
+#: opdracht3/STUDENT/signaal.cpp:624
+msgid "Frequency plot features"
+msgstr "Fitur plot frekuensi"
+
+#: opdracht3/STUDENT/signaal.cpp:625
+msgid "Time domain properties"
+msgstr "Properti domain waktu"
+
+#: opdracht3/STUDENT/signaal.cpp:627
+msgid "Signal properties"
+msgstr "Sifat sinyal"
+
+#: opdracht3/STUDENT/signaal.cpp:695
+msgid "FFT Signal test"
+msgstr "Tampilkan sinyal uji"
+
+#: opdracht4/Basis/applikatie4.cpp:27 opdracht6/Basis/applikatie6.cpp:34
+msgid ""
+"This programme requires a minimal screen resolution of 1024x768 pixels.\n"
+"The start is cancelled."
+msgstr ""
+"Program ini membutuhkan resolusi layar minimal 1024x768 piksel.\n"
+"Awal dibatalkan."
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:123
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:91
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:91
+msgid "filter berekening start."
+msgstr "perhitungan filter mulai."
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:158
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:433
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:126
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:399
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:126
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:399
+msgid "May not reach this point!!"
+msgstr "Mungkin tidak mencapai titik ini !!"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:398
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:364
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:364
+msgid "filter calculation start."
+msgstr "perhitungan filter mulai."
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:646
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:639
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:639
+#, c-format
+msgid "Coefficient[%d] = %.3f (Q%d:%d)"
+msgstr "Koefisien [% d] =% .3f (Q% d:% d)"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:683
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:676
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:676
+#, c-format
+msgid "Mouse = [%.3f*pi,%.3f dB]. |H(%.3f*pi)| = %.3f dB"
+msgstr "Mouse = [% .3f * pi,%.3f dB]. | H (%.3f * pi) | =% .3f dB"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:692
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:685
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:685
+#, c-format
+msgid "Mouse = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
+msgstr "Mouse = [% .3f Hz,%.3f dB]. | H (%.3f Hz) | =% .3f dB"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:713
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1324
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1324
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4078
+msgid "Time graph entry."
+msgstr "Entri grafik waktu."
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:721
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1332
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1332
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4086
+msgid "Time graph exit."
+msgstr "Grafik waktu keluar."
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:723
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:745
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1334
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1356
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1334
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1356
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4088
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4110
+msgid "No coordinates"
+msgstr "Tidak ada koordinat"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:735
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1346
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1346
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4100
+msgid "Freq graph entry."
+msgstr "Entri grafik Frek."
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:743
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1354
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1354
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4108
+msgid "Freq graph exit."
+msgstr "Grafik freq keluar."
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:905
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1403
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:852
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1223
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:852
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1223
+#, c-format
+msgid "Orde = %d (%d taps)"
+msgstr "Orde =%d (%d taps)"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1027
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:721
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:721
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1231
+msgid "About"
+msgstr "Tentang"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1028
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:728
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:728
+msgid "Write a C/CPP Header file"
+msgstr "Tulis file Header C / CPP"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1032
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:725
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:725
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1239
+msgid "Calculate Filter\tCtrl+B"
+msgstr "Hitung Filter\tCtrl + B"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1035
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:729
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:729
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1246
+msgid "Filter"
+msgstr "Filter"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1052
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:718
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:718
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1263
+msgid "Time domain filter impulse response"
+msgstr "Respons impuls filter domain waktu"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1059
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:732
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:732
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1271
+msgid "Time domain coordinates (Mouse over window)"
+msgstr "Koordinat domain waktu (Arahkan mouse ke jendela)"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1063
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:710
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:710
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1309
+msgid "Frequency domain representation"
+msgstr "Representasi domain frekuensi"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1073
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:736
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:736
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1320
+msgid "Frequency domain coordinates (Mouse over window)"
+msgstr "Koordinat domain frekuensi (Arahkan mouse ke jendela)"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1077
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:735
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:735
+msgid "Show analogue frequencies"
+msgstr "Tampilkan frekuensi analog"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1086
+msgid "Discover HAN Embedded Systems Engineering!"
+msgstr "Temukan Rekayasa Sistem Tertanam HAN!"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1089
+msgid "Test results visualization"
+msgstr "Visualisasi hasil tes"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1099
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:714
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:714
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1406
+msgid "Filter parameters"
+msgstr "Parameter filter"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1112
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:739
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:739
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1416
+msgid "Sampling frequency (Hz)"
+msgstr "Frekuensi pengambilan sampel (Hz)"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1116
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1122
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:740
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:742
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:740
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:742
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1421
+msgid "undetermined"
+msgstr "yg tak dpt ditentukan"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1119
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:741
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:741
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1659
+msgid "Filter order"
+msgstr "Urutan filter"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1125
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:743
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:743
+msgid "Supplemental filter amplification (dB) :"
+msgstr "Amplifikasi filter tambahan (dB):"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1131
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:745
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:745
+msgid "Window applied :"
+msgstr "Jendela diterapkan:"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1135
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1139
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:747
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:747
+msgid "Rectangle"
+msgstr "Persegi panjang"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1137
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:749
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:749
+msgid "Hamming"
+msgstr "Hamming"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1142
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:752
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:752
+msgid "Number of bits in coding :"
+msgstr "Jumlah bit dalam pengkodean:"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1151
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:754
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:754
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1436
+msgid "Calculate filter"
+msgstr "Hitung filter"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1157
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:755
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:755
+msgid "Dump coefficients"
+msgstr "Koefisien Dump"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1161
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1463
+msgid "&Quit"
+msgstr "Keluar\tCtrl + Q"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1167
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:712
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:712
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1679
+msgid "Band pass begin (Hz)"
+msgstr "Band pass begin (Hz)"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1175
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:713
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:713
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1693
+msgid "Band pass end (Hz)"
+msgstr "Band pass end (Hz)"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1183
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:717
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:717
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1755
+msgid "Filter test"
+msgstr "Tes filter"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1192
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:760
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:760
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1764
+msgid "Square wave"
+msgstr "Gelombang persegi"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1193
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:761
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:761
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1765
+msgid "Impulse"
+msgstr "Impuls"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1194
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:762
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:762
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1766
+msgid "Step"
+msgstr "Langkah"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1205
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:715
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:715
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1779
+msgid "Test Signal frequency"
+msgstr "Uji frekuensi sinyal"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1215
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:716
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:716
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1795
+msgid "Test Signal amplitude"
+msgstr "Uji amplitudo sinyal"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1225
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:768
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:768
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1810
+msgid "Show test signal"
+msgstr "Tampilkan sinyal uji"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1229
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:769
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:769
+msgid "Draw interpolation spline"
+msgstr "Gambarkan spline interpolasi"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1233
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:765
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:765
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1774
+msgid "Start Filter Test"
+msgstr "Mulai Tes Filter"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1327
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1153
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1153
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2637
+msgid "Specify the sampling frequency in Hz."
+msgstr "Tentukan frekuensi pengambilan sampel dalam Hz."
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1328
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1154
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1154
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2638
+msgid "Frequency:"
+msgstr "Frekuensi:"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1329
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1155
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1155
+msgid "The FIR filter system sampling frequency"
+msgstr "Frekuensi pengambilan sampel sistem filter FIR"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1391
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1211
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1211
+msgid "Specify the order of the filter in number of taps."
+msgstr "Tentukan urutan filter dalam jumlah keran."
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1392
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1212
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1212
+msgid "Filter order:"
+msgstr "Urutan filter:"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1393
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1213
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1213
+msgid "Taps in the FIR filter system"
+msgstr "Ketuk dalam sistem filter FIR"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1557
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1252
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1252
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3245
+msgid "The start of the pass band must be smaller than the end."
+msgstr "Awal band pass harus lebih kecil dari akhirnya."
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1700
+msgid "Student version"
+msgstr "Versi siswa"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1828
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:978
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:978
+msgid "Assignment 4 DSB Practicum"
+msgstr "Tugas 4 Praktikum DSB"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1829
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:979
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:979
+msgid ""
+"Design and implement a FIR filter design tool based on the sinc() function."
+msgstr ""
+"Merancang dan mengimplementasikan alat desain filter FIR berdasarkan fungsi "
+"sinc ()."
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1883
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:992
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:992
+msgid "Save the filter design as a C or CPP header file"
+msgstr "Simpan desain filter sebagai file header C atau CPP"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1993
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1102
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1102
+msgid "Header file written succesfully."
+msgstr "File header ditulis dengan sukses."
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2078
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2080
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1309
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1309
+#, c-format
+msgid "Coefficient[%d] = %d (float:%f)"
+msgstr "Koefisien [%d] =%d (float:%f)"
+
+#: opdracht4/STUDENT/ontwerper/filterDesigner.h:53
+msgid ""
+"FIR filter designer for HAN Embedded Systems Engineering Digital Signal "
+"Processing"
+msgstr ""
+"Perancang filter FIR untuk HAN Embedded Systems Engineering Digital Signal "
+"Processing"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:157
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:158
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:279
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:423
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:424
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:544
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1436
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:157
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:158
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:279
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:423
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:424
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:544
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1436
+msgid "Demoversion"
+msgstr "Versi demo"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:700
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:700
+msgid "FIR Filter Designer"
+msgstr "Perancang Filter FIR"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:711
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:711
+msgid "Testsignaal"
+msgstr "Tanda uji"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:865
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1484
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:865
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1484
+msgid "Demoversie"
+msgstr "Demoversie"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1518
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1518
+msgid "Fixed Point FIR band pass filter"
+msgstr "Fixed Point FIR band pass filter"
+
+#: opdracht6/STUDENT/designer/customdatadialoog.cpp:139
+msgid "Please enter one ore more floating point values."
+msgstr "Harap masukkan satu atau lebih nilai floating point."
+
+#: opdracht6/STUDENT/designer/customdatadialoog.cpp:155
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1504
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1544
+msgid "&Clear"
+msgstr "&Bersih"
+
+#: opdracht6/STUDENT/designer/customdatadialoog.cpp:166
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:200
+msgid "&OK"
+msgstr "&OKE"
+
+#: opdracht6/STUDENT/designer/customdatadialoog.cpp:170
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:204
+msgid "&Cancel"
+msgstr "&Membatalkan"
+
+#: opdracht6/STUDENT/designer/customdatadialoog.cpp:270
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2754
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2803
+msgid "Conversion to a floating point value of this content :"
+msgstr "Konversi ke nilai floating point konten ini:"
+
+#: opdracht6/STUDENT/designer/customdatadialoog.cpp:271
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2755
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2805
+msgid "failed."
+msgstr "gagal."
+
+#: opdracht6/STUDENT/designer/customdatadialoog.h:39
+msgid "Entry of custom data for the IIR filter designer."
+msgstr "Entri data kustom untuk desainer filter IIR."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:55
+msgid "Filter calculation start."
+msgstr "Perhitungan filter dimulai."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:156
+msgid ""
+"Your did not enter any zeros and poles.\n"
+"You must provide at least one pole and one zero."
+msgstr ""
+"Anda tidak memasukkan angka nol dan kutub apa pun.\n"
+"Anda harus memberikan setidaknya satu kutub dan satu nol."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:184
+#, c-format
+msgid "Impulse response[%d] : %.2f"
+msgstr "Tanggapan impulsif [%d]: %.2f"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:224
+#, c-format
+msgid "Impulse response scale factor : %.2f db"
+msgstr "Faktor skala respons impuls: %.2f db"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:387
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:481
+#, c-format
+msgid "Frequency domain[%.2f rad] :"
+msgstr "Domain frekuensi [%.2f rad]:"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:519
+msgid "The entered value"
+msgstr "Nilai yang dimasukkan"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:519
+msgid "cannot be used for scaling the frequency plot"
+msgstr "tidak dapat digunakan untuk menskalakan plot frekuensi"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:565
+msgid "The number of points must be larger than zero."
+msgstr "Jumlah poin harus lebih besar dari nol."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:767
+msgid "Z Plane"
+msgstr "Pesawat Z"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1232
+msgid "Load a filter configuration\tCtrl+O"
+msgstr "Muat konfigurasi filter\tCtrl+O"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1233
+msgid "Save the filter configuration\tCtrl+S"
+msgstr "Simpan konfigurasi filter\tCtrl+S"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1235
+msgid "Reset to demo values"
+msgstr "Setel ulang ke nilai demo"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1240
+msgid "Export the time domain to an image"
+msgstr "Mengekspor domain waktu ke gambar"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1241
+msgid "Export the pole-zero diagram to an image"
+msgstr "Mengekspor diagram kutub-nol ke gambar"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1242
+msgid "Export the frequency domain to an image"
+msgstr "Mengekspor domain frekuensi ke gambar"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1243
+msgid "Export the test signal output to an image"
+msgstr "Mengekspor output sinyal uji ke gambar"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1245
+msgid "Export the time domain output in CSV format"
+msgstr "Mengekspor output domain waktu dalam format CSV"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1279
+msgid "Horizontal plotting limit"
+msgstr "Batas plot horizontal"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1283
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1359
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1558
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1708
+msgid "Auto"
+msgstr "Otomatis"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1292
+msgid "sampling moments"
+msgstr "momen pengambilan sampel"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1296
+msgid "Configuration name"
+msgstr "Nama konfigurasi"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1300
+msgid "Generic digital fiter"
+msgstr "Fiter digital generik"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1328
+msgid "Frequency image elements"
+msgstr "Elemen gambar frekuensi"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1335
+msgid "analogue frequencies"
+msgstr "frekuensi analog"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1340
+msgid "magnitude"
+msgstr "besarnya"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1345
+msgid "Show full sampled range"
+msgstr "Tampilkan rentang sampel lengkap"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1350
+msgid "phase angle"
+msgstr "sudut fase"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1355
+msgid "Vertical plotting limits"
+msgstr "Batas plot vertikal"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1371
+msgid "to"
+msgstr "untuk"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1379
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1569
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1719
+msgid "dB"
+msgstr "dB"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1386
+msgid "Pole-Zero diagram"
+msgstr "Diagram Kutub-Nol"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1395
+msgid "Test signal output"
+msgstr "Uji keluaran sinyal"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1425
+msgid "Filter amplification (dB) :"
+msgstr "Amplifikasi filter (dB):"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1447
+msgid "Dump GUI calculations"
+msgstr "Perhitungan DUI GUI"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1452
+msgid "Show signal value labels"
+msgstr "Tunjukkan label nilai sinyal"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1459
+msgid ""
+"Find out what an exciting study Embedded Systems Engineering is! \n"
+"Press this button to visit the ESE web site."
+msgstr ""
+"Cari tahu apa studi yang menarik Rekayasa Sistem Tertanam itu!\n"
+"Tekan tombol ini untuk mengunjungi situs web ESE."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1478
+msgid ""
+"b-coefficients for \n"
+"x[n] and earlier"
+msgstr ""
+"koefisien-b untuk\n"
+"x [n] dan sebelumnya"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1486
+msgid ""
+"a-coefficients for \n"
+"y[n-1]  and earlier"
+msgstr ""
+"a-koefisien untuk\n"
+"y [n-1] dan sebelumnya"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1500
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1540
+msgid "Show information about these entry fields."
+msgstr "Tampilkan informasi mengenai bidang entri ini."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1512
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2331
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2334
+msgid "Coefficients"
+msgstr "Koefisien"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1522
+msgid "locations of the zeros"
+msgstr "lokasi nol"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1528
+msgid "locations of the poles"
+msgstr "lokasi kutub"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1554
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1704
+msgid "Gain compensation"
+msgstr "Dapatkan kompensasi"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1561
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1711
+msgid "Scale the peak output to 0 dB"
+msgstr "Skala output puncak menjadi 0 dB"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1565
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1715
+msgid "0"
+msgstr "0"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1573
+msgid "Purpose based pole-zero insertion"
+msgstr "Penyisipan pole-nol berbasis tujuan"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1578
+msgid "Zero at Origin"
+msgstr "Nol di Asal"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1580
+msgid "Insert a zero in the origin."
+msgstr "Sisipkan angka nol di titik asal."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1584
+msgid "Pole at Origin"
+msgstr "Tiang di Asal"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1586
+msgid "Insert a pole in the origin."
+msgstr "Sisipkan sebuah tiang di tempat asal."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1590
+msgid "Comb expression"
+msgstr "Ekspresi Sisir"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1592
+msgid "Insert a comb expression of either zeros or poles."
+msgstr "Sisipkan ekspresi sisir yang terdiri dari nol atau kutub."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1600
+msgid "frequency (Hz)"
+msgstr "frekuensi (Hz)"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1613
+msgid "-3 dB band (Hz)"
+msgstr "-3 dB band (Hz)"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1623
+msgid "Insert as bandpass"
+msgstr "Masukkan sebagai bandpass"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1625
+msgid ""
+"Insert a pair of conjugated poles that invokes the bandpass behaviour at the "
+"indicated frequency."
+msgstr ""
+"Sisipkan sepasang kutub terkonjugasi yang memunculkan perilaku bandpass pada "
+"frekuensi yang ditunjukkan."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1629
+msgid "Insert as bandstop"
+msgstr "Masukkan sebagai bandstop"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1631
+msgid ""
+"Insert pairs of conjugated zeros and poles that invoke the bandstop "
+"behaviour at the indicated frequency."
+msgstr ""
+"Masukkan pasangan nol dan kutub terkonjugasi yang memunculkan perilaku "
+"bandstop pada frekuensi yang ditunjukkan."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1638
+msgid "Zeros and Poles"
+msgstr "Nol dan Polandia"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1648
+msgid "Analog filter type"
+msgstr "Jenis filter analog"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1653
+msgid "Butterworth"
+msgstr "Butterworth"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1654
+msgid "Chebyshev"
+msgstr "Chebyshev"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1664
+msgid "2nd order"
+msgstr "Urutan 2"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1665
+msgid "4th order"
+msgstr "Urutan 4"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1666
+msgid "6th order"
+msgstr "Urutan 6"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1667
+msgid "8th order"
+msgstr "Urutan 8"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1668
+msgid "10th order"
+msgstr "Urutan 10"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1669
+msgid "12th order"
+msgstr "Urutan ke-12"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1670
+msgid "14th order"
+msgstr "Urutan 14"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1671
+msgid "16th order"
+msgstr "Urutan ke-16"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1673
+msgid "1st order"
+msgstr "Pesanan pertama"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1729
+msgid "Polar magnitude safety margin"
+msgstr "Margin keamanan berkekuatan kutub"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1739
+msgid "Chebyshev ripple control"
+msgstr "Kontrol riak Chebyshev"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1747
+msgid "%"
+msgstr "%"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1751
+msgid "Analog filter prototype"
+msgstr "Prototipe filter analog"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1768
+msgid "Custom"
+msgstr "Kustom"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1784
+msgid "Absolute"
+msgstr "Absolut"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1785
+msgid "Shannon"
+msgstr "Shannon"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1786
+msgid "Type"
+msgstr "Tipe"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1806
+msgid "Test output options"
+msgstr "Menguji opsi keluaran"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1813
+msgid "Draw the test signal also."
+msgstr "Gambarkan juga sinyal uji."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1817
+msgid "Draw interpolation"
+msgstr "Gambar interpolasi"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1820
+msgid "Draw a spline that interpolates the filtered data."
+msgstr "Gambar spline yang menginterpolasi data yang difilter."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1824
+msgid "Post process auto scaling"
+msgstr "Penskalaan otomatis proses pasca"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1827
+msgid "Scale automatically to show all presented data in the graph window."
+msgstr ""
+"Skala secara otomatis untuk menampilkan semua data yang disajikan di jendela "
+"grafik."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1834
+msgid "Input starts at:"
+msgstr "Masukan dimulai dari:"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1842
+msgid "Number of points"
+msgstr "Jumlah poin"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1871
+msgid "Opdracht 6 DSB Practicum Embedded Systems Engineering bij de HAN."
+msgstr "Opdracht 6 DSB Praktikum Teknik Sistem Tertanam dan HAN."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1872
+msgid "Design and implement an IIR Filter design tool."
+msgstr "Mendesain dan mengimplementasikan alat desain Filter IIR."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1873
+msgid "ir drs E.J Boks (docent HAN ESE) : ewout.boks@han.nl"
+msgstr "ir drs E.J Boks (docent HAN ESE): ewout.boks@han.nl"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1924
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2244
+msgid "Default"
+msgstr "Default"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2099
+msgid ""
+"Error creating the base directory where the Filter coefficients will be "
+"stored."
+msgstr ""
+"Terjadi kesalahan saat membuat direktori dasar tempat koefisien Filter akan "
+"disimpan."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2108
+msgid "Error opening the stream to read the Filter coefficients."
+msgstr "Terjadi kesalahan saat membuka aliran untuk membaca koefisien Filter."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2210
+msgid "Please select an existing configuration"
+msgstr "Pilih konfigurasi yang ada"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2210
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2374
+msgid "Configuration :"
+msgstr "Konfigurasi:"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2311
+msgid "Error opening the stream to write the Filter coefficients."
+msgstr "Terjadi kesalahan saat membuka aliran untuk menulis koefisien Filter."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2318
+msgid "This file was generated automatically by application"
+msgstr "File ini dihasilkan secara otomatis oleh aplikasi"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2320
+msgid ""
+"You are free to modify the data entries in this file as long as you adhere "
+"to the format used in this file."
+msgstr ""
+"Anda bebas untuk memodifikasi entri data dalam file ini selama Anda mematuhi "
+"format yang digunakan dalam file ini."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2323
+msgid "IIR Filter configuration for user"
+msgstr "Konfigurasi Filter IIR untuk pengguna"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2324
+msgid "on"
+msgstr "pada"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2342
+msgid "Zeros"
+msgstr "Nol"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2345
+msgid "Poles"
+msgstr "Polandia"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2351
+msgid "Error closing the file stream that wrote the Filter coefficients."
+msgstr ""
+"Terjadi kesalahan saat menutup aliran file yang menulis koefisien Filter."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2374
+msgid "Please select an new configuration name."
+msgstr "Pilih nama konfigurasi baru."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2383
+msgid "This filter configuration name already exists."
+msgstr "Nama konfigurasi filter ini sudah ada."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2418
+msgid "Do you want to reset all configuration fields to demonstration values?"
+msgstr ""
+"Apakah Anda ingin mengatur ulang semua bidang konfigurasi ke nilai "
+"demonstrasi?"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2419
+msgid "Demonstration values"
+msgstr "Nilai demonstrasi"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2456
+msgid "IIR Filter impulse response output"
+msgstr "Output respons impuls Filter IIR"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2477
+msgid "IIR Filter pole-zero diagram"
+msgstr "Diagram kutub-nol Filter IIR"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2497
+msgid "This feature has not been implemented yet."
+msgstr "Fitur ini belum diimplementasikan."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2517
+msgid "IIR Filter frequency domain output"
+msgstr "IIR Filter keluaran domain frekuensi"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2537
+msgid "IIR Filter time domain test output"
+msgstr "IIR Filter keluaran uji domain waktu"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2639
+msgid "The IIR Filter system sampling frequency"
+msgstr "Frekuensi pengambilan sampel sistem Filter IIR"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2763
+#, c-format
+msgid "Coefficient b_%d : %.2f was added."
+msgstr "Koefisien b_% d:% .2f telah ditambahkan."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2765
+#, c-format
+msgid "Coefficient a_%d : %.2f was added."
+msgstr "Koefisien a_% d:% .2f telah ditambahkan."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2821
+#, c-format
+msgid "Zero [%d] was added :"
+msgstr "Nol [%d] ditambahkan:"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2823
+#, c-format
+msgid "Pole [%d] was added :"
+msgstr "Pole [%d] ditambahkan:"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2837
+msgid ""
+"Your design has fewer zero points than pole points.\n"
+"In order to balance your system, an additional number of zero points in the "
+"z-plane origin has been added to your system."
+msgstr ""
+"Desain Anda memiliki lebih sedikit titik nol daripada titik kutub.\n"
+"Untuk menyeimbangkan sistem Anda, sejumlah titik nol tambahan dalam asal-"
+"bidang z telah ditambahkan ke sistem Anda."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2850
+msgid ""
+"Your design has fewer pole points than zero points.\n"
+"In order to balance your system, an additional number of pole points in the "
+"z-plane origin has been added to your system."
+msgstr ""
+"Desain Anda memiliki titik kutub lebih sedikit dari titik nol.\n"
+"Untuk menyeimbangkan sistem Anda, sejumlah titik kutub tambahan dalam asal-"
+"bidang z telah ditambahkan ke sistem Anda."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2965
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2967
+#, c-format
+msgid "Butterworth Pole [%d] was added :"
+msgstr "Butterworth Pole [%d] telah ditambahkan:"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2969
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2971
+#, c-format
+msgid "Butterworth Zero [%d] was added :"
+msgstr "Butterworth Zero [%d] ditambahkan:"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3045
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3047
+#, c-format
+msgid "Chebyshev Pole [%d] was added :"
+msgstr "Chebyshev Pole [%d] telah ditambahkan:"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3049
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3051
+#, c-format
+msgid "Chebyshev Zero [%d] was added :"
+msgstr "Chebyshev Zero [%d] ditambahkan:"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3451
+msgid ""
+"An LTI difference equation characterised by bk (for inputs) and ak (for "
+"outputs) can be entered here."
+msgstr ""
+"Persamaan perbedaan LTI yang dikarakterisasikan oleh bk (untuk input) dan ak "
+"(untuk output) bisa dimasukkan di sini."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3453
+msgid ""
+"Please note that a pure convolution can be done by entering the h[n] "
+"coefficients as b-coefficients, with the a-coefficients field remaining "
+"empty."
+msgstr ""
+"Harap dicatat bahwa konvolusi murni dapat dilakukan\n"
+"dengan memasukkan koefisien h [n] sebagai koefisien-b,\n"
+"dengan kolom koefisien a tetap kosong."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3456
+msgid "Information on entering LTI difference equation coefficients."
+msgstr "Informasi tentang memasukkan koefisien persamaan perbedaan LTI."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3466
+msgid ""
+"Enter as a, a+bj or r:[p/d]phi .\n"
+"Please insert only a single complex or polar entry.\n"
+"Such an insertion automatically produces an\n"
+"extra insertion of a conjugate complex pair entry.\n"
+"[p/d] is optional and makes phi an angle of pi or degrees."
+msgstr ""
+"Masukkan sebagai a, a + bj atau r: [p / d] phi.\n"
+"Harap masukkan hanya satu entri kompleks atau kutub.\n"
+"Penyisipan seperti itu secara otomatis menghasilkan file\n"
+"penyisipan ekstra dari entri pasangan kompleks konjugasi.\n"
+"[p / d] bersifat opsional dan menjadikan phi sebagai sudut \n"
+"pi atau derajat."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3471
+msgid "Information on entering poles and zeros."
+msgstr "Informasi tentang memasukkan kutub dan nol."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3997
+#, c-format
+msgid "Coefficient[%d] = %.3f"
+msgstr "Koefisien [% d] =% .3f"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4004
+msgid "Out of bounds."
+msgstr "Di luar batas."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4047
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4056
+msgid "Mouse"
+msgstr "Tikus"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4120
+msgid "signal data file (*.txt)|*.txt"
+msgstr "file data sinyal (* .txt) | * .txt"
+
+#: opdracht6/STUDENT/designer/filterDesigner.h:51
+msgid "Digital Signal Processing demonstrator"
+msgstr "Demonstran Pemrosesan Sinyal Digital"
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:141
+msgid "Placement of a number of zeros or poles using a comb expression"
+msgstr "Penempatan sejumlah nol atau kutub menggunakan ekspresi sisir"
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:148
+msgid "An example of placing a comb zero expression on the unit circle."
+msgstr "Contoh penempatan ekspresi sisir nol pada lingkaran satuan."
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:156
+msgid "Zero"
+msgstr "Nol"
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:157
+msgid "Pole"
+msgstr "Tiang"
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:158
+msgid "Placement"
+msgstr "Penempatan"
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:163
+msgid "Radius"
+msgstr "Radius"
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:167
+msgid "1.0"
+msgstr "1,0"
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:171
+msgid "Number of elements in arc (Nyquist range)"
+msgstr "Jumlah elemen dalam busur (rentang Nyquist)"
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:178
+#, c-format
+msgid "Arc length as % of half circle"
+msgstr "Panjang busur sebagai % o f setengah lingkaran"
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:190
+msgid "Compensate with counterpart elements in the origin"
+msgstr "Mengimbangi dengan elemen mitra di tempat asal"
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:193
+msgid ""
+"When generating a number of poles or zeros in a circle, generate an equal "
+"number of zeros or poles in the origin to keep the system causal with "
+"minumum delays."
+msgstr ""
+"Saat membuat sejumlah kutub atau nol dalam lingkaran, buat angka nol atau "
+"kutub yang sama di tempat asal untuk menjaga sistem kausal dengan penundaan "
+"minumum."
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:308
+msgid "The entered radius number cannot be used."
+msgstr "Nomor radius yang dimasukkan tidak dapat digunakan."
+
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.h:39
+msgid "Comb Expression"
+msgstr "Ekspresi Sisir"
+
+#: opdracht6/STUDENT/filter/iirfilter.cpp:101
+#: opdracht6/STUDENT/filter/iirfilter.cpp:111
+msgid "Your pole has a magnitude > 1 !"
+msgstr "Tiang Anda memiliki magnitudo> 1!"
+
+#~ msgid "Application"
+#~ msgstr "Aplikasi"
+
+#~ msgid ""
+#~ "Study Embedded Systems Engineering at HAN! \n"
+#~ "We are the only dedicated bachelor level Embedded Systems Engineering "
+#~ "course in the Netherlands. Become an expert in both hardware and software "
+#~ "engineering with microcontrollers and FPGAs.\n"
+#~ "Press this button to open the HAN ESE web-site in your web browser."
+#~ msgstr ""
+#~ "Pelajari Rekayasa Sistem Tertanam di HAN!\n"
+#~ "Kami adalah satu-satunya kursus Teknik Sistem Tertanam tingkat sarjana "
+#~ "yang berdedikasi di Belanda. Menjadi ahli dalam rekayasa perangkat keras "
+#~ "dan perangkat lunak dengan mikrokontroler dan FPGA.\n"
+#~ "Tekan tombol ini untuk membuka situs web HAN ESE di browser web Anda."
+
+#~ msgid "The entered value \""
+#~ msgstr "Nilai yang dimasukkan \""
+
+#~ msgid "\" cannot be used for scaling the frequency plot"
+#~ msgstr "\"tidak dapat digunakan untuk menskalakan plot frekuensi"
+
+#~ msgid "Error opening the stream to read the filter coefficients."
+#~ msgstr "Kesalahan membuka aliran untuk membaca koefisien filter."
+
+#~ msgid "Error opening the stream to write the filter coefficients."
+#~ msgstr "Kesalahan membuka aliran untuk menulis koefisien filter."
+
+#~ msgid "Error closing the file stream that wrote the filter coefficients."
+#~ msgstr "Kesalahan menutup aliran file yang menulis koefisien filter."
+
+#~ msgid "Show magnitude"
+#~ msgstr "Tunjukkan besarnya"
+
+#~ msgid "Show phase angle"
+#~ msgstr "Tampilkan sudut fase"
+
+#~ msgid "Test signal"
+#~ msgstr "Sinyal uji"
+
+#~ msgid "b coefficients (starting at k=0)"
+#~ msgstr "b koefisien (mulai dari k = 0)"
+
+#~ msgid "a coefficients (starting at k=1)"
+#~ msgstr "a koefisien (mulai dari k = 1)"
+
+#~ msgid ""
+#~ "Enter as a, a+bj or r:phi .\n"
+#~ "Please insert only a single complex or polar entry.\n"
+#~ "Such an insertion implies the insertion of a conjugate complex pair entry."
+#~ msgstr ""
+#~ "Masukkan sebagai a, a + bj atau r: phi.\n"
+#~ "Harap masukkan hanya satu kompleks atau entri kutub.\n"
+#~ "Penyisipan seperti itu menyiratkan penyisipan entri pasangan kompleks "
+#~ "konjugat."
+
+#~ msgid "Scaling factor"
+#~ msgstr "Faktor penskalaan"
+
+#~ msgid "Automatic scaling"
+#~ msgstr "Penskalaan otomatis"
+
+#~ msgid "Design and implement an IIR filter design tool."
+#~ msgstr "Merancang dan mengimplementasikan alat desain filter IIR."
+
+#~ msgid "Conversion to a floating point value of this content :\""
+#~ msgstr "Konversi ke nilai floating point dari konten ini: \""
+
+#~ msgid "\" failed."
+#~ msgstr "\" gagal."
+
+#, c-format
+#~ msgid "Zero [%d] was added : "
+#~ msgstr "Nol [%d] ditambahkan: "
+
+#, c-format
+#~ msgid "Pole [%d] was added : "
+#~ msgstr "Kutub [%d] ditambahkan: "
+
+#~ msgid "This method has not been implemented yet."
+#~ msgstr "Metode ini belum diimplementasikan."
+
+#~ msgid "Floating Point IIR filter demonstrator"
+#~ msgstr "Demonstrator filter Floating Point IIR"
+
+#~ msgid "Locale with English (NZ) initialized."
+#~ msgstr "Lokal dengan Bahasa Inggris (NZ) diinisialisasi."
+
+#~ msgid "The Chebyshev design method has not been implemented yet."
+#~ msgstr "Metode desain Chebyshev belum diterapkan."
+
+#~ msgid ""
+#~ "Enter as a, a+bj or r:phi .\n"
+#~ "Please insert only a single complex or polar entry.\n"
+#~ "Such an insertion implies the insertion \n"
+#~ "of a conjugate complex pair entry."
+#~ msgstr ""
+#~ "Masukkan sebagai a, a + bj atau r: phi.\n"
+#~ "Harap masukkan hanya satu entri kompleks\n"
+#~ "atau kutub.\n"
+#~ "Penyisipan seperti itu menyiratkan penyisipan\n"
+#~ "dari entri pasangan kompleks konjugasi."
+
+#~ msgid "Open the data file"
+#~ msgstr "Buka file data"
+
+#~ msgid ""
+#~ "Your did not enter the same number of zeros and poles.\n"
+#~ "You must balance these entries for this tool to work correctly."
+#~ msgstr ""
+#~ "Anda tidak memasukkan angka nol dan kutub yang sama.\n"
+#~ "Anda harus menyeimbangkan entri ini agar alat ini berfungsi dengan benar."
+
+#~ msgid "Export the time domain filter impulse response"
+#~ msgstr "Mengekspor respons impuls filter domain waktu"
+
+#~ msgid "coords in het tijddomein."
+#~ msgstr "coords di het tijddomein."
+
+#~ msgid "coords in het freqdomein."
+#~ msgstr "coords di freqdomein."
+
+#~ msgid "Filter eigenschappen"
+#~ msgstr "Saring eigenschappen"
+
+#~ msgid "Window"
+#~ msgstr "Jendela"
+
+#, c-format
+#~ msgid "FFT[%d] = "
+#~ msgstr "FFT [%d] = "

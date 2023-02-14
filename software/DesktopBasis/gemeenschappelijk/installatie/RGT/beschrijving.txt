@@ -1,0 +1,13 @@
+Dit programma is een cross-platform applicatie van de opleiding Elektrotechniek/Embedded Systems Engineering, practicum voor regeltechniek en fuzzy control.
+De applikatie is verkrijgbaar in Mac OS X, Windows,FreeBSD en Linux versies.
+
+De applikatie maakt gebruik van
+ 
+- Qt5 
+
+en wordt gebruikt tesamen met de door de opleiding verstrekte ontwikkelborden :
+
+- RGT+DSB Board.
+- RGT Mini board.
+
+

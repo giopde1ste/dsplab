@@ -1,0 +1,402 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./cs43l22/cs43l22.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./exc7200/exc7200.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./ft6x06/ft6x06.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./ili9325/ili9325.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./ili9341/ili9341.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./l3gd20/l3gd20.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./lis302dl/lis302dl.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./lis3dsh/lis3dsh.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./ls016b8uy/ls016b8uy.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./lsm303dlhc/lsm303dlhc.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./mfxstm32l152/mfxstm32l152.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./otm8009a/otm8009a.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./ov2640/ov2640.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./s5k5cag/s5k5cag.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./st7735/st7735.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./st7789h2/st7789h2.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./stmpe1600/stmpe1600.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./stmpe811/stmpe811.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./ts3510/ts3510.obj"
+		},
+		{
+			"path" : "CMakeFiles/ComponentsLib.dir/./wm8994/wm8994.obj"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 164,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/ampire480272"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/ampire640480"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/Common"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/cs43l22"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/exc7200"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/ft6x06"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/ili9325"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/ili9341"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/l3gd20"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/lis302dl"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/lis3dsh"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/ls016b8uy"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/lsm303dlhc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/mfxstm32l152"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/n25q128a"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/n25q256a"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/n25q512a"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/otm8009a"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/ov2640"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/s25fl512s"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/s5k5cag"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/st7735"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/st7789h2"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/stmpe1600"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/stmpe811"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/ts3510"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/S6DSPL/software/STM32Basis/HAL/gemeenschappelijk/Libraries/BSP/Components/wm8994"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			]
+		}
+	],
+	"id" : "ComponentsLib::@6890427a1f51a3e7e1df",
+	"name" : "ComponentsLib",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cs43l22/cs43l22.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "exc7200/exc7200.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ft6x06/ft6x06.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ili9325/ili9325.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ili9341/ili9341.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "l3gd20/l3gd20.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lis302dl/lis302dl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lis3dsh/lis3dsh.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ls016b8uy/ls016b8uy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lsm303dlhc/lsm303dlhc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "mfxstm32l152/mfxstm32l152.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "otm8009a/otm8009a.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ov2640/ov2640.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "s5k5cag/s5k5cag.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "st7735/st7735.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "st7789h2/st7789h2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "stmpe1600/stmpe1600.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "stmpe811/stmpe811.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ts3510/ts3510.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "wm8994/wm8994.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}
