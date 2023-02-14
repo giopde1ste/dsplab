@@ -22,6 +22,7 @@ $Id: dsbComplex.cpp 313 2023-01-30 13:54:35Z ewout $
 
 #include <cmath>
 #include <cassert>
+#include <complex>
 
 #include <dsbComplex.h>
 
@@ -41,10 +42,17 @@ PolairGetal::PolairGetal(const Complex &z) : grootte(z.Mag()), fase(z.Arg())
 {
 }
 
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.
-   Dear student, this part of the software is missing. Complete this part accoording to the assignment.
-*/
+/*! @brief Geef de grootte (lineair) van het polaire getal.
+ * @return de grootte. */
+float PolairGetal::Mag() const {
+	return grootte;
+}
+
+/*! @brief Geef de fasehoek (0 .. 2*pi) van het polaire getal.
+ * @return de fasehoek. */
+float PolairGetal::Arg() const {
+	return fase;
+}
 
 #elif defined(InterfaceTaalEnglish)
 
@@ -59,6 +67,62 @@ PolarNumber::PolarNumber(const Complex &z) : magnitude(z.Mag()),
 */
 
 #endif /* Nederlands/Engels */
+
+/*! @brief Constructors for the Complex class.
+ * @note Geen template ==> maak deze constructors aan in de cpp file. */
+Complex::Complex(const PolairGetal& polairGetal) {
+	auto r = polairGetal.Mag();
+	auto theta = polairGetal.Arg();
+	x = r * cosf(theta);
+	y = r * sinf(theta);
+}
+
+/*! @brief Importeer een polair getal. */
+Complex& Complex::operator = (const PolairGetal& polairGetal) {
+	auto r = polairGetal.Mag();
+	auto theta = polairGetal.Arg();
+	x = r * cosf(theta);
+	y = r * sinf(theta);
+	return *this;
+}
+
+bool Complex::operator == (const Complex& rhs) const {
+	const bool antwoord = (x == rhs.x) && (y == rhs.y);
+	return antwoord;
+}
+
+Complex  Complex::operator + (const Complex& rhs) const /* + overload */ {
+	const Complex uit(x + rhs.x, y + rhs.y);
+	return uit;
+}
+
+Complex  Complex::operator - (const Complex& rhs) const  /* - overload */ {
+	const Complex uit(x - rhs.x, y - rhs.y);
+	return uit;
+}
+
+Complex  Complex::operator * (const Complex& rhs) const  /* * overload */ {
+	const Complex uit(x * rhs.x, y * rhs.y);
+	return uit;
+}
+Complex  Complex::operator * (const float rhs) const  /* * met float overload */ {
+	const Complex uit(x * rhs, y * rhs);
+	return uit;
+}
+Complex  Complex::operator / (const Complex& rhs) const  /* / overload */ {
+	const Complex uit(x / rhs.x, y / rhs.y);
+	return uit;
+}
+Complex& Complex::operator += (const Complex& rhs)  /* += overload */ {
+	x += rhs.x;
+	y += rhs.y;
+	return *this;
+}
+Complex& Complex::operator -= (const Complex& rhs) /* -= overload */ {
+	x -= rhs.x;
+	y -= rhs.y;
+	return *this;
+}
 
 Complex Complex::sqrt() const
 {
