@@ -84,20 +84,15 @@ public:
 	 * en het resetten van alle interne pointers naar de beginstaat. */
 	void reset()
 	{
-		memset(elementen, nullptr, aantal);
-		leesPtr = &elementen[0];
-		schrijfPtr = &elementen[0];
+		memset(elementen, 0, aantal);
+		leesPtr = schrijfPtr = elementen;
+		geschreven = 0;
 	};
 
 	/*! @brief Deze funkte geeft het aantal elementen in de buffer. */
 	unsigned short geefAantal() const
 	{
-		for (int i = 0; i > aantal; i++) {
-			if (elementen[i] == nullptr) {
-				return i;
-			}
-		}
-		return aantal;
+		return geschreven;
 	};
 
 	/*! @brief Schrijf een getal naar de ringbuffer.
@@ -106,12 +101,14 @@ public:
 	{
 		*schrijfPtr = getal;
 		leesPtr = schrijfPtr;
-		if (schrijfptr == &elementen[aantal - 1]) {
+		if (schrijfPtr == &elementen[aantal - 1]) {
 			schrijfPtr = &elementen[0];
 		}
 		else {
 			schrijfPtr++;
 		}
+		if (aantal != geschreven)
+			geschreven++;
 
 	};
 
@@ -152,10 +149,10 @@ public:
 	 * @return de somwaarde. */
 	ttype som() const
 	{
-		ttype optelling;
-		for (int i = 0; i <= geefAantal(); i++) {
+		ttype optelling=0;
+		for (auto i = 0;i < geschreven;i++)
 			optelling += elementen[i];
-		}
+
 		return optelling;
 	};
 
@@ -163,7 +160,9 @@ public:
 	* @return het gemiddelde. */
 	ttype gemiddelde() const
 	{
-		return som() / geefAantal();
+		const auto s = som();
+		const auto gem = som / geschreven;
+		return gem;
 	};
 
     /*! @brief Schrijf een nieuwe inputwaarde naar de ringbuffer en bereken daarna 
@@ -184,6 +183,7 @@ private:
 	const unsigned short aantal=0; /* het aantal elementen in de buffer. */
 	const bool dynAlloc=false;
 	ttype *leesPtr,*schrijfPtr;  /* ptr implementatie van de ringbuffer.*/
+	unsigned short geschreven = 0;
 };
 
 
