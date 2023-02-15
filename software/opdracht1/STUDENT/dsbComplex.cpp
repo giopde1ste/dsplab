@@ -145,3 +145,27 @@ Complex Complex::sqrt() const
 	const Complex wortelgetal(a, b);
 	return (wortelgetal);
 }
+
+/*! @brief Conversie funkties naar grootte/argument.
+	 * @note maak deze in de cpp file aan. */
+float Complex::Mag() const  /* grootte (lineair) */ {
+	const auto pol(PolairGetal(*this));
+	return pol.Mag();
+}
+float Complex::Arg() const  /* fasehoek (0 .. 2*pi) */ {
+	const auto pol(PolairGetal(*this));
+	return pol.Arg();
+}
+
+/*! @brief Conversie naar polaire representatie.
+ * @note maak deze aan */
+PolairGetal Complex::polair() const {
+	const auto pol(PolairGetal(*this));
+	return pol;
+}
+
+/*! @brief De funktie levert de geconjugeerde versie van het huidige object. Maak aan. */
+Complex Complex::conj() const {
+	const auto com(Complex(x, -y));
+	return com;
+}
