@@ -23,23 +23,63 @@ $Id: gemwaarde.cpp 313 2023-01-30 13:54:35Z ewout $
 
 #ifndef OnderwijsOntwikkeling
 #if defined(InterfaceTaalNederlands)
-/* Verwijder dit directief na het invullen van de naam en het studentnummer hieronder. */
-#error  "Student naam en nummer moeten beneden in de velden worden ingevuld."
 #elif defined (InterfaceTaalEnglish)
 /* Remove this directive after filling out name and student number below. */
 #error  "Student name and number must be entered into the fields below."
 #endif
 #endif
 
-/********  Naam/name     :               ******/
-/********  Studentnummer :               ******/
+/********  Naam/name     : Thomas van den Oever ******/
+/********  Studentnummer : 585101               ******/
 
 void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
 {
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
-   Dear student, this part of the software is missing. Complete this part accoording to the assignment.
-*/
+	const auto keuze = filterSelectionRadioBox->GetSelection();
+
+	grafiek->maakSchoon();
+	grafiek->zetTekenPen(wxPen(wxColour("GRAY"), 2, wxSOLID));
+	int grafiekHoogte = grafiek->geefTekenVeldGrootte().GetHeight();
+
+	//grafiek->tekenLijn(wxPoint(0, 0), wxPoint(data[0], 0));
+
+	for(int i = 0; i < data.size(); i++)
+	{
+		grafiek->tekenLijn(wxPoint(i, 0), wxPoint(i, data[i] * grafiekHoogte));
+	}
+
+	grafiek->zetTekenPen(wxPen(wxColour("RED"), 2, wxSOLID));
+
+	switch (keuze){
+	case 0: {
+		RingBuffer<double> buffer(avgValueSlider->GetValue());
+
+		float gem;
+		wxPoint previousPoint(0, 0), currentPoint;
+		for (int i = 0; i < data.size(); i++)
+		{
+			buffer.schrijf(data[i]);
+			gem = buffer.gemiddelde();
+
+			currentPoint.x = i;
+			currentPoint.y = gem * grafiekHoogte;
+
+			grafiek->tekenLijn(previousPoint, currentPoint);
+			previousPoint = currentPoint;
+		}
+			//buffer.schrijf();
+		
+		break;
+	}
+	case 1: {
+		ExponentialAverageFilter filter(100);
+		break;
+	}
+	default: {
+		assert(0);
+		break;
+	}
+	}
+
 
 	/* laat dit hieronder staan. / Leave this statement in place. */
 	gemVeranderd = false;

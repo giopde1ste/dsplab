@@ -1,13 +1,14 @@
 /*!
 @file 
-Opdracht 1 DSB practicum. Werk deze opdracht verder uit aan de hand van het commentaar.
-@version $Rev: 313 $
+Opdracht 1 DSB practicum. Werk deze opdracht verder uit aan de hand van het kommentaar.
+Assignment 1 DSP. Complete this assignment guided by the commentary.
+@version $Rev: 316 $
 @author $Author: ewout $ 
                                    
 @copyright Copyright 2006-2022 ir drs E.J Boks, Hogeschool van Arnhem en Nijmegen. https://ese.han.nl
   
 $URL: https://ese.han.nl/svn/dsbpracticum/trunk/2022/software/opdracht1/Basis/applikatie1.cpp $  
-$Id: applikatie1.cpp 313 2023-01-30 13:54:35Z ewout $
+$Id: applikatie1.cpp 316 2023-02-17 09:58:44Z ewout $
 ************************************************************************/
 
 #include <dsbRingBuffer.h>
@@ -44,21 +45,28 @@ int DSBKlassenApp::MainLoop()
     using CP = ComplexPrinter;
     using PP = PolairPrinter;
 
-    wxLogDebug(CP::str(a) + wxT("+")+CP::str(b) +wxT(" = ")+ CP::str(a+b));
-	wxASSERT(((a+b).Re() == (aTest+bTest).real()) && 
-			  (a+b).Im() == (aTest+bTest).imag());
+	const auto plus(a + b);
+    wxLogDebug(CP::str(a) + wxT("+")+CP::str(b) +wxT(" = ")+ CP::str(plus));
+	wxASSERT((plus.Re() == (aTest+bTest).real()) && 
+			  plus.Im() == (aTest+bTest).imag());
 
-    wxLogDebug(CP::str(b) + wxT("-")+CP::str(a) +wxT(" = ")+ CP::str(b-a));
-	wxASSERT(((a-b).Re() == (aTest-bTest).real()) && 
-			  (a-b).Im() == (aTest-bTest).imag());
+	const auto min(b-a);
+    wxLogDebug(CP::str(b) + wxT("-")+CP::str(a) +wxT(" = ")+ CP::str(min));
+	wxASSERT(((min).Re() == (bTest-aTest).real()) && 
+			  (min).Im() == (bTest-aTest).imag());
 
-    wxLogDebug(CP::str(a) + wxT("*")+CP::str(b) +wxT(" = ")+ CP::str(a*b));
-	wxASSERT(((a*b).Re() == (aTest*bTest).real()) && 
-			  (a*b).Im() == (aTest*bTest).imag());
+	const auto maal(a*b);
+    wxLogDebug(CP::str(a) + wxT("*")+CP::str(b) +wxT(" = ")+ CP::str(maal));
+	wxASSERT(((maal).Re() == (aTest*bTest).real()) && 
+			  (maal).Im() == (aTest*bTest).imag());
 
-    wxLogDebug(CP::str(a) + wxT("/")+CP::str(b) +wxT(" = ")+ CP::str(a/b));
+
+	const auto deling(a / b);
+    wxLogDebug(CP::str(a) + wxT("/")+CP::str(b) +wxT(" = ")+ CP::str(deling));
 	const std::complex<float> delingControle(aTest/bTest);
-	wxLogDebug(wxString::Format(wxT("Check : a/b = [%.3f,%.3f]"),delingControle.real(),delingControle.imag()));
+	//wxLogDebug(wxString::Format(wxT("Check : a/b = [%.3f,%.3f]"),delingControle.real(),delingControle.imag()));
+	wxASSERT((fabsf(deling.Re() - (aTest / bTest).real()) < 1E-3) &&
+		(fabsf(deling.Im() - (aTest / bTest).imag()) < 1E-3));
 
 #if defined(InterfaceTaalNederlands)
     wxLogDebug(CP::str(a) + wxT(" in polaire notatie = ")+PP::str(a.polair()));

@@ -132,8 +132,19 @@ public:
 	* @note verschuif de leesPtr niet. */
 	ttype lees(const unsigned int index) const
 	{
-		//pointerOpxn &elementen[0] + index * ttype;
-		return *(schrijfPtr - index - 1);
+		const auto i = index + 1;
+		const auto pVerschil = schrijfPtr - elementen;
+		if(i > pVerschil)
+		{
+			const auto verschil = i - pVerschil;
+			const auto uit = elementen[aantal - verschil];
+			return uit;
+		}
+		else
+		{
+			return *(schrijfPtr - i);
+		}
+
 	};
 
 	/*! @brief Lees de bufferwaarde op plaats index absoluut,  dwz niet ten opzichte van de schrijfpointer.
@@ -161,7 +172,7 @@ public:
 	ttype gemiddelde() const
 	{
 		const auto s = som();
-		const auto gem = som / geschreven;
+		const auto gem = s / geschreven;
 		return gem;
 	};
 

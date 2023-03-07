@@ -102,7 +102,7 @@ Complex  Complex::operator - (const Complex& rhs) const  /* - overload */ {
 }
 
 Complex  Complex::operator * (const Complex& rhs) const  /* * overload */ {
-	const Complex uit(x * rhs.x, y * rhs.y);
+	const Complex uit(x * rhs.x - y * rhs.y, x * rhs.y + y * rhs.x);
 	return uit;
 }
 Complex  Complex::operator * (const float rhs) const  /* * met float overload */ {
@@ -110,7 +110,10 @@ Complex  Complex::operator * (const float rhs) const  /* * met float overload */
 	return uit;
 }
 Complex  Complex::operator / (const Complex& rhs) const  /* / overload */ {
-	const Complex uit(x / rhs.x, y / rhs.y);
+	const auto divider = rhs.x * rhs.x + rhs.y * rhs.y;
+	const auto real = (x * rhs.x + y * rhs.y) / divider;
+	const auto complex = (y * rhs.x - x * rhs.y) / divider;
+	const Complex uit(real, complex);
 	return uit;
 }
 Complex& Complex::operator += (const Complex& rhs)  /* += overload */ {
@@ -149,11 +152,11 @@ Complex Complex::sqrt() const
 /*! @brief Conversie funkties naar grootte/argument.
 	 * @note maak deze in de cpp file aan. */
 float Complex::Mag() const  /* grootte (lineair) */ {
-	const auto pol(PolairGetal(*this));
+	const auto pol(PolairGetal(x,y));
 	return pol.Mag();
 }
 float Complex::Arg() const  /* fasehoek (0 .. 2*pi) */ {
-	const auto pol(PolairGetal(*this));
+	const auto pol(PolairGetal(x,y));
 	return pol.Arg();
 }
 
