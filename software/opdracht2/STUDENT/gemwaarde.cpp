@@ -38,14 +38,21 @@ void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
 
 	grafiek->maakSchoon();
 	grafiek->zetTekenPen(wxPen(wxColour("GRAY"), 2, wxSOLID));
-	int grafiekHoogte = grafiek->geefTekenVeldGrootte().GetHeight();
+	double grafiekHoogte = grafiek->geefTekenVeldGrootte().GetHeight() * 2;
 
 	//grafiek->tekenLijn(wxPoint(0, 0), wxPoint(data[0], 0));
 
+	//LijnLijst lData;
+	//std::vector<LijnStuk> pLijnstukken;
 	for(int i = 0; i < data.size(); i++)
 	{
 		grafiek->tekenLijn(wxPoint(i, 0), wxPoint(i, data[i] * grafiekHoogte));
+
+		//LijnStuk sData(wxPoint(i, 0), wxPoint(i, data[i] * 10000));
+		//lData.Add(LijnStuk(wxPoint(i, 0), wxPoint(i, data[i] * 10000)));
 	}
+
+	//grafiek->tekenLijnen(lData, true);
 
 	grafiek->zetTekenPen(wxPen(wxColour("RED"), 2, wxSOLID));
 
@@ -71,7 +78,22 @@ void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
 		break;
 	}
 	case 1: {
-		ExponentialAverageFilter filter(100);
+		float avg = avgValueSlider->GetValue();
+
+		float alpha = avg / 100;
+		float gem;
+		wxPoint previousPoint(0, 0), currentPoint;
+		ExponentialAverageFilter filter(alpha);
+		for(int i = 0; i < data.size(); i++)
+		{
+			gem = filter.filter(data[i]);
+
+			currentPoint.x = i;
+			currentPoint.y = gem * grafiekHoogte;
+
+			grafiek->tekenLijn(previousPoint, currentPoint);
+			previousPoint = currentPoint;
+		}
 		break;
 	}
 	default: {
@@ -237,7 +259,7 @@ void GemWaardeVenster::dataLadenHandler(wxCommandEvent &event)
 					}
 				}
 				wxLogDebug(wxString::Format(wxT("waarde = %lf"),waarde));
-				data.Add(waarde- valutaTekenOffset);
+				data.Add(waarde - valutaTekenOffset);
 
 				getal = stroom.ReadLine();
 			}
