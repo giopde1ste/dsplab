@@ -29,16 +29,14 @@ $Id: signaal.cpp 313 2023-01-30 13:54:35Z ewout $
 
 #ifndef OnderwijsOntwikkeling
 #if defined(InterfaceTaalNederlands)
-/* Verwijder dit directief na het invullen van de naam en het studentnummer hieronder. */
-#error  "Student naam en nummer moeten beneden in de velden worden ingevuld."
 #elif defined (InterfaceTaalEnglish)
 /* Remove this directive after filling out name and student number below. */
 #error  "Student name and number must be entered into the fields below."
 #endif
 #endif
 
-/********  Naam/name     :               ******/
-/********  Studentnummer :               ******/
+/********  Naam/name     : Thomas van den Oever ******/
+/********  Studentnummer : 1585101              ******/
 
 /* Dit is de functie die wordt aangeroepen wanneer de knop Tekenen wordt ingedrukt. Vul alle ontbrekende stukken in.
 * This is the function that is called when the draw button is depressed. Fill in all void parts.  */
@@ -76,10 +74,16 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 				{
 					/* Vul hier alle vereiste case velden van de switch in. */
 					/* Complete all required switch case statements here. */
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
-   Dear student, this part of the software is missing. Complete this part accoording to the assignment.
-*/
+				case SignaalType::Cosinus:
+					sigWaarde = cos(hoek);
+					break;
+				case SignaalType::Driehoek:
+					sigWaarde = hoek;
+					//sigWaarde = abs((hoek % 2 * Pi) - 1);
+					break;
+				case SignaalType::Blokgolf:
+					sigWaarde = sin(hoek) >= 0.0 ? 1.0 : -1.0;
+					break;
 
 						/* De overgebleven case statements staan vanaf hier. Deze hoeven niet te worden ingevuld.
 						* The remaining case statements are listed from here. These need not be completed. */
@@ -94,6 +98,8 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 						return;
 						break;
 				}
+
+				sigWaarde *= 1000;
 				signaal.Add(sigWaarde);
 				punten.Add(wxPoint(stap++, static_cast<int>(sigWaarde)));
 
@@ -102,7 +108,7 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 				/* If necessary (for implementation reasons above) , fill out this portion with software instructions.
 				* If not, please ignore and remove the message below. */
 
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -148,7 +154,7 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 		* 3) In the phase calculation, force the phase to zero as the size of the complex number <phaseTone Border(see the constructor of this class).
 		* 4) for info about the readout of the amplitude and phase checkboxes, see http ://docs.wxwidgets.org/3.0/classwx_check_box.html */
 
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
