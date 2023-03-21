@@ -35,31 +35,30 @@ $Id: gemwaarde.cpp 313 2023-01-30 13:54:35Z ewout $
 void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
 {
 	const auto keuze = filterSelectionRadioBox->GetSelection();
+	double grafiekHoogte = grafiek->geefTekenVeldGrootte().GetHeight();
+	auto grafiekBreedte = grafiek->geefTekenVeldGrootte().GetWidth();
 
 	grafiek->maakSchoon();
+
 	grafiek->zetTekenPen(wxPen(wxColour("GRAY"), 2, wxSOLID));
-	double grafiekHoogte = grafiek->geefTekenVeldGrootte().GetHeight() * 2;
 
-	//grafiek->tekenLijn(wxPoint(0, 0), wxPoint(data[0], 0));
 
-	//LijnLijst lData;
-	//std::vector<LijnStuk> pLijnstukken;
+	LijnLijst lData;
+	std::vector<LijnStuk> pLijnstukken;
 	for(int i = 0; i < data.size(); i++)
 	{
-		grafiek->tekenLijn(wxPoint(i, 0), wxPoint(i, data[i] * grafiekHoogte));
-
-		//LijnStuk sData(wxPoint(i, 0), wxPoint(i, data[i] * 10000));
-		//lData.Add(LijnStuk(wxPoint(i, 0), wxPoint(i, data[i] * 10000)));
+		LijnStuk sData(wxPoint(i, 0), wxPoint(i, data[i] * doubleToInt));
+		lData.Add(LijnStuk(wxPoint(i, 0), wxPoint(i, data[i] * doubleToInt)));
 	}
 
-	//grafiek->tekenLijnen(lData, true);
+	grafiek->tekenLijnen(lData, true);
 
 	grafiek->zetTekenPen(wxPen(wxColour("RED"), 2, wxSOLID));
 
 	switch (keuze){
 	case 0: {
 		RingBuffer<double> buffer(avgValueSlider->GetValue());
-
+		LijnLijst pointList;
 		float gem;
 		wxPoint previousPoint(0, 0), currentPoint;
 		for (int i = 0; i < data.size(); i++)
@@ -68,18 +67,19 @@ void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
 			gem = buffer.gemiddelde();
 
 			currentPoint.x = i;
-			currentPoint.y = gem * grafiekHoogte;
+			currentPoint.y = gem * doubleToInt;
 
-			grafiek->tekenLijn(previousPoint, currentPoint);
+			pointList.Add(LijnStuk(previousPoint, currentPoint));
 			previousPoint = currentPoint;
+			
 		}
-			//buffer.schrijf();
-		
+		grafiek->tekenLijnen(pointList, true);
+
 		break;
 	}
 	case 1: {
 		float avg = avgValueSlider->GetValue();
-
+		LijnLijst pointList;
 		float alpha = avg / 100;
 		float gem;
 		wxPoint previousPoint(0, 0), currentPoint;
@@ -89,11 +89,12 @@ void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
 			gem = filter.filter(data[i]);
 
 			currentPoint.x = i;
-			currentPoint.y = gem * grafiekHoogte;
+			currentPoint.y = gem * doubleToInt;
 
-			grafiek->tekenLijn(previousPoint, currentPoint);
+			pointList.Add(LijnStuk(previousPoint, currentPoint));
 			previousPoint = currentPoint;
 		}
+		grafiek->tekenLijnen(pointList, true);
 		break;
 	}
 	default: {
@@ -102,6 +103,15 @@ void GemWaardeVenster::drawDataHandler(wxCommandEvent &event)
 	}
 	}
 
+	/*grafiek->zetTekenPen(wxPen(wxColour("BLACK"), 2, wxLONG_DASH));
+
+	LijnLijst grafiekLijnen;
+
+	for (int i = 0; i < 20; i++)
+	{
+		grafiekLijnen.Add(LijnStuk(wxPoint(0, (i * 0.05) * doubleToInt), wxPoint(grafiekBreedte, (i * 0.05) * doubleToInt)));
+	}
+	grafiek->tekenLijnen(grafiekLijnen, true);*/
 
 	/* laat dit hieronder staan. / Leave this statement in place. */
 	gemVeranderd = false;

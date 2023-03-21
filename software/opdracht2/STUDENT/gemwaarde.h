@@ -69,6 +69,8 @@ private:
 	bool gemVeranderd=true;
 	wxArrayDouble data;
 
+	const int doubleToInt = 10000;
+
 	const wxPen origPen, gemWaardePen,rasterPen;
 	const wxSize grafiekGrootte;
 
