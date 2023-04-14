@@ -2,7 +2,7 @@
 # CMake basis script voor wxWidgets CMake software bouwen
 # Copyright 2004-2021 Hogeschool van Arnhem en Nijmegen
 # Opleiding Embedded Systems Engineering
-# $Id: BasisWXWidgets.cmake 4418 2022-04-11 09:29:13Z ewout $
+# $Id: BasisWXWidgets.cmake 4671 2023-02-15 11:40:42Z ewout $
 #************************************************************************/
 
 set(BouwDesktopApp ON)
@@ -29,7 +29,7 @@ if (UNIX)
 
 	if (APPLE)
 
-		set(WXVERSIE 3.1)
+		set(WXVERSIE 3.1) # stand van zaken 15.02.2023 : macports zit op 3.1
 		set(wxSTATISCH OFF)
 
 		if (CMAKE_BUILD_TYPE MATCHES Debug)
@@ -53,7 +53,7 @@ if (UNIX)
 		## omdat wx-config op FreeBSD wxgtk2 ... wordt genoemd
 		## Deze patch is niet de eindoplossing maar kan nu worden gebruikt
 		## zolang wxWidgets 2.8 als port wordt aangeboden
-		set (WXVERSIE 3.1)
+		set (WXVERSIE 3.2)
 		set(wxSTATISCH OFF)
 		set(COMP_INFO_TOOL  size)
 
@@ -160,10 +160,32 @@ elseif(WIN32)
 
 	if(NOT MINGW)
 		message(STATUS "Desktop bouw met Microsoft Visual Studio omgeving.")
+		
+		set(wxBouwLokaalDir ${PROJECT_SOURCE_DIR}/../wxWidgets)
+		#include(ExternalProject)
+		
+		#add_subdirectory(${wxWidgets_ROOT_DIR} ${CMAKE_CURRENT_BINARY_DIR}/wxZelfBouw)
+		#ExternalProject_Add(wxWidgets SOURCE_DIR ${wxWidgets_ROOT_DIR} BINARY_DIR ${wxBouwLokaalDir}/bouw INSTALL_DIR ${wxBouwLokaalDir}/lib)
+		#ExternalProject_Add_StepDependencies(${PROJEKTNAAM} build wxWidgets)
+		
 		if(PROJECT_ARCH STREQUAL "x86")
 			set(wxWidgets_LIB_DIR "${wxWidgets_ROOT_DIR}/lib/vc_lib")
 		else(PROJECT_ARCH STREQUAL "x86")
-			set(wxWidgets_LIB_DIR "${wxWidgets_ROOT_DIR}/lib/vc_x64_lib")
+		
+			set(wxMSWBouwLibdir ${wxWidgets_ROOT_DIR}/lib/vc_x64_lib)
+			set(wxCMakeBouwLibdir ${wxWidgets_ROOT_DIR}/build/cmake/lib/vc_x64_lib)
+			if(EXISTS ${wxCMakeBouwLibdir})
+				set(wxWidgets_LIB_DIR ${wxCMakeBouwLibdir})
+			elseif(EXISTS ${wxMSWBouwLibdir})
+				set(wxWidgets_LIB_DIR ${wxMSWBouwLibdir})
+			else()
+				message(FATAL_ERROR "de wxWidgets LIB dir werd niet gevonden. Is deze niet gebouwd?")
+			endif()	
+			
+			# msw set(wxWidgets_LIB_DIR "${wxWidgets_ROOT_DIR}/lib/vc_x64_lib")
+			#set(wxWidgets_LIB_DIR "${wxWidgets_ROOT_DIR}/build/cmake/lib/vc_x64_lib")
+			#set(wxWidgets_LIB_DIR "${wxWidgets_ROOT_DIR}/out/build/x64-Debug/lib/vc_x64_dll")
+			#set(wxWidgets_LIB_DIR ${wxBouwLokaalDir}/lib)
 		endif(PROJECT_ARCH STREQUAL "x86")
 	else(NOT MINGW)
 		message(STATUS "Desktop bouw met MinGW omgeving.")
@@ -201,7 +223,7 @@ if(wxWidgets_FOUND)
 	set(wxWidgets_USE_STATIC ${wxSTATISCH})
 	set(wxWidgets_USE_DEBUG ${wxDEBUGAAN})
 
-	# wxWidgets include (this will do all the magic to configure everything)
+# wxWidgets include (this will do all the magic to configure everything)
 	message(STATUS "wxWidgets gevonden. wxWidgets auto config wordt uitgevoerd.")
 	include( ${wxWidgets_USE_FILE} )
 else()

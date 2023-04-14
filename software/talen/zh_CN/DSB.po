@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DSB\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-24 18:17+0200\n"
-"PO-Revision-Date: 2022-06-24 18:17+0200\n"
+"POT-Creation-Date: 2023-03-08 15:30+0100\n"
+"PO-Revision-Date: 2023-03-08 15:30+0100\n"
 "Last-Translator: \n"
 "Language-Team: ewout@boks.com\n"
 "Language: zh\n"
@@ -14,36 +14,44 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: STM32Basis\n"
 "X-Poedit-SearchPathExcluded-1: oud\n"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:46
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:50
 msgid ""
 "Please pay attention. The application is already running. Is this your "
 "intention?"
 msgstr "请大家注意了。该应用程序已经在运行。这是你的意图吗？"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:125
-msgid ""
-"The application was initialized to use the system default language, which "
-"has this name:"
-msgstr "该应用程序被初始化为使用系统默认语言，它有这个名字:"
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:324
+#, fuzzy
+#| msgid " The internationalization locale for"
+msgid "The internationalization locale for"
+msgstr "的国际化地点"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:330
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:326
+msgid "was initialized successfully."
+msgstr "被成功初始化。"
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:365
+msgid "Could not initialise the Locale for"
+msgstr "无法打开"
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:499
 msgid "Unknown"
 msgstr "未知"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:363
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:538
 msgid "The application must now be restarted to activate the new language."
 msgstr "现在必须重新启动应用程序，才能激活新的语言。"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:364
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:539
 msgid "Restart the application."
 msgstr "重新启动应用程序。"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:383
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:558
 msgid "Version : "
 msgstr "版本 : "
 
@@ -51,253 +59,252 @@ msgstr "版本 : "
 msgid "Save the image as a PNG file."
 msgstr "将图片保存为PNG文件。"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:120
-#, c-format
-msgid "Euro %.2lf"
-msgstr "欧元%.2lf"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:152
-msgid "Open\tCtrl+O"
-msgstr "打开\tCtrl+O"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:154
-msgid "Draw data\tCtrl+T"
-msgstr "绘制数据\tCtrl+T"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:156 opdracht3/STUDENT/signaal.cpp:324
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1029
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:722
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:722
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1236
-msgid "Quit\tCtrl+Q"
-msgstr "退出\tCtrl+Q"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:158
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1767
-msgid "File"
-msgstr "文件"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:162
-msgid "Standard Moving Average"
-msgstr "标准移动平均线"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:163
-msgid "Exponential Moving Average"
-msgstr "指数移动平均线"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:167
-msgid "Draw data"
-msgstr "绘制数据"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:234
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4117
-msgid "Open the data file. Please supply a list of one value per line."
-msgstr "打开数据文件。请提供每行一个值的列表。"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:249
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4131
-msgid "Could not open :"
-msgstr "无法打开:"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:274
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4156
-msgid "Error reading the input value :"
-msgstr "读取输入值出错 :"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:313
-msgid "Assignment 2 : the running average"
-msgstr "作业2：运行平均数"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:331
-msgid "Averaging control parameter"
-msgstr "平均控制参数"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:354 opdracht3/STUDENT/signaal.cpp:686
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2107
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:5105
+#: opdracht2/STUDENT/gemwaarde.cpp:151 opdracht3/STUDENT/signaal.cpp:328
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:841
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1156
 msgid "Developer"
 msgstr "开发人员"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:356 opdracht3/STUDENT/signaal.cpp:688
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2109
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:5107
+#: opdracht2/STUDENT/gemwaarde.cpp:153 opdracht3/STUDENT/signaal.cpp:330
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:843
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1158
 msgid "Demo version"
 msgstr "演示版"
 
-#: opdracht3/STUDENT/signaal.cpp:49
+#: opdracht2/STUDENT/gemwaarde.cpp:163
+msgid "Open\tCtrl+O"
+msgstr "打开\tCtrl+O"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:165
+msgid "Draw data\tCtrl+T"
+msgstr "绘制数据\tCtrl+T"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:167 opdracht3/STUDENT/signaal.cpp:352
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1044
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:722
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:722
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1282
+msgid "Quit\tCtrl+Q"
+msgstr "退出\tCtrl+Q"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:169
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1851
+msgid "File"
+msgstr "文件"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:173
+msgid "Standard Moving Average"
+msgstr "标准移动平均线"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:174
+msgid "Exponential Moving Average"
+msgstr "指数移动平均线"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:178
+msgid "Draw data"
+msgstr "绘制数据"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:245
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4240
+msgid "Open the data file. Please supply a list of one value per line."
+msgstr "打开数据文件。请提供每行一个值的列表。"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:260
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4254
+msgid "Could not open :"
+msgstr "无法打开:"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:285
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4279
+msgid "Error reading the input value :"
+msgstr "读取输入值出错 :"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:324
+msgid "Assignment 2 : the running average"
+msgstr "作业2：运行平均数"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:342
+msgid "Averaging control parameter"
+msgstr "平均控制参数"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:378
+msgid "Running average of the US$ <--> € exchange rate."
+msgstr "美元<--> 欧元汇率的运行平均值。"
+
+#: opdracht3/STUDENT/signaal.cpp:50
 msgid "FFTW start of calcation"
 msgstr "FFTW开始计算"
 
-#: opdracht3/STUDENT/signaal.cpp:52
+#: opdracht3/STUDENT/signaal.cpp:53
 msgid "The signal could not be sampled, because"
 msgstr "该信号无法被采样，因为"
 
-#: opdracht3/STUDENT/signaal.cpp:53
+#: opdracht3/STUDENT/signaal.cpp:54
 #, c-format
 msgid "the number of samples per period=%d"
 msgstr "每期的样本数=%d"
 
-#: opdracht3/STUDENT/signaal.cpp:104
+#: opdracht3/STUDENT/signaal.cpp:114
 msgid "Not allowed."
 msgstr "可带宠物."
 
-#: opdracht3/STUDENT/signaal.cpp:108
+#: opdracht3/STUDENT/signaal.cpp:118
 #, c-format
 msgid "(SignaalVenster::tekenReeksHandler) Wrong signal choice (%ld)."
 msgstr "(SignaalVenster::tekenReeksHandler) 错误的信号选择(%ld)。"
 
-#: opdracht3/STUDENT/signaal.cpp:135
+#: opdracht3/STUDENT/signaal.cpp:145
 msgid "No valid data present in the file!"
 msgstr "文件中没有有效数据!"
 
-#: opdracht3/STUDENT/signaal.cpp:146
+#: opdracht3/STUDENT/signaal.cpp:156
 #, c-format
 msgid "Number of values=%d"
 msgstr "值的数量=%d"
 
-#: opdracht3/STUDENT/signaal.cpp:181
+#: opdracht3/STUDENT/signaal.cpp:191
 msgid "Initialisation of the FFT routines resulted in an error"
 msgstr "初始化FFT例程时出现了一个错误"
 
-#: opdracht3/STUDENT/signaal.cpp:182
+#: opdracht3/STUDENT/signaal.cpp:192
 msgid "FFTW Init error"
 msgstr "FFTW 启动错误"
 
-#: opdracht3/STUDENT/signaal.cpp:282
+#: opdracht3/STUDENT/signaal.cpp:302
 msgid "Frequency image was constructed."
 msgstr "构建了频率图像。"
 
-#: opdracht3/STUDENT/signaal.cpp:316
+#: opdracht3/STUDENT/signaal.cpp:344
 msgid "&About"
 msgstr "关于"
 
-#: opdracht3/STUDENT/signaal.cpp:318
+#: opdracht3/STUDENT/signaal.cpp:346
 msgid "&Execute FFT\tCtrl+T"
 msgstr "&执行FFT\tCtrl+T"
 
-#: opdracht3/STUDENT/signaal.cpp:320
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1033
+#: opdracht3/STUDENT/signaal.cpp:348
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1048
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:726
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:726
 msgid "Export the time domain image\tCtrl+R"
 msgstr "导出时域图像\tCtrl+R"
 
-#: opdracht3/STUDENT/signaal.cpp:322
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1034
+#: opdracht3/STUDENT/signaal.cpp:350
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1049
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:727
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:727
 msgid "Export the frequency domain image\tCtrl+E"
 msgstr "导出频域图像\tCtrl+E"
 
-#: opdracht3/STUDENT/signaal.cpp:326
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1030
+#: opdracht3/STUDENT/signaal.cpp:354
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1045
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:723
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:723
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1237
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1283
 msgid "Bestand"
 msgstr "最佳状态"
 
-#: opdracht3/STUDENT/signaal.cpp:332
+#: opdracht3/STUDENT/signaal.cpp:360
 msgid "Signal frequency"
 msgstr "测试信号频率"
 
-#: opdracht3/STUDENT/signaal.cpp:335
+#: opdracht3/STUDENT/signaal.cpp:363
 msgid "Sampling frequency"
 msgstr "采样频率"
 
-#: opdracht3/STUDENT/signaal.cpp:338
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1191
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1196
+#: opdracht3/STUDENT/signaal.cpp:366
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1206
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1211
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:759
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:759
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1763
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1770
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1847
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1854
 msgid "Cosine"
 msgstr "余弦"
 
-#: opdracht3/STUDENT/signaal.cpp:339
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1136
+#: opdracht3/STUDENT/signaal.cpp:367
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1151
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:748
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:748
 msgid "Triangle"
 msgstr "三角形"
 
-#: opdracht3/STUDENT/signaal.cpp:340
+#: opdracht3/STUDENT/signaal.cpp:368
 msgid "Square"
 msgstr "方形"
 
-#: opdracht3/STUDENT/signaal.cpp:341
+#: opdracht3/STUDENT/signaal.cpp:369
 msgid "Data from file"
 msgstr "文件中的数据"
 
-#: opdracht3/STUDENT/signaal.cpp:344
+#: opdracht3/STUDENT/signaal.cpp:372
 msgid "Number of periods:"
 msgstr "期数："
 
-#: opdracht3/STUDENT/signaal.cpp:346
+#: opdracht3/STUDENT/signaal.cpp:374
 msgid "Show amplitude"
 msgstr "显示振幅"
 
-#: opdracht3/STUDENT/signaal.cpp:347
+#: opdracht3/STUDENT/signaal.cpp:375
 msgid "Show phase"
 msgstr "显示阶段"
 
-#: opdracht3/STUDENT/signaal.cpp:348
+#: opdracht3/STUDENT/signaal.cpp:376
 msgid "Dump FFT values"
 msgstr "转储FFT值"
 
-#: opdracht3/STUDENT/signaal.cpp:349
+#: opdracht3/STUDENT/signaal.cpp:377
 msgid "Execute Fast Fourier Transform"
 msgstr "执行快速傅立叶变换"
 
-#: opdracht3/STUDENT/signaal.cpp:501
+#: opdracht3/STUDENT/signaal.cpp:528
 msgid "Assignment 3 DSB Practicum"
 msgstr "作业3 DSB实践"
 
-#: opdracht3/STUDENT/signaal.cpp:502
+#: opdracht3/STUDENT/signaal.cpp:529
 msgid "Employ the FFTW library for generating a frequency plot."
 msgstr "使用FFTW库生成频率图。"
 
-#: opdracht3/STUDENT/signaal.cpp:517
+#: opdracht3/STUDENT/signaal.cpp:544
 msgid "Open a data file with the signal values in float format)"
 msgstr "打开一个带有浮动格式信号值的数据文件)"
 
-#: opdracht3/STUDENT/signaal.cpp:520
+#: opdracht3/STUDENT/signaal.cpp:547
 msgid "All files (*.*)|*.*"
 msgstr "所有文件 (*.*)|*.*"
 
-#: opdracht3/STUDENT/signaal.cpp:532
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1903
+#: opdracht3/STUDENT/signaal.cpp:559
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1918
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1012
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1012
 msgid "Could not open:"
 msgstr "无法打开:"
 
-#: opdracht3/STUDENT/signaal.cpp:557
+#: opdracht3/STUDENT/signaal.cpp:584
 msgid "Error reading the float data."
 msgstr "读取浮动数据错误。"
 
-#: opdracht3/STUDENT/signaal.cpp:591
+#: opdracht3/STUDENT/signaal.cpp:618
 msgid "Signal sampling and frequency image"
 msgstr "信号采样和频率图像"
 
-#: opdracht3/STUDENT/signaal.cpp:598
+#: opdracht3/STUDENT/signaal.cpp:625
 msgid "FFTW Status : unknown"
 msgstr "FFTW 状态：未知"
 
-#: opdracht3/STUDENT/signaal.cpp:624
+#: opdracht3/STUDENT/signaal.cpp:651
 msgid "Frequency plot features"
 msgstr "频率图特征"
 
-#: opdracht3/STUDENT/signaal.cpp:625
+#: opdracht3/STUDENT/signaal.cpp:652
 msgid "Time domain properties"
 msgstr "时域滤波器的脉冲响应"
 
-#: opdracht3/STUDENT/signaal.cpp:627
+#: opdracht3/STUDENT/signaal.cpp:654
 msgid "Signal properties"
 msgstr "信号属性"
 
-#: opdracht3/STUDENT/signaal.cpp:695
+#: opdracht3/STUDENT/signaal.cpp:718
 msgid "FFT Signal test"
 msgstr "测试信号频率"
 
@@ -309,14 +316,14 @@ msgstr ""
 "本程序要求最低屏幕分辨率为1024x768像素。\n"
 "开始时取消了。"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:123
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:124
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:91
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:91
 msgid "filter berekening start."
 msgstr "筛选器启动。"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:158
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:433
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:159
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:435
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:126
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:399
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:126
@@ -324,74 +331,65 @@ msgstr "筛选器启动。"
 msgid "May not reach this point!!"
 msgstr "可能达不到这个地步！!"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:398
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:400
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:364
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:364
 msgid "filter calculation start."
 msgstr "筛选器启动。"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:646
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:639
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:639
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:649
 #, c-format
-msgid "Coefficient[%d] = %.3f (Q%d:%d)"
-msgstr "系数[%d]=%.3f (Q%d:%d)"
+msgid "Coefficient[%d] = %s (Q%d:%d)"
+msgstr "系数[%d] = %s (Q%d:%d)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:683
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:676
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:676
-#, c-format
-msgid "Mouse = [%.3f*pi,%.3f dB]. |H(%.3f*pi)| = %.3f dB"
-msgstr "鼠标 = [%.3f*pi,%.3f dB]。|鼠标=[%.3f*pi,%.3f分贝]"
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:691
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:703
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4158
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4174
+msgid "Coordinate"
+msgstr "坐标"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:692
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:685
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:685
-#, c-format
-msgid "Mouse = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
-msgstr "鼠标 = [%.3f Hz,%.3f dB]。|鼠标 = [%.3f Hz,%.3f dB]"
-
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:713
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:723
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1324
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1324
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4078
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4201
 msgid "Time graph entry."
 msgstr "时间图输入。"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:721
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:731
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1332
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1332
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4086
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4209
 msgid "Time graph exit."
 msgstr "时间图出口。"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:723
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:745
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:733
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:755
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1334
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1356
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1334
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1356
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4088
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4110
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4211
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4233
 msgid "No coordinates"
 msgstr "無座標"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:735
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:745
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1346
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1346
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4100
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4223
 msgid "Freq graph entry."
 msgstr "快速图表条目。"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:743
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:753
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1354
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1354
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4108
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4231
 msgid "Freq graph exit."
 msgstr "快速图出口。"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:905
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1403
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:923
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1418
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:852
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1223
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:852
@@ -400,314 +398,314 @@ msgstr "快速图出口。"
 msgid "Orde = %d (%d taps)"
 msgstr "Orde = %d (%d taps)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1027
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1042
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:721
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:721
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1231
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1277
 msgid "About"
 msgstr "关于"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1028
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1043
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:728
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:728
 msgid "Write a C/CPP Header file"
 msgstr "写一个C/CPP头文件"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1032
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1047
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:725
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:725
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1239
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1285
 msgid "Calculate Filter\tCtrl+B"
 msgstr "计算滤波器Ctrl+B"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1035
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1050
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:729
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:729
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1246
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1292
 msgid "Filter"
 msgstr "筛选"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1052
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1067
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:718
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:718
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1263
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1309
 msgid "Time domain filter impulse response"
 msgstr "时域滤波器的脉冲响应"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1059
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1074
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:732
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:732
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1271
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1317
 msgid "Time domain coordinates (Mouse over window)"
 msgstr "时域坐标（鼠标放在窗口上"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1063
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1078
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:710
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:710
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1309
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1355
 msgid "Frequency domain representation"
 msgstr "频域表示"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1073
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1088
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:736
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:736
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1320
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1366
 msgid "Frequency domain coordinates (Mouse over window)"
 msgstr "频域坐标（鼠标放在窗口上"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1077
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1092
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:735
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:735
 msgid "Show analogue frequencies"
 msgstr "显示模拟频率"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1086
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1101
 msgid "Discover HAN Embedded Systems Engineering!"
 msgstr "发现HAN嵌入式系统工程!"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1089
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1104
 msgid "Test results visualization"
 msgstr "测试结果可视化"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1099
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1114
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:714
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:714
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1406
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1452
 msgid "Filter parameters"
 msgstr "滤波器参数"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1112
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1127
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:739
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:739
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1416
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1462
 msgid "Sampling frequency (Hz)"
 msgstr "采样频率(Hz)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1116
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1122
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1131
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1137
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:740
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:742
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:740
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:742
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1421
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1467
 msgid "undetermined"
 msgstr "未定"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1119
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1134
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:741
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:741
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1659
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1743
 msgid "Filter order"
 msgstr "筛选顺序"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1125
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1140
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:743
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:743
 msgid "Supplemental filter amplification (dB) :"
 msgstr "滤波器放大率（分贝） :"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1131
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1146
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:745
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:745
 msgid "Window applied :"
 msgstr "窗口应用："
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1135
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1139
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1150
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1154
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:747
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:747
 msgid "Rectangle"
 msgstr "矩形"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1137
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1152
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:749
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:749
 msgid "Hamming"
 msgstr "Hamming"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1142
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1157
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:752
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:752
 msgid "Number of bits in coding :"
 msgstr "编码中的位数 :"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1151
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1166
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:754
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:754
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1436
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1485
 msgid "Calculate filter"
 msgstr "计算过滤器"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1157
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1172
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:755
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:755
 msgid "Dump coefficients"
 msgstr "转储系数"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1161
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1463
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1176
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1519
 msgid "&Quit"
 msgstr "&退出"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1167
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1182
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:712
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:712
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1679
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1763
 msgid "Band pass begin (Hz)"
 msgstr "带通开始 (Hz)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1175
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1190
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:713
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:713
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1693
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1777
 msgid "Band pass end (Hz)"
 msgstr "带通端(Hz)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1183
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1198
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:717
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:717
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1755
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1839
 msgid "Filter test"
 msgstr "过滤器测试"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1192
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1207
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:760
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:760
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1764
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1848
 msgid "Square wave"
 msgstr "方波"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1193
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1208
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:761
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:761
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1765
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1849
 msgid "Impulse"
 msgstr "冲力"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1194
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1209
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:762
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:762
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1766
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1850
 msgid "Step"
 msgstr "步骤"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1205
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1220
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:715
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:715
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1779
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1863
 msgid "Test Signal frequency"
 msgstr "测试信号频率"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1215
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1230
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:716
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:716
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1795
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1879
 msgid "Test Signal amplitude"
 msgstr "测试信号振幅"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1225
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1240
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:768
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:768
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1810
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1894
 msgid "Show test signal"
 msgstr "显示测试信号"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1229
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1244
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:769
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:769
 msgid "Draw interpolation spline"
 msgstr "绘制插值花键线"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1233
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1248
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:765
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:765
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1774
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1858
 msgid "Start Filter Test"
 msgstr "启动过滤器测试"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1327
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1342
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1153
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1153
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2637
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2731
 msgid "Specify the sampling frequency in Hz."
 msgstr "指定采样频率，单位为Hz。"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1328
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1343
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1154
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1154
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2638
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2732
 msgid "Frequency:"
 msgstr "频率："
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1329
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1344
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1155
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1155
 msgid "The FIR filter system sampling frequency"
 msgstr "FIR滤波器系统的采样频率"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1391
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1406
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1211
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1211
 msgid "Specify the order of the filter in number of taps."
 msgstr "以抽头数为单位指定过滤器的顺序。"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1392
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1407
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1212
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1212
 msgid "Filter order:"
 msgstr "过滤顺序:"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1393
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1408
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1213
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1213
 msgid "Taps in the FIR filter system"
 msgstr "FIR滤波器系统中的分路器"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1557
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1572
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1252
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1252
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3245
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3352
 msgid "The start of the pass band must be smaller than the end."
 msgstr "传球带的起点一定要比终点小。"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1700
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1715
 msgid "Student version"
 msgstr "学生版"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1828
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1843
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:978
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:978
 msgid "Assignment 4 DSB Practicum"
 msgstr "作业4 DSB实践"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1829
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1844
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:979
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:979
 msgid ""
 "Design and implement a FIR filter design tool based on the sinc() function."
 msgstr "设计并实现一个基于sinc()函数的FIR滤波器设计工具。"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1883
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1898
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:992
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:992
 msgid "Save the filter design as a C or CPP header file"
 msgstr "将过滤器设计保存为C或CPP头文件"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1993
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2008
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1102
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1102
 msgid "Header file written succesfully."
 msgstr "头文件写入成功。"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2078
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2080
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2093
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2095
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1309
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1309
 #, c-format
 msgid "Coefficient[%d] = %d (float:%f)"
 msgstr "系数[%d] = %d (float:%f)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.h:53
+#: opdracht4/STUDENT/ontwerper/filterDesigner.h:54
 msgid ""
 "FIR filter designer for HAN Embedded Systems Engineering Digital Signal "
 "Processing"
@@ -729,6 +727,24 @@ msgstr "HAN的FIR滤波器设计者 嵌入式系统工程 数字信号处理"
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1436
 msgid "Demoversion"
 msgstr "拆迁"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:639
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:639
+#, c-format
+msgid "Coefficient[%d] = %.3f (Q%d:%d)"
+msgstr "系数[%d]=%.3f (Q%d:%d)"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:676
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:676
+#, c-format
+msgid "Mouse = [%.3f*pi,%.3f dB]. |H(%.3f*pi)| = %.3f dB"
+msgstr "鼠标 = [%.3f*pi,%.3f dB]。|鼠标=[%.3f*pi,%.3f分贝]"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:685
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:685
+#, c-format
+msgid "Mouse = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
+msgstr "鼠标 = [%.3f Hz,%.3f dB]。|鼠标 = [%.3f Hz,%.3f dB]"
 
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:700
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:700
@@ -757,30 +773,30 @@ msgid "Please enter one ore more floating point values."
 msgstr "请输入一个或多个浮点值。"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:155
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1504
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1544
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1560
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1628
 msgid "&Clear"
 msgstr "清除"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:166
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:200
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:201
 msgid "&OK"
 msgstr "确定(&O)"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:170
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:204
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:205
 msgid "&Cancel"
 msgstr "&取消"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:270
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2754
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2803
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2858
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2910
 msgid "Conversion to a floating point value of this content :"
 msgstr "转换为该内容的浮点值:"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:271
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2755
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2805
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2859
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2912
 msgid "failed."
 msgstr "失敗。"
 
@@ -788,11 +804,21 @@ msgstr "失敗。"
 msgid "Entry of custom data for the IIR filter designer."
 msgstr "为IIR过滤器设计器输入自定义数据。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:55
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:56
 msgid "Filter calculation start."
 msgstr "过滤器计算开始。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:156
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:68
+msgid "The number of input coefficents must be equal to or larger than one."
+msgstr "输入系数的数量必须等于或大于1。"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:102
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:196
+#, c-format
+msgid "Impulse response[%d] : %s"
+msgstr "脉冲响应[%d] : %s"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:166
 msgid ""
 "Your did not enter any zeros and poles.\n"
 "You must provide at least one pole and one zero."
@@ -800,148 +826,153 @@ msgstr ""
 "你没有输入任何零和极点。\n"
 "你必须提供至少一个极点和一个零。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:184
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:239
 #, c-format
-msgid "Impulse response[%d] : %.2f"
-msgstr "脉冲响应[%d]：%.2f"
+msgid "Impulse response scale factor : %s db"
+msgstr "脉冲响应比例因子：%s db"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:224
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:405
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:502
 #, c-format
-msgid "Impulse response scale factor : %.2f db"
-msgstr "脉冲响应比例系数：%.2f db"
+msgid "Frequency domain[%s rad] :"
+msgstr "频域[%s rad] :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:387
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:481
-#, c-format
-msgid "Frequency domain[%.2f rad] :"
-msgstr "频域[%.2f rad] :"
-
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:519
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:541
 msgid "The entered value"
 msgstr "输入的值"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:519
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:541
 msgid "cannot be used for scaling the frequency plot"
 msgstr "不能用于缩放频率图"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:565
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:587
 msgid "The number of points must be larger than zero."
 msgstr "分数必须大于零。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:767
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:614
+msgid ""
+"Your coefficients are too large for proper scaling in the frequency window. "
+"Please scale down the coefficients."
+msgstr "你的系数太大，无法在频率窗口中正确缩放。请缩小系数的比例。"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:797
 msgid "Z Plane"
 msgstr "Z 平面  Z Plane"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1232
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1278
 msgid "Load a filter configuration\tCtrl+O"
 msgstr "加载一个过滤器配置\tCtrl+O"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1233
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1279
 msgid "Save the filter configuration\tCtrl+S"
 msgstr "保存过滤器配置\tCtrl+S"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1235
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1281
 msgid "Reset to demo values"
 msgstr "重置为演示值"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1240
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1286
 msgid "Export the time domain to an image"
 msgstr "将时域导出为图像"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1241
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1287
 msgid "Export the pole-zero diagram to an image"
 msgstr "将极点-零点图导出为图像"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1242
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1288
 msgid "Export the frequency domain to an image"
 msgstr "将频域导出为图像"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1243
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1289
 msgid "Export the test signal output to an image"
 msgstr "将测试信号输出成图像"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1245
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1291
 msgid "Export the time domain output in CSV format"
 msgstr "以CSV格式导出时域输出"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1279
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1325
 msgid "Horizontal plotting limit"
 msgstr "水平绘图限制"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1283
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1359
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1558
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1708
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1329
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1405
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1642
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1792
 msgid "Auto"
 msgstr "自动"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1292
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1338
 msgid "sampling moments"
 msgstr "采样时刻"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1296
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1342
 msgid "Configuration name"
 msgstr "配置名称"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1300
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1346
 msgid "Generic digital fiter"
 msgstr "通用的数字适配器"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1328
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1374
 msgid "Frequency image elements"
 msgstr "频率图像元素"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1335
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1381
 msgid "analogue frequencies"
 msgstr "模拟频率"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1340
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1386
 msgid "magnitude"
 msgstr "规模"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1345
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1391
 msgid "Show full sampled range"
 msgstr "显示全部采样范围"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1350
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1396
 msgid "phase angle"
 msgstr "相位角"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1355
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1401
 msgid "Vertical plotting limits"
 msgstr "纵向绘图限制"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1371
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1417
 msgid "to"
 msgstr "到"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1379
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1569
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1719
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1425
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1653
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1803
 msgid "dB"
 msgstr "分贝"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1386
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1432
 msgid "Pole-Zero diagram"
 msgstr "极点-零点图"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1395
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1441
 msgid "Test signal output"
 msgstr "测试信号输出"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1425
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1471
 msgid "Filter amplification (dB) :"
 msgstr "滤波器放大率（分贝） :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1447
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1493
+msgid "Clear filter"
+msgstr "清理过滤"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1503
 msgid "Dump GUI calculations"
 msgstr "转储GUI计算"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1452
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1508
 msgid "Show signal value labels"
 msgstr "显示信号值标签"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1459
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1515
 msgid ""
 "Find out what an exciting study Embedded Systems Engineering is! \n"
 "Press this button to visit the ESE web site."
@@ -949,7 +980,7 @@ msgstr ""
 "看看嵌入式系统工程是一项多么令人兴奋的研究!\n"
 "按下这个按钮，访问ESE网站。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1478
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1534
 msgid ""
 "b-coefficients for \n"
 "x[n] and earlier"
@@ -957,7 +988,14 @@ msgstr ""
 "b系数\n"
 "x[n]及以前"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1486
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1536
+msgid ""
+"Assume that the b coefficients are listed on the right side of the equation "
+"sign in the recursive formula, with y[n] on the left side of the equation "
+"sign."
+msgstr "假设b系数列在递归公式中等号的右边，y[n]在等号的左边。"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1542
 msgid ""
 "a-coefficients for \n"
 "y[n-1]  and earlier"
@@ -965,345 +1003,369 @@ msgstr ""
 "a-系数\n"
 "y[n-1]和更早"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1500
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1540
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1544
+msgid ""
+"Assume that the a coefficients are listed on the right side of the equation "
+"sign in the recursive formula, with y[n] on the left side of the equation "
+"sign."
+msgstr "假设a系数列在递归公式中等号的右边，y[n]在等号的左边。"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1556
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1624
 msgid "Show information about these entry fields."
 msgstr "显示这些输入字段的信息。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1512
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2331
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2334
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1570
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1585
+msgid "Scale factor"
+msgstr "比例因子"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1572
+msgid "All input coefficients are multiplied by this scaling factor."
+msgstr "所有的输入系数都乘以这个比例系数。"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1587
+msgid "All output coefficients are multiplied by this scaling factor."
+msgstr "所有的输出系数都乘以这个比例系数。"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1596
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2425
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2428
 msgid "Coefficients"
 msgstr "系数  Coefficients"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1522
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1606
 msgid "locations of the zeros"
 msgstr "零点的位置"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1528
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1612
 msgid "locations of the poles"
 msgstr "两极的位置"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1554
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1704
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1638
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1788
 msgid "Gain compensation"
 msgstr "收益补偿"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1561
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1711
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1645
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1795
 msgid "Scale the peak output to 0 dB"
 msgstr "峰值输出比例为0dB"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1565
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1715
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1649
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1799
 msgid "0"
 msgstr "0"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1573
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1657
 msgid "Purpose based pole-zero insertion"
 msgstr "基于目的的极零插入"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1578
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1662
 msgid "Zero at Origin"
 msgstr "原点为零"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1580
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1664
 msgid "Insert a zero in the origin."
 msgstr "在原点插入一个零。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1584
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1668
 msgid "Pole at Origin"
 msgstr "原点的极点"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1586
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1670
 msgid "Insert a pole in the origin."
 msgstr "在原点插入一个极点。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1590
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1674
 msgid "Comb expression"
 msgstr "梳理表达"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1592
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1676
 msgid "Insert a comb expression of either zeros or poles."
 msgstr "插入一个零点或极点的梳状表达式。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1600
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1684
 msgid "frequency (Hz)"
 msgstr "频率（赫兹）"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1613
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1697
 msgid "-3 dB band (Hz)"
 msgstr "-3分贝带(Hz)"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1623
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1707
 msgid "Insert as bandpass"
 msgstr "作为带通插入"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1625
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1709
 msgid ""
 "Insert a pair of conjugated poles that invokes the bandpass behaviour at the "
 "indicated frequency."
 msgstr "插入一对共轭极点，在指定频率上调用带通行为。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1629
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1713
 msgid "Insert as bandstop"
 msgstr "插件作为止水带"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1631
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1715
 msgid ""
 "Insert pairs of conjugated zeros and poles that invoke the bandstop "
 "behaviour at the indicated frequency."
 msgstr "插入一对共轭零点和极点，在指定的频率上调用带阻行为。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1638
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1722
 msgid "Zeros and Poles"
 msgstr "零和两极"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1648
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1732
 msgid "Analog filter type"
 msgstr "模拟滤波器类型"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1653
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1737
 msgid "Butterworth"
 msgstr "Butterworth"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1654
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1738
 msgid "Chebyshev"
 msgstr "切比舍夫"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1664
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1748
 msgid "2nd order"
 msgstr "二阶"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1665
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1749
 msgid "4th order"
 msgstr "第四阶"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1666
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1750
 msgid "6th order"
 msgstr "六阶"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1667
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1751
 msgid "8th order"
 msgstr "八阶"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1668
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1752
 msgid "10th order"
 msgstr "第十阶"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1669
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1753
 msgid "12th order"
 msgstr "第十二阶"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1670
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1754
 msgid "14th order"
 msgstr "第十四次"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1671
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1755
 msgid "16th order"
 msgstr "第十六次"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1673
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1757
 msgid "1st order"
 msgstr "一阶"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1729
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1813
 msgid "Polar magnitude safety margin"
 msgstr "极地幅度安全系数"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1739
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1823
 msgid "Chebyshev ripple control"
 msgstr "切比雪夫纹波控制"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1747
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1831
 msgid "%"
 msgstr "%"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1751
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1835
 msgid "Analog filter prototype"
 msgstr "模拟滤波器原型"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1768
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1852
 msgid "Custom"
 msgstr "自定义"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1784
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1868
 msgid "Absolute"
 msgstr "绝对"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1785
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1869
 msgid "Shannon"
 msgstr "Shannon"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1786
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1870
 msgid "Type"
 msgstr "类型"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1806
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1890
 msgid "Test output options"
 msgstr "测试输出选项"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1813
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1897
 msgid "Draw the test signal also."
 msgstr "也画出测试信号。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1817
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1901
 msgid "Draw interpolation"
 msgstr "绘制插值"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1820
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1904
 msgid "Draw a spline that interpolates the filtered data."
 msgstr "绘制一个对过滤后的数据进行插值的花键。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1824
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1908
 msgid "Post process auto scaling"
 msgstr "后处理自动缩放"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1827
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1911
 msgid "Scale automatically to show all presented data in the graph window."
 msgstr "自动缩放以在图形窗口中显示所有呈现的数据。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1834
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1918
 msgid "Input starts at:"
 msgstr "输入开始于:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1842
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1926
 msgid "Number of points"
 msgstr "积分数量"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1871
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1955
 msgid "Opdracht 6 DSB Practicum Embedded Systems Engineering bij de HAN."
 msgstr ""
 "Opdracht 6 DSB 嵌入式系统工程实践课程（DSB Practicum Embedded Systems "
 "Engineering bij de HAN）。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1872
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1956
 msgid "Design and implement an IIR Filter design tool."
 msgstr "设计并实现IIR滤波器设计工具。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1873
-msgid "ir drs E.J Boks (docent HAN ESE) : ewout.boks@han.nl"
-msgstr "ir drs E.J.Boks博士(HAN ESE讲师)：ewout.boks@han.nl"
-
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1924
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2244
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2008
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2335
 msgid "Default"
 msgstr "默认"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2099
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2189
 msgid ""
 "Error creating the base directory where the Filter coefficients will be "
 "stored."
 msgstr "创建存储滤波器系数的基础目录时出错。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2108
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2198
 msgid "Error opening the stream to read the Filter coefficients."
 msgstr "打开流读取Filter系数时出错。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2210
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2301
 msgid "Please select an existing configuration"
 msgstr "请选择一个现有的配置"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2210
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2374
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2301
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2468
 msgid "Configuration :"
 msgstr "配置 :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2311
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2405
 msgid "Error opening the stream to write the Filter coefficients."
 msgstr "打开流写Filter系数时出错。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2318
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2412
 msgid "This file was generated automatically by application"
 msgstr "这个文件是由应用程序自动生成的"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2320
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2414
 msgid ""
 "You are free to modify the data entries in this file as long as you adhere "
 "to the format used in this file."
 msgstr "您可以自由修改本文件中的数据条目，只要您遵守本文件中使用的格式。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2323
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2417
 msgid "IIR Filter configuration for user"
 msgstr "用户的IIR过滤器配置"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2324
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2418
 msgid "on"
 msgstr "开"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2342
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2436
 msgid "Zeros"
 msgstr "零"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2345
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2439
 msgid "Poles"
 msgstr "极点"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2351
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2445
 msgid "Error closing the file stream that wrote the Filter coefficients."
 msgstr "关闭写入Filter系数的文件流出错。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2374
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2468
 msgid "Please select an new configuration name."
 msgstr "请选择一个新的配置名称。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2383
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2477
 msgid "This filter configuration name already exists."
 msgstr "该过滤器配置名称已经存在。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2418
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2512
 msgid "Do you want to reset all configuration fields to demonstration values?"
 msgstr "你想把所有配置字段重置为演示值吗？"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2419
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2513
 msgid "Demonstration values"
 msgstr "值的数量=%d"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2456
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2550
 msgid "IIR Filter impulse response output"
 msgstr "IIR滤波器脉冲响应输出"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2477
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2571
 msgid "IIR Filter pole-zero diagram"
 msgstr "IIR滤波器的极零图"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2497
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2591
 msgid "This feature has not been implemented yet."
 msgstr "此功能尚未实施。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2517
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2611
 msgid "IIR Filter frequency domain output"
 msgstr "IIR滤波器频域输出"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2537
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2631
 msgid "IIR Filter time domain test output"
 msgstr "IIR滤波器时域测试输出"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2639
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2733
 msgid "The IIR Filter system sampling frequency"
 msgstr "IIR滤波器系统的采样频率"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2763
-#, c-format
-msgid "Coefficient b_%d : %.2f was added."
-msgstr "系数b_%d：%.2f被添加。"
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2844
+msgid "The multiplication factor"
+msgstr "乘法系数"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2765
-#, c-format
-msgid "Coefficient a_%d : %.2f was added."
-msgstr "系数a_%d：%.2f被添加。"
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2844
+msgid "is not a useable number."
+msgstr "不是一个可使用的数字。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2821
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2870
+#, c-format
+msgid "Coefficient b_%d : %s was added."
+msgstr "系数b_%d : %s 被添加。"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2872
+#, c-format
+msgid "Coefficient a_%d : %s was added."
+msgstr "系数a_%d : %s 被添加。"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2928
 #, c-format
 msgid "Zero [%d] was added :"
 msgstr "零[%d]被添加:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2823
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2930
 #, c-format
 msgid "Pole [%d] was added :"
 msgstr "极点[%d]被添加:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2837
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2944
 msgid ""
 "Your design has fewer zero points than pole points.\n"
 "In order to balance your system, an additional number of zero points in the "
@@ -1312,7 +1374,7 @@ msgstr ""
 "你的设计的零点比极点少。\n"
 "为了平衡你的系统，在z平面原点上增加了一些零点。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2850
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2957
 msgid ""
 "Your design has fewer pole points than zero points.\n"
 "In order to balance your system, an additional number of pole points in the "
@@ -1321,48 +1383,48 @@ msgstr ""
 "您的设计的极点比零点少，为了平衡您的系统，在z平面原点增加了极点的数量。\n"
 "为了平衡你的系统，你的系统在z平面原点上增加了一些极点。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2965
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2967
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3072
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3074
 #, c-format
 msgid "Butterworth Pole [%d] was added :"
 msgstr "巴特沃斯极[%d]被添加:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2969
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2971
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3076
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3078
 #, c-format
 msgid "Butterworth Zero [%d] was added :"
 msgstr "巴特沃斯零点[%d]被添加:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3045
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3047
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3152
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3154
 #, c-format
 msgid "Chebyshev Pole [%d] was added :"
 msgstr "切比雪夫极[%d]被添加:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3049
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3051
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3156
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3158
 #, c-format
 msgid "Chebyshev Zero [%d] was added :"
 msgstr "切比雪夫极[%d]被添加:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3451
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3558
 msgid ""
 "An LTI difference equation characterised by bk (for inputs) and ak (for "
 "outputs) can be entered here."
 msgstr "这里可以输入一个以bk（输入）和ak（输出）为特征的LTI差异方程。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3453
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3560
 msgid ""
 "Please note that a pure convolution can be done by entering the h[n] "
 "coefficients as b-coefficients, with the a-coefficients field remaining "
 "empty."
 msgstr "请注意，纯卷积可以通过输入h[n]系数作为b系数来完成，而a系数字段保持空。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3456
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3563
 msgid "Information on entering LTI difference equation coefficients."
 msgstr "输入LTI差分方程系数的信息。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3466
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3573
 msgid ""
 "Enter as a, a+bj or r:[p/d]phi .\n"
 "Please insert only a single complex or polar entry.\n"
@@ -1376,74 +1438,69 @@ msgstr ""
 "额外插入一个共轭复数对条目。\n"
 "p/d]是可选的，使phi成为pi或度的角度。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3471
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3578
 msgid "Information on entering poles and zeros."
 msgstr "关于输入极点和零的信息。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3997
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4104
 #, c-format
-msgid "Coefficient[%d] = %.3f"
-msgstr "系数[%d]=%.3f"
+msgid "Coefficient[%d] = %s"
+msgstr "系数[%d] = %s"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4004
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4111
 msgid "Out of bounds."
 msgstr "出界了。"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4047
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4056
-msgid "Mouse"
-msgstr "老鼠"
-
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4120
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4243
 msgid "signal data file (*.txt)|*.txt"
 msgstr "信号数据文件(*.txt)|*.txt"
 
-#: opdracht6/STUDENT/designer/filterDesigner.h:51
+#: opdracht6/STUDENT/designer/filterDesigner.h:52
 msgid "Digital Signal Processing demonstrator"
 msgstr "数字信号处理演示器"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:141
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:142
 msgid "Placement of a number of zeros or poles using a comb expression"
 msgstr "使用梳状表达式放置若干零点或极点"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:148
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:149
 msgid "An example of placing a comb zero expression on the unit circle."
 msgstr "在单位圆上放置一个梳状零点表达式的例子。"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:156
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:157
 msgid "Zero"
 msgstr "零"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:157
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:158
 msgid "Pole"
 msgstr "电极"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:158
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:159
 msgid "Placement"
 msgstr "放置"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:163
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:164
 msgid "Radius"
 msgstr "半径"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:167
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:168
 msgid "1.0"
 msgstr "1.0"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:171
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:172
 msgid "Number of elements in arc (Nyquist range)"
 msgstr "弧线上的元素数量（奈奎斯特范围）。"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:178
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:179
 #, c-format
 msgid "Arc length as % of half circle"
 msgstr "弧长为% of半圆"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:190
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:191
 msgid "Compensate with counterpart elements in the origin"
 msgstr "用原点中的对应元素进行补偿"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:193
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:194
 msgid ""
 "When generating a number of poles or zeros in a circle, generate an equal "
 "number of zeros or poles in the origin to keep the system causal with "
@@ -1452,7 +1509,7 @@ msgstr ""
 "当在一个圆中产生一定数量的极点或零点时，在原点产生相同数量的零点或极点，以保"
 "持系统的因果关系和最小的延迟。"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:308
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:309
 msgid "The entered radius number cannot be used."
 msgstr "输入的半径数不能使用。"
 
@@ -1460,10 +1517,25 @@ msgstr "输入的半径数不能使用。"
 msgid "Comb Expression"
 msgstr "梳理表达"
 
-#: opdracht6/STUDENT/filter/iirfilter.cpp:101
-#: opdracht6/STUDENT/filter/iirfilter.cpp:111
+#: opdracht6/STUDENT/filter/iirfilter.cpp:99
+#: opdracht6/STUDENT/filter/iirfilter.cpp:109
 msgid "Your pole has a magnitude > 1 !"
 msgstr "你的极点有一个幅度>1 !"
+
+#~ msgid ""
+#~ "The application was initialized to use the system default language, which "
+#~ "has this name:"
+#~ msgstr "该应用程序被初始化为使用系统默认语言，它有这个名字:"
+
+#, c-format
+#~ msgid "Euro %.2lf"
+#~ msgstr "欧元%.2lf"
+
+#~ msgid "ir drs E.J Boks (docent HAN ESE) : ewout.boks@han.nl"
+#~ msgstr "ir drs E.J.Boks博士(HAN ESE讲师)：ewout.boks@han.nl"
+
+#~ msgid "Mouse"
+#~ msgstr "老鼠"
 
 #~ msgid "Application"
 #~ msgstr "应用"
@@ -1518,9 +1590,6 @@ msgstr "你的极点有一个幅度>1 !"
 #~ "请输入a、a+bj或r:phi 。\n"
 #~ "请只插入一个复合物或极性条目。\n"
 #~ "这样的插入意味着插入了一个共轭复合物对条目。"
-
-#~ msgid "Scaling factor"
-#~ msgstr "缩放系数"
 
 #~ msgid "Automatic scaling"
 #~ msgstr "自动缩放"

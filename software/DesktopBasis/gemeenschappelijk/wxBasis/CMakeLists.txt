@@ -2,7 +2,7 @@
 # CMake script voor wxWidgets CMake software bouwen
 # Copyright 2004-2017 Hogeschool van Arnhem en Nijmegen
 # Opleiding Embedded Systems Engineering
-# $Id: CMakeLists.txt 4389 2022-02-24 14:42:24Z ewout $
+# $Id: CMakeLists.txt 4685 2023-03-08 15:50:32Z ewout $
 #************************************************************************/
 
 if(POLICY CMP0043)
@@ -11,7 +11,7 @@ endif()
 
 set(wxBASISCPPCHECKAAN 0)
 
-file(GLOB wxBasisBestanden *.cpp)
+set(wxBasisBestanden desktopApp.cpp grafiekVenster.cpp tinyexpr.c algemeen.cpp)
 
 list(SORT wxBasisBestanden)
 

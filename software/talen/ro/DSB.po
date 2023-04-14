@@ -2,25 +2,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DSB\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-24 18:15+0200\n"
-"PO-Revision-Date: 2022-06-24 18:16+0200\n"
+"POT-Creation-Date: 2023-03-08 15:33+0100\n"
+"PO-Revision-Date: 2023-03-08 15:33+0100\n"
 "Last-Translator: \n"
 "Language-Team: ewout@boks.com\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n"
-"%100<=19) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && "
+"n%100<=19) ? 1 : 2);\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: STM32Basis\n"
 "X-Poedit-SearchPathExcluded-1: oud\n"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:46
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:50
 msgid ""
 "Please pay attention. The application is already running. Is this your "
 "intention?"
@@ -28,27 +28,31 @@ msgstr ""
 "Vă rugăm să fiți atenți. Aplicația este deja în curs de execuție. Aceasta "
 "este intenția dumneavoastră?"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:125
-msgid ""
-"The application was initialized to use the system default language, which "
-"has this name:"
-msgstr ""
-"Aplicația a fost inițializată pentru a utiliza limba implicită a sistemului, "
-"care are acest nume:"
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:324
+msgid "The internationalization locale for"
+msgstr "Locația de internaționalizare pentru"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:330
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:326
+msgid "was initialized successfully."
+msgstr "a fost inițializat cu succes."
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:365
+msgid "Could not initialise the Locale for"
+msgstr "Nu s-a putut inițializa Locale pentru"
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:499
 msgid "Unknown"
 msgstr "Necunoscut"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:363
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:538
 msgid "The application must now be restarted to activate the new language."
 msgstr "Aplicația trebuie repornită acum pentru a activa noua limbă."
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:364
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:539
 msgid "Restart the application."
 msgstr "Reporniți aplicația."
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:383
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:558
 msgid "Version : "
 msgstr "Versiunea "
 
@@ -56,256 +60,255 @@ msgstr "Versiunea "
 msgid "Save the image as a PNG file."
 msgstr "Salvați imaginea ca fișier PNG."
 
-#: opdracht2/STUDENT/gemwaarde.cpp:120
-#, c-format
-msgid "Euro %.2lf"
-msgstr "Euro %.2lf"
+#: opdracht2/STUDENT/gemwaarde.cpp:151 opdracht3/STUDENT/signaal.cpp:328
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:841
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1156
+msgid "Developer"
+msgstr "Dezvoltator"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:152
+#: opdracht2/STUDENT/gemwaarde.cpp:153 opdracht3/STUDENT/signaal.cpp:330
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:843
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1158
+msgid "Demo version"
+msgstr "Versiunea demo"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:163
 msgid "Open\tCtrl+O"
 msgstr "Deschidere Ctrl+O"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:154
+#: opdracht2/STUDENT/gemwaarde.cpp:165
 msgid "Draw data\tCtrl+T"
 msgstr "Desenați datele\tCtrl+T"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:156 opdracht3/STUDENT/signaal.cpp:324
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1029
+#: opdracht2/STUDENT/gemwaarde.cpp:167 opdracht3/STUDENT/signaal.cpp:352
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1044
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:722
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:722
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1236
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1282
 msgid "Quit\tCtrl+Q"
 msgstr "Renunță Ctrl+Q"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:158
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1767
+#: opdracht2/STUDENT/gemwaarde.cpp:169
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1851
 msgid "File"
 msgstr "Fişier"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:162
+#: opdracht2/STUDENT/gemwaarde.cpp:173
 msgid "Standard Moving Average"
 msgstr "Media mobilă standard"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:163
+#: opdracht2/STUDENT/gemwaarde.cpp:174
 msgid "Exponential Moving Average"
 msgstr "Medie mobilă exponențială"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:167
+#: opdracht2/STUDENT/gemwaarde.cpp:178
 msgid "Draw data"
 msgstr "Desenați date"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:234
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4117
+#: opdracht2/STUDENT/gemwaarde.cpp:245
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4240
 msgid "Open the data file. Please supply a list of one value per line."
 msgstr ""
 "Deschideți fișierul de date. Vă rugăm să furnizați o listă cu câte o valoare "
 "pe linie."
 
-#: opdracht2/STUDENT/gemwaarde.cpp:249
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4131
+#: opdracht2/STUDENT/gemwaarde.cpp:260
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4254
 msgid "Could not open :"
 msgstr "Nu s-a putut deschide :"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:274
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4156
+#: opdracht2/STUDENT/gemwaarde.cpp:285
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4279
 msgid "Error reading the input value :"
 msgstr "Eroare de citire a valorii de intrare :"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:313
+#: opdracht2/STUDENT/gemwaarde.cpp:324
 msgid "Assignment 2 : the running average"
 msgstr "Sarcina 2 : media curentă"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:331
+#: opdracht2/STUDENT/gemwaarde.cpp:342
 msgid "Averaging control parameter"
 msgstr "Parametrul de control al mediei"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:354 opdracht3/STUDENT/signaal.cpp:686
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2107
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:5105
-msgid "Developer"
-msgstr "Dezvoltator"
+#: opdracht2/STUDENT/gemwaarde.cpp:378
+msgid "Running average of the US$ <--> € exchange rate."
+msgstr "Media curentă a cursului de schimb US$ <--> €."
 
-#: opdracht2/STUDENT/gemwaarde.cpp:356 opdracht3/STUDENT/signaal.cpp:688
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2109
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:5107
-msgid "Demo version"
-msgstr "Versiunea demo"
-
-#: opdracht3/STUDENT/signaal.cpp:49
+#: opdracht3/STUDENT/signaal.cpp:50
 msgid "FFTW start of calcation"
 msgstr "FFTW începutul calculului"
 
-#: opdracht3/STUDENT/signaal.cpp:52
+#: opdracht3/STUDENT/signaal.cpp:53
 msgid "The signal could not be sampled, because"
 msgstr "Semnalul nu a putut fi eșantionat, deoarece"
 
-#: opdracht3/STUDENT/signaal.cpp:53
+#: opdracht3/STUDENT/signaal.cpp:54
 #, c-format
 msgid "the number of samples per period=%d"
 msgstr "numărul de eșantioane pe perioadă=%d"
 
-#: opdracht3/STUDENT/signaal.cpp:104
+#: opdracht3/STUDENT/signaal.cpp:114
 msgid "Not allowed."
 msgstr "Nu este permis."
 
-#: opdracht3/STUDENT/signaal.cpp:108
+#: opdracht3/STUDENT/signaal.cpp:118
 #, c-format
 msgid "(SignaalVenster::tekenReeksHandler) Wrong signal choice (%ld)."
 msgstr ""
 "(SignaalVenster::tekenReeksHandler) Alegerea greșită a semnalului (%ld)."
 
-#: opdracht3/STUDENT/signaal.cpp:135
+#: opdracht3/STUDENT/signaal.cpp:145
 msgid "No valid data present in the file!"
 msgstr "Nu există date valide în fișier!"
 
-#: opdracht3/STUDENT/signaal.cpp:146
+#: opdracht3/STUDENT/signaal.cpp:156
 #, c-format
 msgid "Number of values=%d"
 msgstr "Numărul de valori=%d"
 
-#: opdracht3/STUDENT/signaal.cpp:181
+#: opdracht3/STUDENT/signaal.cpp:191
 msgid "Initialisation of the FFT routines resulted in an error"
 msgstr "Inițializarea rutinelor FFT a avut ca rezultat o eroare"
 
-#: opdracht3/STUDENT/signaal.cpp:182
+#: opdracht3/STUDENT/signaal.cpp:192
 msgid "FFTW Init error"
 msgstr "Eroare FFTW Init"
 
-#: opdracht3/STUDENT/signaal.cpp:282
+#: opdracht3/STUDENT/signaal.cpp:302
 msgid "Frequency image was constructed."
 msgstr "A fost construită imaginea de frecvență."
 
-#: opdracht3/STUDENT/signaal.cpp:316
+#: opdracht3/STUDENT/signaal.cpp:344
 msgid "&About"
 msgstr "&Despre"
 
-#: opdracht3/STUDENT/signaal.cpp:318
+#: opdracht3/STUDENT/signaal.cpp:346
 msgid "&Execute FFT\tCtrl+T"
 msgstr "&Executați FFT\tCtrl+T"
 
-#: opdracht3/STUDENT/signaal.cpp:320
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1033
+#: opdracht3/STUDENT/signaal.cpp:348
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1048
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:726
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:726
 msgid "Export the time domain image\tCtrl+R"
 msgstr "Exportați imaginea în domeniul timpului\tCtrl+R"
 
-#: opdracht3/STUDENT/signaal.cpp:322
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1034
+#: opdracht3/STUDENT/signaal.cpp:350
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1049
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:727
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:727
 msgid "Export the frequency domain image\tCtrl+E"
 msgstr "Exportați imaginea în domeniul de frecvență\tCtrl+E"
 
-#: opdracht3/STUDENT/signaal.cpp:326
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1030
+#: opdracht3/STUDENT/signaal.cpp:354
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1045
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:723
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:723
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1237
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1283
 msgid "Bestand"
 msgstr "Bestand"
 
-#: opdracht3/STUDENT/signaal.cpp:332
+#: opdracht3/STUDENT/signaal.cpp:360
 msgid "Signal frequency"
 msgstr "Frecvența semnalului"
 
-#: opdracht3/STUDENT/signaal.cpp:335
+#: opdracht3/STUDENT/signaal.cpp:363
 msgid "Sampling frequency"
 msgstr "Frecvența de eșantionare"
 
-#: opdracht3/STUDENT/signaal.cpp:338
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1191
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1196
+#: opdracht3/STUDENT/signaal.cpp:366
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1206
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1211
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:759
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:759
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1763
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1770
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1847
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1854
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: opdracht3/STUDENT/signaal.cpp:339
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1136
+#: opdracht3/STUDENT/signaal.cpp:367
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1151
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:748
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:748
 msgid "Triangle"
 msgstr "Triunghi"
 
-#: opdracht3/STUDENT/signaal.cpp:340
+#: opdracht3/STUDENT/signaal.cpp:368
 msgid "Square"
 msgstr "Pătrat"
 
-#: opdracht3/STUDENT/signaal.cpp:341
+#: opdracht3/STUDENT/signaal.cpp:369
 msgid "Data from file"
 msgstr "Date din fișier"
 
-#: opdracht3/STUDENT/signaal.cpp:344
+#: opdracht3/STUDENT/signaal.cpp:372
 msgid "Number of periods:"
 msgstr "Numărul de perioade:"
 
-#: opdracht3/STUDENT/signaal.cpp:346
+#: opdracht3/STUDENT/signaal.cpp:374
 msgid "Show amplitude"
 msgstr "Arată amplitudinea"
 
-#: opdracht3/STUDENT/signaal.cpp:347
+#: opdracht3/STUDENT/signaal.cpp:375
 msgid "Show phase"
 msgstr "Arată faza"
 
-#: opdracht3/STUDENT/signaal.cpp:348
+#: opdracht3/STUDENT/signaal.cpp:376
 msgid "Dump FFT values"
 msgstr "Aruncați valorile FFT"
 
-#: opdracht3/STUDENT/signaal.cpp:349
+#: opdracht3/STUDENT/signaal.cpp:377
 msgid "Execute Fast Fourier Transform"
 msgstr "Executarea transformării Fourier rapide"
 
-#: opdracht3/STUDENT/signaal.cpp:501
+#: opdracht3/STUDENT/signaal.cpp:528
 msgid "Assignment 3 DSB Practicum"
 msgstr "Sarcina 3 DSB Practicum"
 
-#: opdracht3/STUDENT/signaal.cpp:502
+#: opdracht3/STUDENT/signaal.cpp:529
 msgid "Employ the FFTW library for generating a frequency plot."
 msgstr "Utilizați biblioteca FFTW pentru a genera un grafic de frecvență."
 
-#: opdracht3/STUDENT/signaal.cpp:517
+#: opdracht3/STUDENT/signaal.cpp:544
 msgid "Open a data file with the signal values in float format)"
 msgstr "Deschideți un fișier de date cu valorile semnalului în format float)"
 
-#: opdracht3/STUDENT/signaal.cpp:520
+#: opdracht3/STUDENT/signaal.cpp:547
 msgid "All files (*.*)|*.*"
 msgstr "Toate fișierele (*.*)|*.*"
 
-#: opdracht3/STUDENT/signaal.cpp:532
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1903
+#: opdracht3/STUDENT/signaal.cpp:559
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1918
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1012
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1012
 msgid "Could not open:"
 msgstr "Nu s-a putut deschide:"
 
-#: opdracht3/STUDENT/signaal.cpp:557
+#: opdracht3/STUDENT/signaal.cpp:584
 msgid "Error reading the float data."
 msgstr "Eroare de citire a datelor flotantului."
 
-#: opdracht3/STUDENT/signaal.cpp:591
+#: opdracht3/STUDENT/signaal.cpp:618
 msgid "Signal sampling and frequency image"
 msgstr "Eșantionarea semnalului și imaginea de frecvență"
 
-#: opdracht3/STUDENT/signaal.cpp:598
+#: opdracht3/STUDENT/signaal.cpp:625
 msgid "FFTW Status : unknown"
 msgstr "Statutul FFTW : necunoscut"
 
-#: opdracht3/STUDENT/signaal.cpp:624
+#: opdracht3/STUDENT/signaal.cpp:651
 msgid "Frequency plot features"
 msgstr "Caracteristicile graficului de frecvență"
 
-#: opdracht3/STUDENT/signaal.cpp:625
+#: opdracht3/STUDENT/signaal.cpp:652
 msgid "Time domain properties"
 msgstr "Proprietăți în domeniul timpului"
 
-#: opdracht3/STUDENT/signaal.cpp:627
+#: opdracht3/STUDENT/signaal.cpp:654
 msgid "Signal properties"
 msgstr "Proprietăți de semnal"
 
-#: opdracht3/STUDENT/signaal.cpp:695
+#: opdracht3/STUDENT/signaal.cpp:718
 msgid "FFT Signal test"
 msgstr "Testul de semnal FFT"
 
@@ -317,14 +320,14 @@ msgstr ""
 "Acest program necesită o rezoluție minimă a ecranului de 1024x768 pixeli.\n"
 "Startul este anulat."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:123
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:124
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:91
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:91
 msgid "filter berekening start."
 msgstr "filtru berekening start."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:158
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:433
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:159
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:435
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:126
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:399
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:126
@@ -332,74 +335,65 @@ msgstr "filtru berekening start."
 msgid "May not reach this point!!"
 msgstr "Poate că nu va ajunge la acest punct!!!"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:398
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:400
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:364
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:364
 msgid "filter calculation start."
 msgstr "începerea calculului de filtrare."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:646
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:639
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:639
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:649
 #, c-format
-msgid "Coefficient[%d] = %.3f (Q%d:%d)"
-msgstr "Coeficient[%d] = %.3f (Q%d:%d)"
+msgid "Coefficient[%d] = %s (Q%d:%d)"
+msgstr "Coeficient[%d] = %s (Q%d:%d)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:683
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:676
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:676
-#, c-format
-msgid "Mouse = [%.3f*pi,%.3f dB]. |H(%.3f*pi)| = %.3f dB"
-msgstr "Mouse = [%.3f*pi,%.3f dB]. |H(%.3f*pi)| = %.3f dB"
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:691
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:703
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4158
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4174
+msgid "Coordinate"
+msgstr "Coordonați"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:692
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:685
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:685
-#, c-format
-msgid "Mouse = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
-msgstr "Mouse = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
-
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:713
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:723
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1324
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1324
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4078
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4201
 msgid "Time graph entry."
 msgstr "Introducerea graficului de timp."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:721
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:731
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1332
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1332
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4086
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4209
 msgid "Time graph exit."
 msgstr "Ieșirea graficului de timp."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:723
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:745
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:733
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:755
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1334
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1356
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1334
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1356
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4088
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4110
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4211
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4233
 msgid "No coordinates"
 msgstr "Fără coordonate"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:735
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:745
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1346
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1346
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4100
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4223
 msgid "Freq graph entry."
 msgstr "Frecvența de intrare în grafic."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:743
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:753
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1354
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1354
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4108
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4231
 msgid "Freq graph exit."
 msgstr "Ieșire din graficul de frecvență."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:905
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1403
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:923
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1418
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:852
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1223
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:852
@@ -408,287 +402,287 @@ msgstr "Ieșire din graficul de frecvență."
 msgid "Orde = %d (%d taps)"
 msgstr "Orde = %d (%d atingeri)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1027
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1042
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:721
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:721
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1231
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1277
 msgid "About"
 msgstr "Despre"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1028
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1043
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:728
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:728
 msgid "Write a C/CPP Header file"
 msgstr "Scrieți un fișier C/CPP Header"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1032
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1047
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:725
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:725
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1239
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1285
 msgid "Calculate Filter\tCtrl+B"
 msgstr "Calculați filtrul Ctrl+B"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1035
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1050
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:729
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:729
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1246
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1292
 msgid "Filter"
 msgstr "Filtru"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1052
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1067
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:718
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:718
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1263
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1309
 msgid "Time domain filter impulse response"
 msgstr "Răspunsul la impuls al filtrului în domeniul timpului"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1059
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1074
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:732
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:732
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1271
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1317
 msgid "Time domain coordinates (Mouse over window)"
 msgstr "Coordonate în domeniul timpului (Mouse over window)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1063
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1078
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:710
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:710
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1309
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1355
 msgid "Frequency domain representation"
 msgstr "Reprezentarea în domeniul de frecvență"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1073
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1088
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:736
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:736
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1320
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1366
 msgid "Frequency domain coordinates (Mouse over window)"
 msgstr "Coordonate în domeniul de frecvență (Mouse over window)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1077
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1092
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:735
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:735
 msgid "Show analogue frequencies"
 msgstr "Afișarea frecvențelor analogice"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1086
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1101
 msgid "Discover HAN Embedded Systems Engineering!"
 msgstr "Descoperiți ingineria sistemelor integrate HAN!"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1089
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1104
 msgid "Test results visualization"
 msgstr "Vizualizarea rezultatelor testelor"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1099
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1114
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:714
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:714
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1406
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1452
 msgid "Filter parameters"
 msgstr "Parametrii de filtrare"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1112
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1127
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:739
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:739
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1416
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1462
 msgid "Sampling frequency (Hz)"
 msgstr "Frecvența de eșantionare (Hz)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1116
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1122
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1131
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1137
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:740
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:742
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:740
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:742
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1421
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1467
 msgid "undetermined"
 msgstr "nedeterminată"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1119
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1134
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:741
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:741
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1659
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1743
 msgid "Filter order"
 msgstr "Ordine de filtrare"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1125
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1140
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:743
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:743
 msgid "Supplemental filter amplification (dB) :"
 msgstr "Amplificarea filtrului suplimentar (dB) :"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1131
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1146
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:745
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:745
 msgid "Window applied :"
 msgstr "Fereastră aplicată :"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1135
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1139
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1150
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1154
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:747
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:747
 msgid "Rectangle"
 msgstr "Dreptunghi"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1137
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1152
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:749
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:749
 msgid "Hamming"
 msgstr "Hamming"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1142
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1157
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:752
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:752
 msgid "Number of bits in coding :"
 msgstr "Numărul de biți în codare :"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1151
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1166
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:754
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:754
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1436
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1485
 msgid "Calculate filter"
 msgstr "Calculați filtrul"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1157
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1172
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:755
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:755
 msgid "Dump coefficients"
 msgstr "Coeficienți de descărcare de gestiune"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1161
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1463
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1176
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1519
 msgid "&Quit"
 msgstr "&Quit"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1167
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1182
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:712
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:712
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1679
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1763
 msgid "Band pass begin (Hz)"
 msgstr "Banda de trecere începe (Hz)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1175
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1190
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:713
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:713
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1693
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1777
 msgid "Band pass end (Hz)"
 msgstr "Sfârșitul benzii de trecere (Hz)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1183
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1198
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:717
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:717
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1755
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1839
 msgid "Filter test"
 msgstr "Test de filtrare"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1192
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1207
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:760
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:760
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1764
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1848
 msgid "Square wave"
 msgstr "Undă pătrată"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1193
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1208
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:761
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:761
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1765
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1849
 msgid "Impulse"
 msgstr "Impuls"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1194
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1209
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:762
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:762
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1766
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1850
 msgid "Step"
 msgstr "Etapă"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1205
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1220
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:715
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:715
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1779
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1863
 msgid "Test Signal frequency"
 msgstr "Frecvența semnalului de testare"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1215
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1230
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:716
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:716
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1795
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1879
 msgid "Test Signal amplitude"
 msgstr "Amplitudinea semnalului de testare"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1225
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1240
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:768
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:768
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1810
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1894
 msgid "Show test signal"
 msgstr "Afișați semnalul de testare"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1229
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1244
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:769
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:769
 msgid "Draw interpolation spline"
 msgstr "Desenați spline de interpolare"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1233
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1248
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:765
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:765
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1774
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1858
 msgid "Start Filter Test"
 msgstr "Începeți testul de filtrare"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1327
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1342
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1153
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1153
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2637
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2731
 msgid "Specify the sampling frequency in Hz."
 msgstr "Specificați frecvența de eșantionare în Hz."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1328
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1343
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1154
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1154
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2638
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2732
 msgid "Frequency:"
 msgstr "Frecvența:"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1329
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1344
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1155
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1155
 msgid "The FIR filter system sampling frequency"
 msgstr "Frecvența de eșantionare a sistemului de filtrare FIR"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1391
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1406
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1211
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1211
 msgid "Specify the order of the filter in number of taps."
 msgstr "Specificați ordinea filtrului în număr de atingeri."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1392
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1407
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1212
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1212
 msgid "Filter order:"
 msgstr "Ordine de filtrare:"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1393
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1408
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1213
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1213
 msgid "Taps in the FIR filter system"
 msgstr "Taps în sistemul de filtrare FIR"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1557
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1572
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1252
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1252
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3245
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3352
 msgid "The start of the pass band must be smaller than the end."
 msgstr "Începutul benzii de trecere trebuie să fie mai mic decât sfârșitul."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1700
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1715
 msgid "Student version"
 msgstr "Versiunea pentru studenți"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1828
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1843
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:978
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:978
 msgid "Assignment 4 DSB Practicum"
 msgstr "Sarcina 4 DSB Practicum"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1829
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1844
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:979
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:979
 msgid ""
@@ -697,27 +691,27 @@ msgstr ""
 "Proiectarea și implementarea unui instrument de proiectare a unui filtru FIR "
 "bazat pe funcția sinc()."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1883
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1898
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:992
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:992
 msgid "Save the filter design as a C or CPP header file"
 msgstr "Salvați proiectul filtrului ca fișier de antet C sau CPP"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1993
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2008
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1102
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1102
 msgid "Header file written succesfully."
 msgstr "Fișier de antet scris cu succes."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2078
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2080
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2093
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2095
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1309
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1309
 #, c-format
 msgid "Coefficient[%d] = %d (float:%f)"
 msgstr "Coeficient[%d] = %d (float:%f)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.h:53
+#: opdracht4/STUDENT/ontwerper/filterDesigner.h:54
 msgid ""
 "FIR filter designer for HAN Embedded Systems Engineering Digital Signal "
 "Processing"
@@ -741,6 +735,24 @@ msgstr ""
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1436
 msgid "Demoversion"
 msgstr "Demoversion"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:639
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:639
+#, c-format
+msgid "Coefficient[%d] = %.3f (Q%d:%d)"
+msgstr "Coeficient[%d] = %.3f (Q%d:%d)"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:676
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:676
+#, c-format
+msgid "Mouse = [%.3f*pi,%.3f dB]. |H(%.3f*pi)| = %.3f dB"
+msgstr "Mouse = [%.3f*pi,%.3f dB]. |H(%.3f*pi)| = %.3f dB"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:685
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:685
+#, c-format
+msgid "Mouse = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
+msgstr "Mouse = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
 
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:700
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:700
@@ -769,30 +781,30 @@ msgid "Please enter one ore more floating point values."
 msgstr "Vă rugăm să introduceți una sau mai multe valori în virgulă mobilă."
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:155
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1504
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1544
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1560
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1628
 msgid "&Clear"
 msgstr "&Clear"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:166
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:200
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:201
 msgid "&OK"
 msgstr "&OK"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:170
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:204
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:205
 msgid "&Cancel"
 msgstr "&Anuleaza"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:270
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2754
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2803
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2858
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2910
 msgid "Conversion to a floating point value of this content :"
 msgstr "Conversia la o valoare în virgulă mobilă a acestui conținut :"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:271
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2755
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2805
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2859
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2912
 msgid "failed."
 msgstr "a eșuat."
 
@@ -800,11 +812,22 @@ msgstr "a eșuat."
 msgid "Entry of custom data for the IIR filter designer."
 msgstr "Introducerea de date personalizate pentru proiectantul filtrului IIR."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:55
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:56
 msgid "Filter calculation start."
 msgstr "Începe calculul filtrului."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:156
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:68
+msgid "The number of input coefficents must be equal to or larger than one."
+msgstr ""
+"Numărul de coeficienți de intrare trebuie să fie egal sau mai mare decât unu."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:102
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:196
+#, c-format
+msgid "Impulse response[%d] : %s"
+msgstr "Răspunsul la impulsuri[%d] : %s"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:166
 msgid ""
 "Your did not enter any zeros and poles.\n"
 "You must provide at least one pole and one zero."
@@ -812,148 +835,155 @@ msgstr ""
 "Nu ați introdus niciun zero și niciun pol.\n"
 "Trebuie să furnizați cel puțin un pol și un zero."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:184
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:239
 #, c-format
-msgid "Impulse response[%d] : %.2f"
-msgstr "Răspunsul la impulsuri[%d] : %.2f"
+msgid "Impulse response scale factor : %s db"
+msgstr "Factorul de scalare a răspunsului la impulsuri : %s db"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:224
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:405
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:502
 #, c-format
-msgid "Impulse response scale factor : %.2f db"
-msgstr "Factorul de scalare a răspunsului la impulsuri : %.2f db"
+msgid "Frequency domain[%s rad] :"
+msgstr "Domeniul de frecvență[%s rad] :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:387
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:481
-#, c-format
-msgid "Frequency domain[%.2f rad] :"
-msgstr "Domeniul de frecvență[%.2f rad] :"
-
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:519
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:541
 msgid "The entered value"
 msgstr "Valoarea introdusă"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:519
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:541
 msgid "cannot be used for scaling the frequency plot"
 msgstr "nu poate fi utilizat pentru scalarea graficului de frecvență"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:565
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:587
 msgid "The number of points must be larger than zero."
 msgstr "Numărul de puncte trebuie să fie mai mare decât zero."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:767
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:614
+msgid ""
+"Your coefficients are too large for proper scaling in the frequency window. "
+"Please scale down the coefficients."
+msgstr ""
+"Coeficienții dvs. sunt prea mari pentru o scalare adecvată în fereastra de "
+"frecvență. Vă rugăm să micșorați coeficienții."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:797
 msgid "Z Plane"
 msgstr "Planul Z"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1232
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1278
 msgid "Load a filter configuration\tCtrl+O"
 msgstr "Încărcați o configurație de filtru\tCtrl+O"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1233
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1279
 msgid "Save the filter configuration\tCtrl+S"
 msgstr "Salvați configurația filtrului Ctrl+S"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1235
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1281
 msgid "Reset to demo values"
 msgstr "Resetare la valorile demo"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1240
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1286
 msgid "Export the time domain to an image"
 msgstr "Exportați domeniul temporal într-o imagine"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1241
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1287
 msgid "Export the pole-zero diagram to an image"
 msgstr "Exportați diagrama pol-zero într-o imagine"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1242
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1288
 msgid "Export the frequency domain to an image"
 msgstr "Exportați domeniul de frecvență într-o imagine"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1243
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1289
 msgid "Export the test signal output to an image"
 msgstr "Exportați semnalul de ieșire al testului într-o imagine"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1245
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1291
 msgid "Export the time domain output in CSV format"
 msgstr "Exportați ieșirea în domeniul timpului în format CSV"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1279
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1325
 msgid "Horizontal plotting limit"
 msgstr "Limita de trasare orizontală"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1283
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1359
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1558
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1708
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1329
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1405
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1642
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1792
 msgid "Auto"
 msgstr "Auto"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1292
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1338
 msgid "sampling moments"
 msgstr "momente de eșantionare"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1296
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1342
 msgid "Configuration name"
 msgstr "Numele configurației"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1300
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1346
 msgid "Generic digital fiter"
 msgstr "Fiter digital generic"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1328
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1374
 msgid "Frequency image elements"
 msgstr "Elemente de imagine de frecvență"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1335
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1381
 msgid "analogue frequencies"
 msgstr "frecvențe analogice"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1340
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1386
 msgid "magnitude"
 msgstr "magnitudine"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1345
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1391
 msgid "Show full sampled range"
 msgstr "Afișați întreaga gamă eșantionată"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1350
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1396
 msgid "phase angle"
 msgstr "unghiul de fază"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1355
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1401
 msgid "Vertical plotting limits"
 msgstr "Limite de trasare verticală"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1371
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1417
 msgid "to"
 msgstr "catre"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1379
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1569
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1719
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1425
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1653
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1803
 msgid "dB"
 msgstr "dB"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1386
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1432
 msgid "Pole-Zero diagram"
 msgstr "Diagrama Polul Zero"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1395
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1441
 msgid "Test signal output"
 msgstr "Ieșirea semnalului de testare"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1425
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1471
 msgid "Filter amplification (dB) :"
 msgstr "Amplificarea filtrului (dB) :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1447
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1493
+msgid "Clear filter"
+msgstr "Curăță filtru"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1503
 msgid "Dump GUI calculations"
 msgstr "Calculele de dumping GUI"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1452
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1508
 msgid "Show signal value labels"
 msgstr "Afișați etichetele valorilor semnalului"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1459
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1515
 msgid ""
 "Find out what an exciting study Embedded Systems Engineering is! \n"
 "Press this button to visit the ESE web site."
@@ -961,7 +991,7 @@ msgstr ""
 "Aflați ce studiu interesant este Ingineria sistemelor integrate!\n"
 "Apăsați acest buton pentru a vizita site-ul web ESE."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1478
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1534
 msgid ""
 "b-coefficients for \n"
 "x[n] and earlier"
@@ -969,7 +999,16 @@ msgstr ""
 "b-coeficienți pentru\n"
 "x[n] și mai devreme"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1486
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1536
+msgid ""
+"Assume that the b coefficients are listed on the right side of the equation "
+"sign in the recursive formula, with y[n] on the left side of the equation "
+"sign."
+msgstr ""
+"Să presupunem că coeficienții b sunt enumerați în partea dreaptă a semnului "
+"ecuației în formula recursivă, cu y[n] în partea stângă a semnului ecuației."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1542
 msgid ""
 "a-coefficients for \n"
 "y[n-1]  and earlier"
@@ -977,81 +1016,105 @@ msgstr ""
 "coeficienții a- pentru\n"
 "y[n-1] și mai devreme"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1500
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1540
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1544
+msgid ""
+"Assume that the a coefficients are listed on the right side of the equation "
+"sign in the recursive formula, with y[n] on the left side of the equation "
+"sign."
+msgstr ""
+"Să presupunem că coeficienții a sunt enumerați în partea dreaptă a semnului "
+"ecuației în formula recursivă, cu y[n] în partea stângă a semnului ecuației."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1556
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1624
 msgid "Show information about these entry fields."
 msgstr "Afișează informații despre aceste câmpuri de intrare."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1512
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2331
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2334
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1570
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1585
+msgid "Scale factor"
+msgstr "Factor de scară"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1572
+msgid "All input coefficients are multiplied by this scaling factor."
+msgstr ""
+"Toți coeficienții de intrare sunt înmulțițiți cu acest factor de scalare."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1587
+msgid "All output coefficients are multiplied by this scaling factor."
+msgstr ""
+"Toți coeficienții de ieșire sunt înmulțițiți cu acest factor de scalare."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1596
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2425
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2428
 msgid "Coefficients"
 msgstr "Coeficienți"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1522
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1606
 msgid "locations of the zeros"
 msgstr "locațiile zerourilor"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1528
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1612
 msgid "locations of the poles"
 msgstr "amplasarea polilor"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1554
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1704
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1638
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1788
 msgid "Gain compensation"
 msgstr "Compensarea câștigului"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1561
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1711
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1645
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1795
 msgid "Scale the peak output to 0 dB"
 msgstr "Scalați ieșirea de vârf la 0 dB"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1565
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1715
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1649
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1799
 msgid "0"
 msgstr "0"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1573
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1657
 msgid "Purpose based pole-zero insertion"
 msgstr "Inserție pol-zero bazată pe scop"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1578
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1662
 msgid "Zero at Origin"
 msgstr "Zero la origine"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1580
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1664
 msgid "Insert a zero in the origin."
 msgstr "Introduceți un zero în origine."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1584
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1668
 msgid "Pole at Origin"
 msgstr "Polul la origine"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1586
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1670
 msgid "Insert a pole in the origin."
 msgstr "Introduceți un pol în origine."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1590
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1674
 msgid "Comb expression"
 msgstr "Expresia pieptene"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1592
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1676
 msgid "Insert a comb expression of either zeros or poles."
 msgstr "Introduceți o expresie de pieptene fie de zerouri, fie de poli."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1600
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1684
 msgid "frequency (Hz)"
 msgstr "frecvența (Hz)"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1613
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1697
 msgid "-3 dB band (Hz)"
 msgstr "-banda de 3 dB (Hz)"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1623
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1707
 msgid "Insert as bandpass"
 msgstr "Introduceți ca bandpass"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1625
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1709
 msgid ""
 "Insert a pair of conjugated poles that invokes the bandpass behaviour at the "
 "indicated frequency."
@@ -1059,11 +1122,11 @@ msgstr ""
 "Introduceți o pereche de poli conjugați care invocă comportamentul de "
 "trecere de bandă la frecvența indicată."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1629
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1713
 msgid "Insert as bandstop"
 msgstr "Introduceți ca opritor de bandă"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1631
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1715
 msgid ""
 "Insert pairs of conjugated zeros and poles that invoke the bandstop "
 "behaviour at the indicated frequency."
@@ -1071,142 +1134,138 @@ msgstr ""
 "Introduceți perechi de zerouri și poli conjugați care invocă comportamentul "
 "de bandă de oprire la frecvența indicată."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1638
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1722
 msgid "Zeros and Poles"
 msgstr "Zerouri și poli"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1648
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1732
 msgid "Analog filter type"
 msgstr "Tip de filtru analogic"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1653
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1737
 msgid "Butterworth"
 msgstr "Butterworth"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1654
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1738
 msgid "Chebyshev"
 msgstr "Chebyshev"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1664
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1748
 msgid "2nd order"
 msgstr "a 2-a comandă"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1665
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1749
 msgid "4th order"
 msgstr "A patra comandă"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1666
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1750
 msgid "6th order"
 msgstr "Al 6-lea ordin"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1667
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1751
 msgid "8th order"
 msgstr "a 8-a comandă"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1668
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1752
 msgid "10th order"
 msgstr "A 10-a comandă"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1669
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1753
 msgid "12th order"
 msgstr "A 12-a comandă"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1670
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1754
 msgid "14th order"
 msgstr "A 14-a comandă"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1671
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1755
 msgid "16th order"
 msgstr "A 16-a comandă"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1673
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1757
 msgid "1st order"
 msgstr "Prima comandă"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1729
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1813
 msgid "Polar magnitude safety margin"
 msgstr "Marja de siguranță a magnitudinii polare"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1739
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1823
 msgid "Chebyshev ripple control"
 msgstr "Control al ondulației Chebyshev"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1747
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1831
 msgid "%"
 msgstr "%"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1751
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1835
 msgid "Analog filter prototype"
 msgstr "Prototip de filtru analogic"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1768
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1852
 msgid "Custom"
 msgstr "Personalizat"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1784
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1868
 msgid "Absolute"
 msgstr "Absolut"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1785
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1869
 msgid "Shannon"
 msgstr "Shannon"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1786
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1870
 msgid "Type"
 msgstr "Tip"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1806
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1890
 msgid "Test output options"
 msgstr "Opțiuni de ieșire a testelor"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1813
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1897
 msgid "Draw the test signal also."
 msgstr "Desenați și semnalul de test."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1817
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1901
 msgid "Draw interpolation"
 msgstr "Desenați interpolarea"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1820
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1904
 msgid "Draw a spline that interpolates the filtered data."
 msgstr "Desenați o spline care interpolează datele filtrate."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1824
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1908
 msgid "Post process auto scaling"
 msgstr "Scalare automată post proces"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1827
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1911
 msgid "Scale automatically to show all presented data in the graph window."
 msgstr ""
 "Scalați automat pentru a afișa toate datele prezentate în fereastra grafică."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1834
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1918
 msgid "Input starts at:"
 msgstr "Intrarea începe la:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1842
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1926
 msgid "Number of points"
 msgstr "Număr de puncte"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1871
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1955
 msgid "Opdracht 6 DSB Practicum Embedded Systems Engineering bij de HAN."
 msgstr "Opdracht 6 DSB Practicum Embedded Systems Engineering bij de HAN."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1872
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1956
 msgid "Design and implement an IIR Filter design tool."
 msgstr ""
 "Proiectarea și implementarea unui instrument de proiectare a unui filtru IIR."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1873
-msgid "ir drs E.J Boks (docent HAN ESE) : ewout.boks@han.nl"
-msgstr "ir drs E.J Boks (docent HAN ESE) : ewout.boks@han.nl"
-
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1924
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2244
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2008
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2335
 msgid "Default"
 msgstr "Implicit"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2099
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2189
 msgid ""
 "Error creating the base directory where the Filter coefficients will be "
 "stored."
@@ -1214,30 +1273,30 @@ msgstr ""
 "Eroare la crearea directorului de bază în care vor fi stocați coeficienții "
 "de filtrare."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2108
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2198
 msgid "Error opening the stream to read the Filter coefficients."
 msgstr ""
 "Eroare la deschiderea fluxului pentru citirea coeficienților de filtrare."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2210
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2301
 msgid "Please select an existing configuration"
 msgstr "Vă rugăm să selectați o configurație existentă"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2210
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2374
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2301
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2468
 msgid "Configuration :"
 msgstr "Configurație :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2311
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2405
 msgid "Error opening the stream to write the Filter coefficients."
 msgstr ""
 "Eroare la deschiderea fluxului pentru scrierea coeficienților de filtrare."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2318
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2412
 msgid "This file was generated automatically by application"
 msgstr "Acest fișier a fost generat automat de aplicația"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2320
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2414
 msgid ""
 "You are free to modify the data entries in this file as long as you adhere "
 "to the format used in this file."
@@ -1245,90 +1304,98 @@ msgstr ""
 "Sunteți liber să modificați datele introduse în acest fișier, atâta timp cât "
 "respectați formatul utilizat în acest fișier."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2323
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2417
 msgid "IIR Filter configuration for user"
 msgstr "Configurația filtrului IIR pentru utilizator"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2324
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2418
 msgid "on"
 msgstr "pe"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2342
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2436
 msgid "Zeros"
 msgstr "Zerouri"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2345
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2439
 msgid "Poles"
 msgstr "Stâlpi"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2351
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2445
 msgid "Error closing the file stream that wrote the Filter coefficients."
 msgstr ""
 "Eroare de închidere a fluxului de fișiere care a scris coeficienții de "
 "filtrare."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2374
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2468
 msgid "Please select an new configuration name."
 msgstr "Vă rugăm să selectați un nou nume de configurare."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2383
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2477
 msgid "This filter configuration name already exists."
 msgstr "Acest nume de configurare a filtrului există deja."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2418
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2512
 msgid "Do you want to reset all configuration fields to demonstration values?"
 msgstr ""
 "Doriți să resetați toate câmpurile de configurare la valorile demonstrative?"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2419
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2513
 msgid "Demonstration values"
 msgstr "Valori demonstrative"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2456
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2550
 msgid "IIR Filter impulse response output"
 msgstr "IIR Răspunsul la impulsul de ieșire al filtrului IIR"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2477
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2571
 msgid "IIR Filter pole-zero diagram"
 msgstr "Diagrama pol-zero a filtrului IIR"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2497
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2591
 msgid "This feature has not been implemented yet."
 msgstr "Această caracteristică nu a fost încă implementată."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2517
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2611
 msgid "IIR Filter frequency domain output"
 msgstr "IIR Filtru IIR ieșire în domeniul de frecvență"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2537
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2631
 msgid "IIR Filter time domain test output"
 msgstr "IIR Filtru IIR ieșire de testare în domeniul timpului"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2639
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2733
 msgid "The IIR Filter system sampling frequency"
 msgstr "Frecvența de eșantionare a sistemului de filtrare IIR"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2763
-#, c-format
-msgid "Coefficient b_%d : %.2f was added."
-msgstr "S-a adăugat coeficientul b_%d : %.2f."
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2844
+msgid "The multiplication factor"
+msgstr "Factorul de multiplicare"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2765
-#, c-format
-msgid "Coefficient a_%d : %.2f was added."
-msgstr "S-a adăugat coeficientul a_%d : %.2f."
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2844
+msgid "is not a useable number."
+msgstr "nu este un număr utilizabil."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2821
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2870
+#, c-format
+msgid "Coefficient b_%d : %s was added."
+msgstr "S-a adăugat coeficientul b_%d : %s."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2872
+#, c-format
+msgid "Coefficient a_%d : %s was added."
+msgstr "S-a adăugat coeficientul a_%d : %s."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2928
 #, c-format
 msgid "Zero [%d] was added :"
 msgstr "Zero [%d] a fost adăugat :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2823
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2930
 #, c-format
 msgid "Pole [%d] was added :"
 msgstr "A fost adăugat polul [%d] :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2837
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2944
 msgid ""
 "Your design has fewer zero points than pole points.\n"
 "In order to balance your system, an additional number of zero points in the "
@@ -1338,7 +1405,7 @@ msgstr ""
 "Pentru a vă echilibra sistemul, a fost adăugat un număr suplimentar de "
 "puncte zero în originea planului z."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2850
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2957
 msgid ""
 "Your design has fewer pole points than zero points.\n"
 "In order to balance your system, an additional number of pole points in the "
@@ -1348,31 +1415,31 @@ msgstr ""
 "Pentru a vă echilibra sistemul, a fost adăugat un număr suplimentar de "
 "puncte polare în originea planului z."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2965
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2967
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3072
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3074
 #, c-format
 msgid "Butterworth Pole [%d] was added :"
 msgstr "Butterworth Pole [%d] a fost adăugat :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2969
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2971
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3076
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3078
 #, c-format
 msgid "Butterworth Zero [%d] was added :"
 msgstr "Butterworth Zero [%d] a fost adăugat :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3045
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3047
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3152
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3154
 #, c-format
 msgid "Chebyshev Pole [%d] was added :"
 msgstr "A fost adăugat polul Chebyshev [%d]:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3049
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3051
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3156
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3158
 #, c-format
 msgid "Chebyshev Zero [%d] was added :"
 msgstr "Chebyshev Zero [%d] a fost adăugat :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3451
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3558
 msgid ""
 "An LTI difference equation characterised by bk (for inputs) and ak (for "
 "outputs) can be entered here."
@@ -1380,7 +1447,7 @@ msgstr ""
 "Se poate introduce aici o ecuație diferențială LTI caracterizată prin bk "
 "(pentru intrări) și ak (pentru ieșiri)."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3453
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3560
 msgid ""
 "Please note that a pure convolution can be done by entering the h[n] "
 "coefficients as b-coefficients, with the a-coefficients field remaining "
@@ -1390,12 +1457,12 @@ msgstr ""
 "prin introducerea coeficienților h[n] ca și coeficienți b,\n"
 "câmpul coeficienților a- rămânând gol."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3456
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3563
 msgid "Information on entering LTI difference equation coefficients."
 msgstr ""
 "Informații privind introducerea coeficienților ecuației diferențiale LTI."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3466
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3573
 msgid ""
 "Enter as a, a+bj or r:[p/d]phi .\n"
 "Please insert only a single complex or polar entry.\n"
@@ -1409,77 +1476,72 @@ msgstr ""
 "inserare suplimentară a unei intrări de pereche complexă conjugată.\n"
 "[p/d] este opțional și face din phi un unghi de pi sau grade."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3471
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3578
 msgid "Information on entering poles and zeros."
 msgstr "Informații privind introducerea polilor și a zerourilor."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3997
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4104
 #, c-format
-msgid "Coefficient[%d] = %.3f"
-msgstr "Coeficient[%d] = %.3f"
+msgid "Coefficient[%d] = %s"
+msgstr "Coeficient[%d] = %s"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4004
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4111
 msgid "Out of bounds."
 msgstr "În afara limitelor."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4047
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4056
-msgid "Mouse"
-msgstr "Șoarece"
-
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4120
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4243
 msgid "signal data file (*.txt)|*.txt"
 msgstr "fișier de date de semnal (*.txt)|*.txt"
 
-#: opdracht6/STUDENT/designer/filterDesigner.h:51
+#: opdracht6/STUDENT/designer/filterDesigner.h:52
 msgid "Digital Signal Processing demonstrator"
 msgstr "Demonstrator de procesare digitală a semnalelor"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:141
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:142
 msgid "Placement of a number of zeros or poles using a comb expression"
 msgstr ""
 "Plasarea unui număr de zerouri sau de poli folosind o expresie în formă de "
 "pieptene"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:148
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:149
 msgid "An example of placing a comb zero expression on the unit circle."
 msgstr ""
 "Un exemplu de plasare a unei expresii de zero pieptene pe cercul unitar."
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:156
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:157
 msgid "Zero"
 msgstr "Zero"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:157
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:158
 msgid "Pole"
 msgstr "Polul"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:158
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:159
 msgid "Placement"
 msgstr "Destinație de plasare"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:163
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:164
 msgid "Radius"
 msgstr "Rază"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:167
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:168
 msgid "1.0"
 msgstr "1.0"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:171
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:172
 msgid "Number of elements in arc (Nyquist range)"
 msgstr "Numărul de elemente în arc (intervalul Nyquist)"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:178
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:179
 #, c-format
 msgid "Arc length as % of half circle"
 msgstr "Lungimea arcului ca % of semicerc"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:190
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:191
 msgid "Compensate with counterpart elements in the origin"
 msgstr "Compensați cu elemente omologe în origine"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:193
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:194
 msgid ""
 "When generating a number of poles or zeros in a circle, generate an equal "
 "number of zeros or poles in the origin to keep the system causal with "
@@ -1489,7 +1551,7 @@ msgstr ""
 "un număr egal de zerouri sau de poli în origine pentru a menține sistemul "
 "cauzal cu întârzieri minime."
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:308
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:309
 msgid "The entered radius number cannot be used."
 msgstr "Numărul de rază introdus nu poate fi utilizat."
 
@@ -1497,10 +1559,27 @@ msgstr "Numărul de rază introdus nu poate fi utilizat."
 msgid "Comb Expression"
 msgstr "Expresie pieptene"
 
-#: opdracht6/STUDENT/filter/iirfilter.cpp:101
-#: opdracht6/STUDENT/filter/iirfilter.cpp:111
+#: opdracht6/STUDENT/filter/iirfilter.cpp:99
+#: opdracht6/STUDENT/filter/iirfilter.cpp:109
 msgid "Your pole has a magnitude > 1 !"
 msgstr "Polul tău are o magnitudine > 1 !"
+
+#~ msgid ""
+#~ "The application was initialized to use the system default language, which "
+#~ "has this name:"
+#~ msgstr ""
+#~ "Aplicația a fost inițializată pentru a utiliza limba implicită a "
+#~ "sistemului, care are acest nume:"
+
+#, c-format
+#~ msgid "Euro %.2lf"
+#~ msgstr "Euro %.2lf"
+
+#~ msgid "ir drs E.J Boks (docent HAN ESE) : ewout.boks@han.nl"
+#~ msgstr "ir drs E.J Boks (docent HAN ESE) : ewout.boks@han.nl"
+
+#~ msgid "Mouse"
+#~ msgstr "Șoarece"
 
 #~ msgid "Application"
 #~ msgstr "Aplicație"

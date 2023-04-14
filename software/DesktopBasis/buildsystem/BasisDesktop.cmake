@@ -2,7 +2,7 @@
 # CMake basis script voor CMake software bouwen
 # Copyright 2004-2022 Hogeschool van Arnhem en Nijmegen
 # Opleiding Embedded Systems Engineering
-# $Id: BasisDesktop.cmake 4480 2022-06-01 08:52:28Z ewout $
+# $Id: BasisDesktop.cmake 4680 2023-03-08 14:00:01Z ewout $
 #************************************************************************/
 
 string(TIMESTAMP DitJaar "%Y")
@@ -80,29 +80,64 @@ if($ENV{CLION_IDE})
 endif($ENV{CLION_IDE})
 
 set(CLionIdeGebruikt $ENV{CLION_IDE})
+if(NOT CMAKE_CONFIGURATION_TYPES)
+    get_property(HAVE_MULTI_CONFIG_GENERATOR GLOBAL PROPERTY GENERATOR_IS_MULTI_CONFIG)
+    # Set default configuration types for multi-config generators
+    if(HAVE_MULTI_CONFIG_GENERATOR)
+        set(CMAKE_CONFIGURATION_TYPES "Debug;Release;SizeRelease;DebugRelease")
+    endif()
+endif()
 
-# Bouw onder windows met CLion
-#message("BUILD_TYPE=${CMAKE_BUILD_TYPE}")
+# https://blog.kitware.com/cmake-and-the-default-build-type/
+if(NOT CMAKE_BUILD_TYPE)
+  set(default_build_type "Debug")
+  message(WARNING "Setting build type to '${default_build_type}' as none was specified.")
+  set(CMAKE_BUILD_TYPE "${default_build_type}" CACHE STRING "Choose the type of build." FORCE)
+  if(NOT CMAKE_CONFIGURATION_TYPES)
+    # Set the possible values of build type for cmake-gui
+    set_property(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS "Debug" "Release" "SizeRelease" "DebugRelease")
+  endif(NOT CMAKE_CONFIGURATION_TYPES)	
+endif()
+
+# Standaard staat de dir op Executable, maar dit kan worden aangepast.
+if(NOT ExecutableDir)
+	set(ExecutableDir Executable)
+else(NOT ExecutableDir)
+	message(STATUS "Custom executable dir gezet : ${ExecutableDir}")
+endif(NOT ExecutableDir)
+
 if(NOT WIN32)
-	set(UitvoerDir ${PROJECT_SOURCE_DIR}/Executable/${CMAKE_BUILD_TYPE})
-	set(InstallatieDir ${UitvoerDir})
+  set(UitvoerDir ${PROJECT_SOURCE_DIR}/${ExecutableDir}/${CMAKE_BUILD_TYPE})
+  set(InstallatieDir ${UitvoerDir})
+  
+  set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${UitvoerDir} CACHE STRING "" FORCE)
 else(NOT WIN32)
-
-	# bij make install wordt alles in de Executable dir gezet
-	if(BouwDesktopApp)
-		set(UitvoerDir ${PROJECT_SOURCE_DIR}/Executable/${PROJECT_ARCH})
-	else(BouwDesktopApp)
-		set(UitvoerDir ${PROJECT_SOURCE_DIR}/Executable)
-	endif(BouwDesktopApp)
-
-	set(InstallatieDir ${UitvoerDir}/${CMAKE_BUILD_TYPE})
+  # bij make install wordt alles in de Executable dir gezet
+  if(BouwDesktopApp)
+    
+    set(UitvoerDir ${PROJECT_SOURCE_DIR}/${ExecutableDir}/${PROJECT_ARCH})
+    set(InstallatieDir ${UitvoerDir}/${CMAKE_BUILD_TYPE}/)
+    
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${UitvoerDir} CACHE STRING "" FORCE)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${UitvoerDir}/Debug/bin CACHE STRING "" FORCE)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${UitvoerDir}/Release/bin CACHE STRING "" FORCE)		
+  else(BouwDesktopApp)
+    set(UitvoerDir ${PROJECT_SOURCE_DIR}/${ExecutableDir}/${CMAKE_BUILD_TYPE})
+    set(InstallatieDir ${UitvoerDir})
+  endif(BouwDesktopApp)
 endif(NOT WIN32)
 
-set(CMAKE_INSTALL_PREFIX ${InstallatieDir} CACHE STRING "" FORCE)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${UitvoerDir} CACHE STRING "" FORCE)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${UitvoerDir} CACHE STRING "" FORCE)
+mark_as_advanced(UitvoerDir InstallatieDir)
 
-# Voor Debug message(STATUS "Installatie dir is : ${InstallatieDir}")
+set(CMAKE_INSTALL_PREFIX ${InstallatieDir} CACHE STRING "" FORCE)
+file(TO_CMAKE_PATH "${CMAKE_INSTALL_PREFIX}" CMAKE_INSTALL_PREFIX)
+#message(STATUS "[Debug] Install = ${CMAKE_INSTALL_PREFIX}")
+
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${UitvoerDir} CACHE STRING "" FORCE)
+
+message(STATUS "Uitvoer dir is : ${UitvoerDir}")
+message(STATUS "Installatie dir is : ${InstallatieDir}")
+######
 
 if (UNIX)
 	message(STATUS "Unix wordt gebouwd.")
@@ -136,7 +171,7 @@ if (UNIX)
 	endif()
 
 	find_package(cppcheck QUIET)
-	find_package(Clang) # REQUIRED)
+	find_package(Clang REQUIRED)
 
 	set(ccompiler clang)
 	set(cppcompiler clang++)

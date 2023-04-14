@@ -2,25 +2,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DSB\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-24 18:16+0200\n"
-"PO-Revision-Date: 2022-06-24 18:16+0200\n"
+"POT-Creation-Date: 2023-03-08 15:33+0100\n"
+"PO-Revision-Date: 2023-03-08 15:33+0100\n"
 "Last-Translator: \n"
 "Language-Team: ewout@boks.com\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: STM32Basis\n"
 "X-Poedit-SearchPathExcluded-1: oud\n"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:46
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:50
 msgid ""
 "Please pay attention. The application is already running. Is this your "
 "intention?"
@@ -28,27 +28,31 @@ msgstr ""
 "Пожалуйста, обратите внимание. Приложение уже запущено. Таковы ваши "
 "намерения?"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:125
-msgid ""
-"The application was initialized to use the system default language, which "
-"has this name:"
-msgstr ""
-"Приложение было инициализировано для использования системного языка по "
-"умолчанию, который имеет такое название:"
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:324
+msgid "The internationalization locale for"
+msgstr "Локаль интернационализации для"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:330
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:326
+msgid "was initialized successfully."
+msgstr "была успешно инициализирована."
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:365
+msgid "Could not initialise the Locale for"
+msgstr "Не удалось инициализировать локаль для"
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:499
 msgid "Unknown"
 msgstr "Неизвестно"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:363
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:538
 msgid "The application must now be restarted to activate the new language."
 msgstr "Теперь приложение должно быть перезапущено для активации нового языка."
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:364
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:539
 msgid "Restart the application."
 msgstr "Перезапустите приложение."
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:383
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:558
 msgid "Version : "
 msgstr "Версия: "
 
@@ -56,256 +60,255 @@ msgstr "Версия: "
 msgid "Save the image as a PNG file."
 msgstr "Сохраните изображение в виде файла PNG."
 
-#: opdracht2/STUDENT/gemwaarde.cpp:120
-#, c-format
-msgid "Euro %.2lf"
-msgstr "Евро %.2lf"
+#: opdracht2/STUDENT/gemwaarde.cpp:151 opdracht3/STUDENT/signaal.cpp:328
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:841
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1156
+msgid "Developer"
+msgstr "Разработчик"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:152
+#: opdracht2/STUDENT/gemwaarde.cpp:153 opdracht3/STUDENT/signaal.cpp:330
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:843
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1158
+msgid "Demo version"
+msgstr "Демо-версия"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:163
 msgid "Open\tCtrl+O"
 msgstr "Открыть\tCtrl+O"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:154
+#: opdracht2/STUDENT/gemwaarde.cpp:165
 msgid "Draw data\tCtrl+T"
 msgstr "Чертежные данные\tCtrl+T"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:156 opdracht3/STUDENT/signaal.cpp:324
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1029
+#: opdracht2/STUDENT/gemwaarde.cpp:167 opdracht3/STUDENT/signaal.cpp:352
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1044
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:722
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:722
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1236
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1282
 msgid "Quit\tCtrl+Q"
 msgstr "Выход из\tCtrl+Q"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:158
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1767
+#: opdracht2/STUDENT/gemwaarde.cpp:169
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1851
 msgid "File"
 msgstr "Файл"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:162
+#: opdracht2/STUDENT/gemwaarde.cpp:173
 msgid "Standard Moving Average"
 msgstr "Стандартное скользящее среднее"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:163
+#: opdracht2/STUDENT/gemwaarde.cpp:174
 msgid "Exponential Moving Average"
 msgstr "Среднее экспоненциальное перемещение"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:167
+#: opdracht2/STUDENT/gemwaarde.cpp:178
 msgid "Draw data"
 msgstr "Чертежные данные"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:234
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4117
+#: opdracht2/STUDENT/gemwaarde.cpp:245
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4240
 msgid "Open the data file. Please supply a list of one value per line."
 msgstr ""
 "Откройте файл данных. Пожалуйста, предоставьте список по одному значению на "
 "строку."
 
-#: opdracht2/STUDENT/gemwaarde.cpp:249
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4131
+#: opdracht2/STUDENT/gemwaarde.cpp:260
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4254
 msgid "Could not open :"
 msgstr "Не может быть открыт:"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:274
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4156
+#: opdracht2/STUDENT/gemwaarde.cpp:285
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4279
 msgid "Error reading the input value :"
 msgstr "Ошибка при считывании входного значения :"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:313
+#: opdracht2/STUDENT/gemwaarde.cpp:324
 msgid "Assignment 2 : the running average"
 msgstr "Назначение 2: текущее среднее"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:331
+#: opdracht2/STUDENT/gemwaarde.cpp:342
 msgid "Averaging control parameter"
 msgstr "Средний параметр управления"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:354 opdracht3/STUDENT/signaal.cpp:686
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2107
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:5105
-msgid "Developer"
-msgstr "Разработчик"
+#: opdracht2/STUDENT/gemwaarde.cpp:378
+msgid "Running average of the US$ <--> € exchange rate."
+msgstr "Текущее среднее значение обменного курса доллара США <--> €."
 
-#: opdracht2/STUDENT/gemwaarde.cpp:356 opdracht3/STUDENT/signaal.cpp:688
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2109
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:5107
-msgid "Demo version"
-msgstr "Демо-версия"
-
-#: opdracht3/STUDENT/signaal.cpp:49
+#: opdracht3/STUDENT/signaal.cpp:50
 msgid "FFTW start of calcation"
 msgstr "БПФВ начало кальцинации"
 
-#: opdracht3/STUDENT/signaal.cpp:52
+#: opdracht3/STUDENT/signaal.cpp:53
 msgid "The signal could not be sampled, because"
 msgstr "Сигнал не мог быть отобран, потому что"
 
-#: opdracht3/STUDENT/signaal.cpp:53
+#: opdracht3/STUDENT/signaal.cpp:54
 #, c-format
 msgid "the number of samples per period=%d"
 msgstr "количество отсчетов за период=%d"
 
-#: opdracht3/STUDENT/signaal.cpp:104
+#: opdracht3/STUDENT/signaal.cpp:114
 msgid "Not allowed."
 msgstr "Не разрешено."
 
-#: opdracht3/STUDENT/signaal.cpp:108
+#: opdracht3/STUDENT/signaal.cpp:118
 #, c-format
 msgid "(SignaalVenster::tekenReeksHandler) Wrong signal choice (%ld)."
 msgstr "(SignaalVenster::tekenReeksHandler) Неправильный выбор сигнала (%ld)."
 
-#: opdracht3/STUDENT/signaal.cpp:135
+#: opdracht3/STUDENT/signaal.cpp:145
 msgid "No valid data present in the file!"
 msgstr "В файле отсутствуют достоверные данные!"
 
-#: opdracht3/STUDENT/signaal.cpp:146
+#: opdracht3/STUDENT/signaal.cpp:156
 #, c-format
 msgid "Number of values=%d"
 msgstr "Количество значений=%d"
 
-#: opdracht3/STUDENT/signaal.cpp:181
+#: opdracht3/STUDENT/signaal.cpp:191
 msgid "Initialisation of the FFT routines resulted in an error"
 msgstr "Инициализация БПФ-процедур привела к ошибке"
 
-#: opdracht3/STUDENT/signaal.cpp:182
+#: opdracht3/STUDENT/signaal.cpp:192
 msgid "FFTW Init error"
 msgstr "Ошибка инициализации FFTW"
 
-#: opdracht3/STUDENT/signaal.cpp:282
+#: opdracht3/STUDENT/signaal.cpp:302
 msgid "Frequency image was constructed."
 msgstr "Было построено частотное изображение."
 
-#: opdracht3/STUDENT/signaal.cpp:316
+#: opdracht3/STUDENT/signaal.cpp:344
 msgid "&About"
 msgstr "&О программе"
 
-#: opdracht3/STUDENT/signaal.cpp:318
+#: opdracht3/STUDENT/signaal.cpp:346
 msgid "&Execute FFT\tCtrl+T"
 msgstr "&Execute FFT\tCtrl+T"
 
-#: opdracht3/STUDENT/signaal.cpp:320
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1033
+#: opdracht3/STUDENT/signaal.cpp:348
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1048
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:726
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:726
 msgid "Export the time domain image\tCtrl+R"
 msgstr "Экспорт изображения временной области\tCtrl+R"
 
-#: opdracht3/STUDENT/signaal.cpp:322
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1034
+#: opdracht3/STUDENT/signaal.cpp:350
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1049
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:727
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:727
 msgid "Export the frequency domain image\tCtrl+E"
 msgstr "Экспорт изображения частотного домена\tCtrl+E"
 
-#: opdracht3/STUDENT/signaal.cpp:326
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1030
+#: opdracht3/STUDENT/signaal.cpp:354
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1045
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:723
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:723
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1237
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1283
 msgid "Bestand"
 msgstr "Бестанд"
 
-#: opdracht3/STUDENT/signaal.cpp:332
+#: opdracht3/STUDENT/signaal.cpp:360
 msgid "Signal frequency"
 msgstr "Частота сигнала"
 
-#: opdracht3/STUDENT/signaal.cpp:335
+#: opdracht3/STUDENT/signaal.cpp:363
 msgid "Sampling frequency"
 msgstr "Частота выборки"
 
-#: opdracht3/STUDENT/signaal.cpp:338
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1191
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1196
+#: opdracht3/STUDENT/signaal.cpp:366
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1206
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1211
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:759
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:759
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1763
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1770
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1847
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1854
 msgid "Cosine"
 msgstr "Cosine"
 
-#: opdracht3/STUDENT/signaal.cpp:339
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1136
+#: opdracht3/STUDENT/signaal.cpp:367
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1151
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:748
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:748
 msgid "Triangle"
 msgstr "Треугольник"
 
-#: opdracht3/STUDENT/signaal.cpp:340
+#: opdracht3/STUDENT/signaal.cpp:368
 msgid "Square"
 msgstr "Квадрат"
 
-#: opdracht3/STUDENT/signaal.cpp:341
+#: opdracht3/STUDENT/signaal.cpp:369
 msgid "Data from file"
 msgstr "Данные из файла"
 
-#: opdracht3/STUDENT/signaal.cpp:344
+#: opdracht3/STUDENT/signaal.cpp:372
 msgid "Number of periods:"
 msgstr "Количество периодов:"
 
-#: opdracht3/STUDENT/signaal.cpp:346
+#: opdracht3/STUDENT/signaal.cpp:374
 msgid "Show amplitude"
 msgstr "Показать амплитуду"
 
-#: opdracht3/STUDENT/signaal.cpp:347
+#: opdracht3/STUDENT/signaal.cpp:375
 msgid "Show phase"
 msgstr "Показать фазу"
 
-#: opdracht3/STUDENT/signaal.cpp:348
+#: opdracht3/STUDENT/signaal.cpp:376
 msgid "Dump FFT values"
 msgstr "Сброс значений БПФ"
 
-#: opdracht3/STUDENT/signaal.cpp:349
+#: opdracht3/STUDENT/signaal.cpp:377
 msgid "Execute Fast Fourier Transform"
 msgstr "Выполнить быстрое преобразование Фурье"
 
-#: opdracht3/STUDENT/signaal.cpp:501
+#: opdracht3/STUDENT/signaal.cpp:528
 msgid "Assignment 3 DSB Practicum"
 msgstr "Назначение 3 DSB Практика"
 
-#: opdracht3/STUDENT/signaal.cpp:502
+#: opdracht3/STUDENT/signaal.cpp:529
 msgid "Employ the FFTW library for generating a frequency plot."
 msgstr "Используйте библиотеку FFTW для генерации частотного графика."
 
-#: opdracht3/STUDENT/signaal.cpp:517
+#: opdracht3/STUDENT/signaal.cpp:544
 msgid "Open a data file with the signal values in float format)"
 msgstr ""
 "Открыть файл данных со значениями сигналов в формате с плавающей запятой)"
 
-#: opdracht3/STUDENT/signaal.cpp:520
+#: opdracht3/STUDENT/signaal.cpp:547
 msgid "All files (*.*)|*.*"
 msgstr "Все файлы (*.*)|*.*"
 
-#: opdracht3/STUDENT/signaal.cpp:532
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1903
+#: opdracht3/STUDENT/signaal.cpp:559
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1918
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1012
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1012
 msgid "Could not open:"
 msgstr "Не мог открыть:"
 
-#: opdracht3/STUDENT/signaal.cpp:557
+#: opdracht3/STUDENT/signaal.cpp:584
 msgid "Error reading the float data."
 msgstr "Ошибка при чтении данных поплавка."
 
-#: opdracht3/STUDENT/signaal.cpp:591
+#: opdracht3/STUDENT/signaal.cpp:618
 msgid "Signal sampling and frequency image"
 msgstr "Сэмплирование сигнала и частотное изображение"
 
-#: opdracht3/STUDENT/signaal.cpp:598
+#: opdracht3/STUDENT/signaal.cpp:625
 msgid "FFTW Status : unknown"
 msgstr "Статус FFTW : неизвестно"
 
-#: opdracht3/STUDENT/signaal.cpp:624
+#: opdracht3/STUDENT/signaal.cpp:651
 msgid "Frequency plot features"
 msgstr "Особенности частотного графика"
 
-#: opdracht3/STUDENT/signaal.cpp:625
+#: opdracht3/STUDENT/signaal.cpp:652
 msgid "Time domain properties"
 msgstr "Свойства временной области"
 
-#: opdracht3/STUDENT/signaal.cpp:627
+#: opdracht3/STUDENT/signaal.cpp:654
 msgid "Signal properties"
 msgstr "Сигнальные свойства"
 
-#: opdracht3/STUDENT/signaal.cpp:695
+#: opdracht3/STUDENT/signaal.cpp:718
 msgid "FFT Signal test"
 msgstr "FFT-тест сигнала"
 
@@ -317,14 +320,14 @@ msgstr ""
 "Эта программа требует минимального разрешения экрана 1024x768 пикселей.\n"
 "Старт отменяется."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:123
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:124
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:91
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:91
 msgid "filter berekening start."
 msgstr "запуск разрыва фильтра."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:158
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:433
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:159
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:435
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:126
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:399
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:126
@@ -332,74 +335,65 @@ msgstr "запуск разрыва фильтра."
 msgid "May not reach this point!!"
 msgstr "Может не дойти до этой точки!!!"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:398
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:400
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:364
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:364
 msgid "filter calculation start."
 msgstr "запуск расчета фильтра."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:646
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:639
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:639
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:649
 #, c-format
-msgid "Coefficient[%d] = %.3f (Q%d:%d)"
-msgstr "Коэффициент[%d] = %.3f (Q%d:%d)"
+msgid "Coefficient[%d] = %s (Q%d:%d)"
+msgstr "Коэффициент[%d] = %s (Q%d:%d)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:683
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:676
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:676
-#, c-format
-msgid "Mouse = [%.3f*pi,%.3f dB]. |H(%.3f*pi)| = %.3f dB"
-msgstr "Мышь = [%.3f*pi,%.3fdB]. |H(%.3f*pi)| = %.3f dB"
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:691
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:703
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4158
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4174
+msgid "Coordinate"
+msgstr "Координата"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:692
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:685
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:685
-#, c-format
-msgid "Mouse = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
-msgstr "Мышь = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
-
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:713
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:723
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1324
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1324
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4078
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4201
 msgid "Time graph entry."
 msgstr "Ввод графика времени."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:721
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:731
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1332
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1332
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4086
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4209
 msgid "Time graph exit."
 msgstr "Выход из графика времени."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:723
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:745
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:733
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:755
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1334
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1356
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1334
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1356
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4088
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4110
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4211
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4233
 msgid "No coordinates"
 msgstr "Нет координат"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:735
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:745
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1346
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1346
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4100
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4223
 msgid "Freq graph entry."
 msgstr "Ввод графика Freq."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:743
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:753
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1354
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1354
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4108
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4231
 msgid "Freq graph exit."
 msgstr "Выход из графика Freq."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:905
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1403
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:923
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1418
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:852
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1223
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:852
@@ -408,287 +402,287 @@ msgstr "Выход из графика Freq."
 msgid "Orde = %d (%d taps)"
 msgstr "Орда = %d (%dспуск)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1027
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1042
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:721
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:721
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1231
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1277
 msgid "About"
 msgstr "О нас"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1028
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1043
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:728
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:728
 msgid "Write a C/CPP Header file"
 msgstr "Напишите заголовочный файл C/CPP"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1032
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1047
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:725
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:725
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1239
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1285
 msgid "Calculate Filter\tCtrl+B"
 msgstr "Рассчитать фильтр\tCtrl+B"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1035
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1050
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:729
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:729
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1246
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1292
 msgid "Filter"
 msgstr "Фильтр"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1052
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1067
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:718
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:718
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1263
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1309
 msgid "Time domain filter impulse response"
 msgstr "Импульсный ответ временного фильтра"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1059
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1074
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:732
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:732
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1271
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1317
 msgid "Time domain coordinates (Mouse over window)"
 msgstr "Координаты временного домена (Мышь над окном)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1063
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1078
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:710
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:710
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1309
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1355
 msgid "Frequency domain representation"
 msgstr "Представление частотного домена"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1073
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1088
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:736
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:736
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1320
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1366
 msgid "Frequency domain coordinates (Mouse over window)"
 msgstr "Координаты частотного домена (Мышь над окном)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1077
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1092
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:735
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:735
 msgid "Show analogue frequencies"
 msgstr "Показать аналоговые частоты"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1086
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1101
 msgid "Discover HAN Embedded Systems Engineering!"
 msgstr "Откройте для себя HAN Embedded Systems Engineering!"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1089
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1104
 msgid "Test results visualization"
 msgstr "Визуализация результатов тестирования"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1099
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1114
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:714
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:714
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1406
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1452
 msgid "Filter parameters"
 msgstr "Параметры фильтра"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1112
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1127
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:739
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:739
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1416
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1462
 msgid "Sampling frequency (Hz)"
 msgstr "Частота дискретизации (Гц)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1116
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1122
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1131
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1137
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:740
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:742
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:740
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:742
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1421
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1467
 msgid "undetermined"
 msgstr "неопределённый"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1119
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1134
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:741
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:741
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1659
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1743
 msgid "Filter order"
 msgstr "Порядок фильтрации"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1125
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1140
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:743
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:743
 msgid "Supplemental filter amplification (dB) :"
 msgstr "Дополнительное усиление фильтра (дБ) :"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1131
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1146
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:745
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:745
 msgid "Window applied :"
 msgstr "Применяемое окно :"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1135
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1139
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1150
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1154
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:747
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:747
 msgid "Rectangle"
 msgstr "Прямоугольник"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1137
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1152
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:749
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:749
 msgid "Hamming"
 msgstr "Хамминг"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1142
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1157
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:752
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:752
 msgid "Number of bits in coding :"
 msgstr "Количество бит в кодировке :"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1151
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1166
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:754
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:754
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1436
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1485
 msgid "Calculate filter"
 msgstr "Рассчитать фильтр"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1157
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1172
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:755
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:755
 msgid "Dump coefficients"
 msgstr "Коэффициенты разгрузки"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1161
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1463
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1176
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1519
 msgid "&Quit"
 msgstr "&Выход"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1167
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1182
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:712
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:712
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1679
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1763
 msgid "Band pass begin (Hz)"
 msgstr "Передача полосы начинается (Гц)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1175
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1190
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:713
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:713
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1693
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1777
 msgid "Band pass end (Hz)"
 msgstr "Конец полосы пропускания (Гц)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1183
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1198
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:717
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:717
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1755
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1839
 msgid "Filter test"
 msgstr "Испытание фильтра"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1192
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1207
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:760
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:760
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1764
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1848
 msgid "Square wave"
 msgstr "Квадратная волна"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1193
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1208
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:761
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:761
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1765
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1849
 msgid "Impulse"
 msgstr "Импульс"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1194
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1209
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:762
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:762
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1766
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1850
 msgid "Step"
 msgstr "Шаг"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1205
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1220
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:715
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:715
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1779
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1863
 msgid "Test Signal frequency"
 msgstr "Частота тестового сигнала"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1215
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1230
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:716
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:716
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1795
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1879
 msgid "Test Signal amplitude"
 msgstr "Амплитуда тестового сигнала"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1225
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1240
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:768
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:768
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1810
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1894
 msgid "Show test signal"
 msgstr "Показать тестовый сигнал"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1229
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1244
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:769
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:769
 msgid "Draw interpolation spline"
 msgstr "Нарисовать интерполяционный сплайн"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1233
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1248
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:765
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:765
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1774
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1858
 msgid "Start Filter Test"
 msgstr "Тест стартового фильтра"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1327
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1342
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1153
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1153
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2637
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2731
 msgid "Specify the sampling frequency in Hz."
 msgstr "Укажите частоту дискретизации в Гц."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1328
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1343
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1154
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1154
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2638
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2732
 msgid "Frequency:"
 msgstr "Частота:"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1329
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1344
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1155
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1155
 msgid "The FIR filter system sampling frequency"
 msgstr "Частота дискретизации системы фильтрации FIR"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1391
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1406
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1211
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1211
 msgid "Specify the order of the filter in number of taps."
 msgstr "Укажите порядок расположения фильтра по количеству ответвлений."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1392
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1407
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1212
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1212
 msgid "Filter order:"
 msgstr "Порядок фильтрации:"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1393
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1408
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1213
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1213
 msgid "Taps in the FIR filter system"
 msgstr "Краны в системе фильтрации FIR"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1557
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1572
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1252
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1252
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3245
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3352
 msgid "The start of the pass band must be smaller than the end."
 msgstr "Начало полосы пропускания должно быть меньше конца."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1700
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1715
 msgid "Student version"
 msgstr "Студенческая версия"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1828
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1843
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:978
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:978
 msgid "Assignment 4 DSB Practicum"
 msgstr "Задание 4 DSB Практика"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1829
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1844
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:979
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:979
 msgid ""
@@ -697,27 +691,27 @@ msgstr ""
 "Проектируйте и реализуйте инструмент проектирования FIR-фильтров на основе "
 "функции sinc()."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1883
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1898
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:992
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:992
 msgid "Save the filter design as a C or CPP header file"
 msgstr "Сохранить конструкцию фильтра в виде заголовочного файла C или CPP"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1993
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2008
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1102
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1102
 msgid "Header file written succesfully."
 msgstr "Заголовочный файл написан успешно."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2078
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2080
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2093
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2095
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1309
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1309
 #, c-format
 msgid "Coefficient[%d] = %d (float:%f)"
 msgstr "Коэффициент[%d] = %d (float:%f)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.h:53
+#: opdracht4/STUDENT/ontwerper/filterDesigner.h:54
 msgid ""
 "FIR filter designer for HAN Embedded Systems Engineering Digital Signal "
 "Processing"
@@ -741,6 +735,24 @@ msgstr ""
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1436
 msgid "Demoversion"
 msgstr "Демонстрация"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:639
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:639
+#, c-format
+msgid "Coefficient[%d] = %.3f (Q%d:%d)"
+msgstr "Коэффициент[%d] = %.3f (Q%d:%d)"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:676
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:676
+#, c-format
+msgid "Mouse = [%.3f*pi,%.3f dB]. |H(%.3f*pi)| = %.3f dB"
+msgstr "Мышь = [%.3f*pi,%.3fdB]. |H(%.3f*pi)| = %.3f dB"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:685
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:685
+#, c-format
+msgid "Mouse = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
+msgstr "Мышь = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
 
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:700
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:700
@@ -769,30 +781,30 @@ msgid "Please enter one ore more floating point values."
 msgstr "Пожалуйста, введите на одну руду больше значений с плавающей точкой."
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:155
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1504
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1544
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1560
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1628
 msgid "&Clear"
 msgstr "Очистить"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:166
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:200
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:201
 msgid "&OK"
 msgstr "OK"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:170
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:204
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:205
 msgid "&Cancel"
 msgstr "&Отмена"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:270
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2754
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2803
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2858
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2910
 msgid "Conversion to a floating point value of this content :"
 msgstr "Преобразование в значение с плавающей точкой этого содержимого :"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:271
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2755
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2805
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2859
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2912
 msgid "failed."
 msgstr "не удалось."
 
@@ -800,11 +812,21 @@ msgstr "не удалось."
 msgid "Entry of custom data for the IIR filter designer."
 msgstr "Ввод пользовательских данных для проектировщика IIR-фильтров."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:55
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:56
 msgid "Filter calculation start."
 msgstr "Начало расчета фильтра."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:156
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:68
+msgid "The number of input coefficents must be equal to or larger than one."
+msgstr "Количество входных коэффициентов должно быть равно или больше единицы."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:102
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:196
+#, c-format
+msgid "Impulse response[%d] : %s"
+msgstr "Импульсная реакция[%d] : %s"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:166
 msgid ""
 "Your did not enter any zeros and poles.\n"
 "You must provide at least one pole and one zero."
@@ -812,148 +834,155 @@ msgstr ""
 "Вы не ввели ни нулей, ни полюсов.\n"
 "Ты должен предоставить хотя бы один полюс и один ноль."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:184
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:239
 #, c-format
-msgid "Impulse response[%d] : %.2f"
-msgstr "Импульсный ответ[%d] : %.2f"
+msgid "Impulse response scale factor : %s db"
+msgstr "Коэффициент масштабирования импульсной характеристики : %s дБ"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:224
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:405
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:502
 #, c-format
-msgid "Impulse response scale factor : %.2f db"
-msgstr "Коэффициент шкалы импульсного отклика : %.2f db"
+msgid "Frequency domain[%s rad] :"
+msgstr "Частотная область[%s рад] :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:387
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:481
-#, c-format
-msgid "Frequency domain[%.2f rad] :"
-msgstr "Частотная область[%.2f рад] :"
-
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:519
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:541
 msgid "The entered value"
 msgstr "Введенное значение"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:519
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:541
 msgid "cannot be used for scaling the frequency plot"
 msgstr "нельзя использовать для масштабирования графика частоты"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:565
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:587
 msgid "The number of points must be larger than zero."
 msgstr "Количество точек должно быть больше нуля."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:767
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:614
+msgid ""
+"Your coefficients are too large for proper scaling in the frequency window. "
+"Please scale down the coefficients."
+msgstr ""
+"Ваши коэффициенты слишком велики для правильного масштабирования в окне "
+"частот. Пожалуйста, уменьшите масштаб коэффициентов."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:797
 msgid "Z Plane"
 msgstr "Z-плоскость"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1232
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1278
 msgid "Load a filter configuration\tCtrl+O"
 msgstr "Загрузить конфигурацию фильтра\tCtrl+O"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1233
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1279
 msgid "Save the filter configuration\tCtrl+S"
 msgstr "Сохранить конфигурацию фильтра\tCtrl+S"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1235
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1281
 msgid "Reset to demo values"
 msgstr "Сброс на демонстрационные значения"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1240
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1286
 msgid "Export the time domain to an image"
 msgstr "Экспорт временной области в изображение"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1241
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1287
 msgid "Export the pole-zero diagram to an image"
 msgstr "Экспортируйте диаграмму полюсов-нулей в изображение"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1242
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1288
 msgid "Export the frequency domain to an image"
 msgstr "Экспорт частотной области в изображение"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1243
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1289
 msgid "Export the test signal output to an image"
 msgstr "Экспорт выходного тестового сигнала в изображение"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1245
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1291
 msgid "Export the time domain output in CSV format"
 msgstr "Экспорт выходных данных временной области в формате CSV"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1279
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1325
 msgid "Horizontal plotting limit"
 msgstr "Предел горизонтального черчения"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1283
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1359
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1558
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1708
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1329
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1405
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1642
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1792
 msgid "Auto"
 msgstr "Авто"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1292
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1338
 msgid "sampling moments"
 msgstr "моменты выборки"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1296
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1342
 msgid "Configuration name"
 msgstr "Имя конфигурации"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1300
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1346
 msgid "Generic digital fiter"
 msgstr "Общий цифровой фильтр"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1328
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1374
 msgid "Frequency image elements"
 msgstr "Элементы частотного изображения"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1335
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1381
 msgid "analogue frequencies"
 msgstr "аналоговые частоты"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1340
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1386
 msgid "magnitude"
 msgstr "величина"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1345
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1391
 msgid "Show full sampled range"
 msgstr "Показать полный диапазон выборки"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1350
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1396
 msgid "phase angle"
 msgstr "фазовый угол"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1355
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1401
 msgid "Vertical plotting limits"
 msgstr "Пределы вертикального черчения"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1371
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1417
 msgid "to"
 msgstr "в"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1379
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1569
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1719
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1425
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1653
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1803
 msgid "dB"
 msgstr "dB"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1386
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1432
 msgid "Pole-Zero diagram"
 msgstr "Диаграмма нулевого полюса"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1395
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1441
 msgid "Test signal output"
 msgstr "Выход тестового сигнала"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1425
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1471
 msgid "Filter amplification (dB) :"
 msgstr "Усиление фильтра (дБ) :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1447
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1493
+msgid "Clear filter"
+msgstr "Очистить фильтр"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1503
 msgid "Dump GUI calculations"
 msgstr "Расчеты GUI дампа"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1452
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1508
 msgid "Show signal value labels"
 msgstr "Показывать метки значений сигналов"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1459
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1515
 msgid ""
 "Find out what an exciting study Embedded Systems Engineering is! \n"
 "Press this button to visit the ESE web site."
@@ -961,7 +990,7 @@ msgstr ""
 "Узнайте, что такое захватывающее исследование Embedded Systems Engineering!\n"
 "Нажмите эту кнопку, чтобы перейти на веб-сайт ESE."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1478
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1534
 msgid ""
 "b-coefficients for \n"
 "x[n] and earlier"
@@ -969,7 +998,16 @@ msgstr ""
 "b-коэффициенты для\n"
 "x[н] и ранее"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1486
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1536
+msgid ""
+"Assume that the b coefficients are listed on the right side of the equation "
+"sign in the recursive formula, with y[n] on the left side of the equation "
+"sign."
+msgstr ""
+"Предположим, что коэффициенты b перечислены справа от знака уравнения в "
+"рекурсивной формуле, а y[n] - слева от знака уравнения."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1542
 msgid ""
 "a-coefficients for \n"
 "y[n-1]  and earlier"
@@ -977,82 +1015,104 @@ msgstr ""
 "коэффициенты для\n"
 "y[n-1] и раньше"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1500
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1540
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1544
+msgid ""
+"Assume that the a coefficients are listed on the right side of the equation "
+"sign in the recursive formula, with y[n] on the left side of the equation "
+"sign."
+msgstr ""
+"Предположим, что коэффициенты a перечислены справа от знака уравнения в "
+"рекурсивной формуле, а y[n] - слева от знака уравнения."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1556
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1624
 msgid "Show information about these entry fields."
 msgstr "Покажите информацию об этих полях ввода."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1512
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2331
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2334
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1570
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1585
+msgid "Scale factor"
+msgstr "Коэффициент масштабирования"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1572
+msgid "All input coefficients are multiplied by this scaling factor."
+msgstr "Все входные коэффициенты умножаются на этот масштабный коэффициент."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1587
+msgid "All output coefficients are multiplied by this scaling factor."
+msgstr "Все выходные коэффициенты умножаются на этот масштабный коэффициент."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1596
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2425
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2428
 msgid "Coefficients"
 msgstr "Коэффициенты"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1522
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1606
 msgid "locations of the zeros"
 msgstr "нули"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1528
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1612
 msgid "locations of the poles"
 msgstr "расположение полюсов"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1554
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1704
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1638
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1788
 msgid "Gain compensation"
 msgstr "Компенсация прибыли"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1561
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1711
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1645
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1795
 msgid "Scale the peak output to 0 dB"
 msgstr "Масштабировать пиковую мощность до 0 дБ"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1565
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1715
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1649
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1799
 msgid "0"
 msgstr "0"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1573
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1657
 msgid "Purpose based pole-zero insertion"
 msgstr "Вставка полюса-нуля на основе цели"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1578
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1662
 msgid "Zero at Origin"
 msgstr "Ноль при возникновении"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1580
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1664
 msgid "Insert a zero in the origin."
 msgstr "Вставьте ноль в начало координат."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1584
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1668
 msgid "Pole at Origin"
 msgstr "Полюс у истоков"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1586
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1670
 msgid "Insert a pole in the origin."
 msgstr "Вставьте полюс в начало координат."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1590
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1674
 msgid "Comb expression"
 msgstr "Комбинированная экспрессия"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1592
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1676
 msgid "Insert a comb expression of either zeros or poles."
 msgstr ""
 "Вставьте гребенчатое выражение, состоящее либо из нулей, либо из полюсов."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1600
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1684
 msgid "frequency (Hz)"
 msgstr "частота (Гц)"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1613
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1697
 msgid "-3 dB band (Hz)"
 msgstr "-полоса 3 дБ (Гц)"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1623
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1707
 msgid "Insert as bandpass"
 msgstr "Вставка как полоса пропускания"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1625
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1709
 msgid ""
 "Insert a pair of conjugated poles that invokes the bandpass behaviour at the "
 "indicated frequency."
@@ -1060,11 +1120,11 @@ msgstr ""
 "Вставьте пару сопряженных полюсов, вызывающих полосовое поведение на "
 "указанной частоте."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1629
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1713
 msgid "Insert as bandstop"
 msgstr "Вставка в качестве ограничителя полосы"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1631
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1715
 msgid ""
 "Insert pairs of conjugated zeros and poles that invoke the bandstop "
 "behaviour at the indicated frequency."
@@ -1072,143 +1132,139 @@ msgstr ""
 "Вставьте пары сопряженных нулей и полюсов, которые вызывают поведение "
 "полосовой остановки на указанной частоте."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1638
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1722
 msgid "Zeros and Poles"
 msgstr "Нули и полюса"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1648
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1732
 msgid "Analog filter type"
 msgstr "Тип аналогового фильтра"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1653
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1737
 msgid "Butterworth"
 msgstr "Баттерворт"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1654
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1738
 msgid "Chebyshev"
 msgstr "Чебышев"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1664
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1748
 msgid "2nd order"
 msgstr "второй заказ"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1665
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1749
 msgid "4th order"
 msgstr "4-я серия"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1666
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1750
 msgid "6th order"
 msgstr "6-й порядок"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1667
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1751
 msgid "8th order"
 msgstr "8-ой порядок"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1668
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1752
 msgid "10th order"
 msgstr "10-я серия"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1669
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1753
 msgid "12th order"
 msgstr "12-й заказ"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1670
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1754
 msgid "14th order"
 msgstr "14-я серия"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1671
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1755
 msgid "16th order"
 msgstr "16-й заказ"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1673
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1757
 msgid "1st order"
 msgstr "1-й заказ"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1729
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1813
 msgid "Polar magnitude safety margin"
 msgstr "Запас прочности полярной величины"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1739
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1823
 msgid "Chebyshev ripple control"
 msgstr "Управление пульсациями по Чебышеву"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1747
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1831
 msgid "%"
 msgstr "%"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1751
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1835
 msgid "Analog filter prototype"
 msgstr "Прототип аналогового фильтра"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1768
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1852
 msgid "Custom"
 msgstr "Пользовательский"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1784
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1868
 msgid "Absolute"
 msgstr "Абсолютно"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1785
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1869
 msgid "Shannon"
 msgstr "Шеннон"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1786
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1870
 msgid "Type"
 msgstr "Тип"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1806
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1890
 msgid "Test output options"
 msgstr "Опции тестового вывода"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1813
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1897
 msgid "Draw the test signal also."
 msgstr "Нарисуйте также тестовый сигнал."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1817
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1901
 msgid "Draw interpolation"
 msgstr "Интерполяция чертежей"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1820
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1904
 msgid "Draw a spline that interpolates the filtered data."
 msgstr "Нарисуйте сплайн, который интерполирует отфильтрованные данные."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1824
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1908
 msgid "Post process auto scaling"
 msgstr "Автоматическое масштабирование постпроцесса"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1827
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1911
 msgid "Scale automatically to show all presented data in the graph window."
 msgstr ""
 "Масштабирование автоматически для отображения всех представленных данных в "
 "окне графика."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1834
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1918
 msgid "Input starts at:"
 msgstr "Вход начинается с:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1842
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1926
 msgid "Number of points"
 msgstr "Кол-во поинов"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1871
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1955
 msgid "Opdracht 6 DSB Practicum Embedded Systems Engineering bij de HAN."
 msgstr "Opdracht 6 DSB Practicum Embedded Systems Engineering bij de HAN."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1872
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1956
 msgid "Design and implement an IIR Filter design tool."
 msgstr ""
 "Проектирование и внедрение инструмента для проектирования фильтров IIR."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1873
-msgid "ir drs E.J Boks (docent HAN ESE) : ewout.boks@han.nl"
-msgstr "ir drs E.J Boks (доцент HAN ESE) : ewout.boks@han.nl"
-
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1924
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2244
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2008
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2335
 msgid "Default"
 msgstr "По умолчанию"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2099
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2189
 msgid ""
 "Error creating the base directory where the Filter coefficients will be "
 "stored."
@@ -1216,28 +1272,28 @@ msgstr ""
 "Ошибка создания базового каталога, в котором будут храниться коэффициенты "
 "фильтра."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2108
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2198
 msgid "Error opening the stream to read the Filter coefficients."
 msgstr "Ошибка открытия потока для считывания коэффициентов фильтра."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2210
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2301
 msgid "Please select an existing configuration"
 msgstr "Пожалуйста, выберите существующую конфигурацию"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2210
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2374
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2301
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2468
 msgid "Configuration :"
 msgstr "Конфигурация:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2311
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2405
 msgid "Error opening the stream to write the Filter coefficients."
 msgstr "Ошибка открытия потока для записи коэффициентов фильтра."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2318
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2412
 msgid "This file was generated automatically by application"
 msgstr "Этот файл был сгенерирован автоматически приложением"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2320
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2414
 msgid ""
 "You are free to modify the data entries in this file as long as you adhere "
 "to the format used in this file."
@@ -1245,88 +1301,96 @@ msgstr ""
 "Вы можете изменять записи данных в этом файле, если придерживаетесь формата, "
 "используемого в этом файле."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2323
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2417
 msgid "IIR Filter configuration for user"
 msgstr "Настройка фильтра IIR для пользователя"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2324
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2418
 msgid "on"
 msgstr "вкл"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2342
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2436
 msgid "Zeros"
 msgstr "Нули"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2345
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2439
 msgid "Poles"
 msgstr "Поляки"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2351
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2445
 msgid "Error closing the file stream that wrote the Filter coefficients."
 msgstr ""
 "Ошибка закрытия файлового потока, в котором записаны коэффициенты Фильтра."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2374
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2468
 msgid "Please select an new configuration name."
 msgstr "Пожалуйста, выберите новое имя конфигурации."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2383
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2477
 msgid "This filter configuration name already exists."
 msgstr "Это имя конфигурации фильтра уже существует."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2418
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2512
 msgid "Do you want to reset all configuration fields to demonstration values?"
 msgstr "Вы хотите сбросить все поля конфигурации на демонстрационные значения?"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2419
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2513
 msgid "Demonstration values"
 msgstr "Демонстрационные ценности"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2456
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2550
 msgid "IIR Filter impulse response output"
 msgstr "Выход импульсного ответа IIR фильтра"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2477
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2571
 msgid "IIR Filter pole-zero diagram"
 msgstr "Диаграмма \"полюс - ноль\" фильтра ИДК"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2497
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2591
 msgid "This feature has not been implemented yet."
 msgstr "Эта функция еще не реализована."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2517
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2611
 msgid "IIR Filter frequency domain output"
 msgstr "IIR Выход частотной области фильтра"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2537
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2631
 msgid "IIR Filter time domain test output"
 msgstr "Выходной тест временного домена IIR фильтра"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2639
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2733
 msgid "The IIR Filter system sampling frequency"
 msgstr "Частота дискретизации системы фильтрации IIR"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2763
-#, c-format
-msgid "Coefficient b_%d : %.2f was added."
-msgstr "Добавлен коэффициент b_%d : %.2f."
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2844
+msgid "The multiplication factor"
+msgstr "Коэффициент умножения"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2765
-#, c-format
-msgid "Coefficient a_%d : %.2f was added."
-msgstr "Добавлен коэффициент a_%d : %.2f."
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2844
+msgid "is not a useable number."
+msgstr "не является пригодным для использования числом."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2821
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2870
+#, c-format
+msgid "Coefficient b_%d : %s was added."
+msgstr "Коэффициент b_%d : %s был добавлен."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2872
+#, c-format
+msgid "Coefficient a_%d : %s was added."
+msgstr "Коэффициент a_%d : %s был добавлен."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2928
 #, c-format
 msgid "Zero [%d] was added :"
 msgstr "Был добавлен ноль [%d] :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2823
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2930
 #, c-format
 msgid "Pole [%d] was added :"
 msgstr "Полюс [%d] был добавлен :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2837
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2944
 msgid ""
 "Your design has fewer zero points than pole points.\n"
 "In order to balance your system, an additional number of zero points in the "
@@ -1336,7 +1400,7 @@ msgstr ""
 "Для того, чтобы сбалансировать вашу систему, в начало z-плоскости было "
 "добавлено дополнительное количество нулевых точек."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2850
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2957
 msgid ""
 "Your design has fewer pole points than zero points.\n"
 "In order to balance your system, an additional number of pole points in the "
@@ -1346,31 +1410,31 @@ msgstr ""
 "Для того, чтобы сбалансировать вашу систему, в начало z-плоскости было "
 "добавлено дополнительное количество полюсных баллов."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2965
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2967
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3072
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3074
 #, c-format
 msgid "Butterworth Pole [%d] was added :"
 msgstr "Добавлен полюс Баттерворта [%d] :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2969
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2971
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3076
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3078
 #, c-format
 msgid "Butterworth Zero [%d] was added :"
 msgstr "Был добавлен ноль Баттерворта [%d] :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3045
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3047
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3152
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3154
 #, c-format
 msgid "Chebyshev Pole [%d] was added :"
 msgstr "Был добавлен полюс Чебышева [%d] :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3049
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3051
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3156
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3158
 #, c-format
 msgid "Chebyshev Zero [%d] was added :"
 msgstr "Чебышевский ноль [%d] был добавлен :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3451
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3558
 msgid ""
 "An LTI difference equation characterised by bk (for inputs) and ak (for "
 "outputs) can be entered here."
@@ -1378,7 +1442,7 @@ msgstr ""
 "Здесь можно ввести разностное уравнение LTI, характеризуемое bk (для входов) "
 "и ak (для выходов)."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3453
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3560
 msgid ""
 "Please note that a pure convolution can be done by entering the h[n] "
 "coefficients as b-coefficients, with the a-coefficients field remaining "
@@ -1388,11 +1452,11 @@ msgstr ""
 "коэффициентов h[n] как b-коэффициентов, при этом поле a-коэффициентов "
 "остается пустым."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3456
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3563
 msgid "Information on entering LTI difference equation coefficients."
 msgstr "Информация о вводе коэффициентов разностного уравнения LTI."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3466
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3573
 msgid ""
 "Enter as a, a+bj or r:[p/d]phi .\n"
 "Please insert only a single complex or polar entry.\n"
@@ -1406,75 +1470,70 @@ msgstr ""
 "Дополнительная вставка сопряженной сложной пары.\n"
 "[p/d] является необязательным и делает фи углом пи или градусов."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3471
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3578
 msgid "Information on entering poles and zeros."
 msgstr "Информация о вводе полюсов и нулей."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3997
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4104
 #, c-format
-msgid "Coefficient[%d] = %.3f"
-msgstr "Коэффициент[%d] = %.3f"
+msgid "Coefficient[%d] = %s"
+msgstr "Коэффициент[%d] = %s"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4004
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4111
 msgid "Out of bounds."
 msgstr "Выходит за рамки."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4047
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4056
-msgid "Mouse"
-msgstr "Мышь"
-
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4120
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4243
 msgid "signal data file (*.txt)|*.txt"
 msgstr "файл данных сигнала (*.txt)|*.txt"
 
-#: opdracht6/STUDENT/designer/filterDesigner.h:51
+#: opdracht6/STUDENT/designer/filterDesigner.h:52
 msgid "Digital Signal Processing demonstrator"
 msgstr "Демонстратор цифровой обработки сигналов"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:141
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:142
 msgid "Placement of a number of zeros or poles using a comb expression"
 msgstr ""
 "Размещение количества нулей или полюсов с помощью гребенчатого выражения"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:148
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:149
 msgid "An example of placing a comb zero expression on the unit circle."
 msgstr "Пример размещения выражения гребенчатого нуля на единичной окружности."
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:156
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:157
 msgid "Zero"
 msgstr "Нуль"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:157
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:158
 msgid "Pole"
 msgstr "Столб"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:158
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:159
 msgid "Placement"
 msgstr "Размещение"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:163
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:164
 msgid "Radius"
 msgstr "Радиус"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:167
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:168
 msgid "1.0"
 msgstr "1.0"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:171
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:172
 msgid "Number of elements in arc (Nyquist range)"
 msgstr "Количество элементов в дуге (диапазон Найквиста)"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:178
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:179
 #, c-format
 msgid "Arc length as % of half circle"
 msgstr "Длина дуги как % of полуокружность"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:190
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:191
 msgid "Compensate with counterpart elements in the origin"
 msgstr "Компенсировать элементами аналогов в происхождении"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:193
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:194
 msgid ""
 "When generating a number of poles or zeros in a circle, generate an equal "
 "number of zeros or poles in the origin to keep the system causal with "
@@ -1484,7 +1543,7 @@ msgstr ""
 "или полюсов в начале координат, чтобы сохранить систему причинноследственной "
 "с минимальными задержками."
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:308
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:309
 msgid "The entered radius number cannot be used."
 msgstr "Введенный номер радиуса не может быть использован."
 
@@ -1492,10 +1551,27 @@ msgstr "Введенный номер радиуса не может быть и
 msgid "Comb Expression"
 msgstr "Комбинированная экспрессия"
 
-#: opdracht6/STUDENT/filter/iirfilter.cpp:101
-#: opdracht6/STUDENT/filter/iirfilter.cpp:111
+#: opdracht6/STUDENT/filter/iirfilter.cpp:99
+#: opdracht6/STUDENT/filter/iirfilter.cpp:109
 msgid "Your pole has a magnitude > 1 !"
 msgstr "Ваш полюс имеет величину > 1!"
+
+#~ msgid ""
+#~ "The application was initialized to use the system default language, which "
+#~ "has this name:"
+#~ msgstr ""
+#~ "Приложение было инициализировано для использования системного языка по "
+#~ "умолчанию, который имеет такое название:"
+
+#, c-format
+#~ msgid "Euro %.2lf"
+#~ msgstr "Евро %.2lf"
+
+#~ msgid "ir drs E.J Boks (docent HAN ESE) : ewout.boks@han.nl"
+#~ msgstr "ir drs E.J Boks (доцент HAN ESE) : ewout.boks@han.nl"
+
+#~ msgid "Mouse"
+#~ msgstr "Мышь"
 
 #~ msgid "Application"
 #~ msgstr "Приложение"
@@ -1516,9 +1592,6 @@ msgstr "Ваш полюс имеет величину > 1!"
 
 #~ msgid "Locale with English (NZ) initialized."
 #~ msgstr "Местоположение с инициализацией на английском языке (NZ)."
-
-#~ msgid "Scaling factor"
-#~ msgstr "Масштабный коэффициент"
 
 #~ msgid "Automatic scaling"
 #~ msgstr "Автоматическое масштабирование"

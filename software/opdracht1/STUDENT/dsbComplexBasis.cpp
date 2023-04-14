@@ -4,11 +4,11 @@
 Opdracht 1 DSB practicum. Werk deze opdracht verder uit aan de hand van het kommentaar.
 Assignment 1 DSB practical. Elaborate this assignment on the basis of the comments.
 
-@version $Rev: 305 $
+@version $Rev: 317 $
 @author $Author: ewout $
 @note  Werk deze code verder uit volgens de opdracht  / Complete this code according to the assignment.
 @copyright Copyright 2006-2022 ir drs E.J Boks Hogeschool van Arnhem en Nijmegen.
-$Id: dsbComplexBasis.cpp 305 2022-04-26 14:38:28Z ewout $
+$Id: dsbComplexBasis.cpp 317 2023-03-08 14:16:10Z ewout $
 */
 
 #include <cmath>
@@ -19,6 +19,7 @@ $Id: dsbComplexBasis.cpp 305 2022-04-26 14:38:28Z ewout $
 #ifdef BouwDesktopApp
 
 #include <dsbComplexBasis.h>
+#include <wx/numformatter.h>
 
 
 PolairPrinter::PolairPrinter(const PolairGetal &pg) : p(pg)
@@ -28,10 +29,12 @@ PolairPrinter::PolairPrinter(const PolairGetal &pg) : p(pg)
 
 wxString PolairPrinter::str(const PolairGetal &pg,const PolairPrinter::Formaat formaat, const Teller precisie)
 {
-	const wxString arg((Formaat::Standaard==formaat) ?
-	                   wxString::Format(wxT("|%%.%df|*/_%%.%df"), precisie, precisie) :
-	wxString::Format(wxT("%%.%df:%%.%df"), precisie, precisie));
-	const wxString uit(wxString::Format(arg, pg.Mag(), pg.Arg()));
+	const wxString grString(wxNumberFormatter::ToString(pg.Mag(),precisie));
+	const wxString fString(wxNumberFormatter::ToString(pg.Arg(),precisie));
+	
+	const wxString uit((Formaat::Standaard==formaat) ?
+	                   wxString::Format(wxT("|%s|*/_%s"), grString,fString) :
+	                   wxString::Format(wxT("%s:%s"), grString,fString));
 	return(uit);
 }
 
@@ -55,9 +58,12 @@ ComplexPrinter::ComplexPrinter(Complex &c) : z(c)
 
 wxString ComplexPrinter::str(const Complex &cw,const ComplexPrinter::Formaat formaat)
 {
+	const wxString xs(wxNumberFormatter::ToString(cw.Re(),3));
+	const wxString ys(wxNumberFormatter::ToString(cw.Im(),3));
+	
 	const wxString uit((Formaat::Standaard==formaat) ?
-	                   wxString::Format(wxT("[Re:%.3f Im:%.3f]"), cw.Re(), cw.Im()) :
-	                   wxString::Format(wxT("%.3f%+.3fj"), cw.Re(), cw.Im()));
+	                   wxString::Format(wxT("[Re:%s Im:%s]"), xs,ys) :
+	                   wxString::Format(wxT("%s+%sj"), xs,ys));
 	return(uit);
 }
 
@@ -85,7 +91,7 @@ RetCode ComplexPrinter::importeer(const wxString& invoer)
 		{
 			/* Het is een volledig reel getal. */
 			double waarde;
-			const bool gelukt = invoer.ToDouble(&waarde);
+			const bool gelukt = wxNumberFormatter::FromString(invoer,&waarde);
 			
 			if (true == gelukt)
 			{
@@ -99,7 +105,7 @@ RetCode ComplexPrinter::importeer(const wxString& invoer)
 			/* Het is een polair getal. */
 			const wxString voorkomma(invoer.Before(':'));
 			double rwaarde;
-			const bool rgelukt = voorkomma.ToDouble(&rwaarde);
+			const bool rgelukt = wxNumberFormatter::FromString(voorkomma,&rwaarde);
 			if (false == rgelukt)
 				retkode = RetCode::Fout;
 			else
@@ -124,7 +130,7 @@ RetCode ComplexPrinter::importeer(const wxString& invoer)
 				
 				double phiwaarde;
 				
-				const bool phigelukt = nakomma.ToDouble(&phiwaarde);
+				const bool phigelukt = wxNumberFormatter::FromString(nakomma,&phiwaarde);
 				
 				if (true == phigelukt)
 				{
@@ -156,14 +162,14 @@ RetCode ComplexPrinter::importeer(const wxString& invoer)
 		{
 			const wxString voorj(invoer.Before('+'));
 			double xwaarde;
-			const bool xgelukt = voorj.ToDouble(&xwaarde);
+			const bool xgelukt = wxNumberFormatter::FromString(voorj,&xwaarde);
 			if (true == xgelukt)
 				z.x = static_cast<float>(xwaarde);
 			
 			const wxString naplus(subinvoer.After('+'));
 			const wxString imwaarde(naplus.Before('j'));
 			double ywaarde;
-			const bool ygelukt = imwaarde.ToDouble(&ywaarde);
+			const bool ygelukt = wxNumberFormatter::FromString(imwaarde,&ywaarde);
 			if (true == ygelukt)
 				z.y = static_cast<float>(ywaarde);
 			
@@ -173,14 +179,14 @@ RetCode ComplexPrinter::importeer(const wxString& invoer)
 		{
 			const wxString voorj(invoer.Before('-'));
 			double xwaarde;
-			const bool xgelukt = voorj.ToDouble(&xwaarde);
+			const bool xgelukt = wxNumberFormatter::FromString(voorj,&xwaarde);
 			if (true == xgelukt)
 				z.x = static_cast<float>(xwaarde);
 			
 			const wxString naplus(subinvoer.After('-'));
 			const wxString imwaarde(naplus.Before('j'));
 			double ywaarde;
-			const bool ygelukt = imwaarde.ToDouble(&ywaarde);
+			const bool ygelukt = wxNumberFormatter::FromString(imwaarde,&ywaarde);
 			if (true == ygelukt)
 				z.y = -1.0f * static_cast<float>(ywaarde);
 			

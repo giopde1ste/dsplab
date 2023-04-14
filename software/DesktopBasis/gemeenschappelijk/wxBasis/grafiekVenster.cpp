@@ -3,10 +3,10 @@
   De grafische funkties implementatie. Hier staat wxWidget code om grafieken in
   assenstelsels te tekenen.
 
-  @version $Rev: 4496 $
+  @version $Rev: 4707 $
   @author $Author: ewout $ 
   @copyright Copyright 2006-2015 ir drs E.J Boks Hogeschool van Arnhem en Nijmegen 
-  $Id: grafiekVenster.cpp 4496 2022-06-16 15:45:45Z ewout $
+  $Id: grafiekVenster.cpp 4707 2023-03-13 16:48:15Z ewout $
 */
 
 #include <grafiekVenster.h>
@@ -75,36 +75,39 @@ const wxBrush GrafiekVenster::doorzichtig = wxBrush(*wxWHITE, wxBRUSHSTYLE_TRANS
 const wxBrush  GrafiekVenster::volledig = wxBrush(*wxWHITE, wxBRUSHSTYLE_SOLID);
 
 
-GrafiekVenster::GrafiekVenster(wxWindow *parent,
-                               int id,
-                               const wxSize &size,
-                               long style) : wxPanel(parent,
-                                                     id,
-                                                     wxDefaultPosition,
-                                                     size,
-                                                     (style | wxFULL_REPAINT_ON_RESIZE) ),
-                                             grafiekGrootte(GetSize()),
-                                             tekenPen(wxPen(wxColour(wxT("BLUE")), 2, wxPENSTYLE_SOLID)),
-                                             tekenBorstel(doorzichtig),
-                                             assenstelselPen(wxPen(wxColour(wxT("BLACK")), 1, wxPENSTYLE_DOT_DASH)),
-                                             oorsprong(wxPoint(0,0)),
-                                             offset(oorsprong),
-                                             tekeningBitMap(grafiekGrootte.GetWidth(),
-                                                            grafiekGrootte.GetHeight()),
-                                             tekeningDC(tekeningBitMap)
+GrafiekVenster::GrafiekVenster(wxWindow* parent,
+	int id,
+	const wxSize& size,
+	long style) : wxPanel(parent,
+		id,
+		wxDefaultPosition,
+		size,
+		(style | wxFULL_REPAINT_ON_RESIZE)),
+	grafiekGrootte(GetSize()),
+	tekenPen(wxPen(wxColour(wxT("BLUE")), 2, wxPENSTYLE_SOLID)),
+	assenstelselPen(wxPen(wxColour(wxT("BLACK")), 1, wxPENSTYLE_DOT_DASH)),
+	oorsprong(wxPoint(0, 0)),
+	offset(oorsprong),
+	tekeningBitMap(grafiekGrootte.GetWidth(),
+		grafiekGrootte.GetHeight()),
+	tekeningDC(tekeningBitMap)
 
 {
 	SetBackgroundStyle(wxBG_STYLE_PAINT);
 	SetAutoLayout(true);
 	SetMaxSize(grafiekGrootte);
-	
+
 	wxASSERT_MSG((true == tekeningDC.IsOk()),
-	             wxT("(GrafiekVenster::GrafiekVenster) Kon geen geheugen voor DC alloceren"));
-	
-	tekeningDC.Clear();
-	tekeningDC.SetUserScale(1.0, 1.0);
-	
-	tekeningDC.SetAxisOrientation(true,false);
+		wxT("(GrafiekVenster::GrafiekVenster) Kon geen geheugen voor DC alloceren"));
+
+	if (true == tekeningDC.IsOk())
+	{
+		tekeningDC.Clear();
+		tekeningDC.SetUserScale(1.0, 1.0);
+
+		tekeningDC.SetAxisOrientation(true, false);
+		tekeningDC.SetBrush(doorzichtig);
+	}
 }
 
 
@@ -275,7 +278,22 @@ void GrafiekVenster::zetAssenPen(const wxPen &pen)
 
 void GrafiekVenster::zetBorstel(const wxBrush &borstel)
 {
-	tekenBorstel = borstel;
+	tekeningDC.SetBrush(borstel);
+}
+
+void GrafiekVenster::zetStaafBreedte(const UInt32 sb)
+{
+	staafBreedte = sb;
+}
+
+void GrafiekVenster::zetAutoStaafBreedte()
+{
+	staafBreedte = 0;
+}
+
+void GrafiekVenster::zetStdStaafBreedte()
+{
+	staafBreedte = 1;
 }
 
 void GrafiekVenster::tekenAssenstelsel()
@@ -295,23 +313,37 @@ void GrafiekVenster::tekenAssenstelsel()
 }
 
 void GrafiekVenster::tekenStaaf(const wxPoint &coord,
-                                const bool eindPunten)
+								 const bool eindPunten)
 {
-	const wxPoint basis(offset.x+coord.x,0);
-	const wxPoint eindPunt(transCoord((offset+coord)));
 	
+	wxASSERT(0 != staafBreedte);
+
 	zetPen(tekenPen);
 	
-	tekeningDC.DrawLine(transCoord(basis),eindPunt);
-	
-	if (true == eindPunten)
-		tekeningDC.DrawCircle(eindPunt,2);
+	if (staafBreedte > 1)
+	{
+		const wxPoint basis(coord.x, 0);
+		const wxSize gr(staafBreedte, coord.y);
+		const wxRect rh(basis, gr);
+		tekenRechthoek(rh,true);
+		if (true == eindPunten)
+			tekenCirkel(coord, staafBreedte,false);
+	}
+	else
+	{
+		const wxPoint basis(offset.x + coord.x, 0);
+		const wxPoint eindPunt(transCoord((offset + coord)));
+		tekeningDC.DrawLine(transCoord(basis), eindPunt);
+		if (true == eindPunten)
+			tekeningDC.DrawCircle(eindPunt, 1);
+	}
+
 	
 	Refresh();
 }
 
 void GrafiekVenster::tekenStaaf(const LabelPoint& coord,
-                                const bool eindPunten)
+							     const bool eindPunten)
 {
 	
 	const wxPoint koord(coord.x, coord.y);
@@ -330,7 +362,7 @@ void GrafiekVenster::tekenStaaf(const LabelPoint& coord,
 }
 
 wxRealPoint GrafiekVenster::tekenStaven(const PuntLijst &punten,
-                                        const bool autoschaal ,
+                                        const bool autoschaal,
                                         const bool bolletje)
 {
 	wxRealPoint schaal;
@@ -425,7 +457,7 @@ wxRealPoint GrafiekVenster::tekenStaven(const PuntLijst &punten,
 }
 
 wxRealPoint GrafiekVenster::tekenStaven(const LabelPuntLijst& punten,
-                                        const bool autoschaal,
+										const bool autoschaal,
                                         const bool bolletje)
 {
 	wxRealPoint schaal;
@@ -521,22 +553,40 @@ wxRealPoint GrafiekVenster::tekenStaven(const LabelPuntLijst& punten,
 
 void GrafiekVenster::tekenStaven(const PuntLijst &punten,
                                  const wxRealPoint &schaal,
-                                 const bool bolletje)
+								 const bool bolletje)
 {
 	const auto aantal = punten.GetCount();
-	for (UInt32 i = 0; i<aantal; i++)
+
+	/* breedte van de staaf hangt af van de schaal */
+	const auto xBreedte = (0 != staafBreedte) ?  staafBreedte : MAX(1, static_cast<int>(schaal.x * 1));
+
+	for (UInt32 i = 0; i < aantal; i++)
 	{
-		const auto &p = punten[i];
-		const wxPoint basis(offset.x + static_cast<int>(schaal.x*p.x), offset.y);
-		const wxPoint eind(basis.x, offset.y + static_cast<int>(schaal.y*p.y));
-		
-		const wxPoint beginPunt(transCoord(basis));
+		const auto& p = punten[i];
+		const wxPoint basis(offset.x + static_cast<int>(schaal.x * p.x), offset.y);
+		const wxPoint eind(basis.x + (xBreedte ), offset.y + static_cast<int>(schaal.y * p.y));
+		const wxRect rh(basis, eind);
+
+		tekenRechthoek(rh, true);
+		//const wxPoint beginPunt(transCoord(basis));
 		const wxPoint eindPunt(transCoord(eind));
+
+		/* let op : size moet negatieve min waarde hebben om omhoog te tekenen. */
+		//const wxSize rhGrootte(xBreedte, static_cast<int>(-1.0 * schaal.y * p.y));
+
 		
-		tekeningDC.DrawLine(beginPunt, eindPunt);
-		
+		/* 12.03.2023 omgeschakeld naar staven omdat bij schaling dit beter werkt. */
+		//tekeningDC.DrawRectangle(beginPunt, rhGrootte);
+		//tekeningDC.DrawLine(beginPunt, eindPunt);
+	//	const wxPoint vloedpunt(beginPunt.x + 1, beginPunt.y - 1);
+	//	tekeningDC.FloodFill(vloedpunt, tekenPen.GetColour());
+
 		if (true == bolletje)
-			tekeningDC.DrawCircle(eindPunt, 2);
+		{
+			static const UInt32 minBreedte = 2;
+			const auto bolBreedte = MIN(minBreedte, xBreedte);
+			tekeningDC.DrawCircle(eindPunt, bolBreedte);
+		}
 	}
 	
 	Refresh();
@@ -544,22 +594,37 @@ void GrafiekVenster::tekenStaven(const PuntLijst &punten,
 
 void GrafiekVenster::tekenStaven(const LabelPuntLijst& punten,
                                  const wxRealPoint& schaal,
-                                 const bool bolletje)
+								const bool bolletje)
 {
 	const auto aantal = punten.GetCount();
+
+	/* breedte van de staaf hangt af van de schaal */
+	const auto xBreedte = (0 != staafBreedte) ? staafBreedte : MAX(1, static_cast<int>(schaal.x * 1));
+
 	for (UInt32 i = 0; i < aantal; i++)
 	{
 		const auto& p = punten[i];
 		const wxPoint basis(offset.x + static_cast<int>(schaal.x * p.x), offset.y);
-		const wxPoint eind(basis.x, offset.y + static_cast<int>(schaal.y * p.y));
-		
+		const wxPoint eind(basis.x + (xBreedte / 2), offset.y + static_cast<int>(schaal.y * p.y));
+
 		const wxPoint beginPunt(transCoord(basis));
 		const wxPoint eindPunt(transCoord(eind));
+
+		/* let op : size moet negatieve min waarde hebben om omhoog te tekenen. */
+		const wxSize rhGrootte(xBreedte, static_cast<int>(-1.0 * schaal.y * p.y));
+
+		/* 12.03.2023 omgeschakeld naar staven omdat bij schaling dit beter werkt. */
+		tekeningDC.DrawRectangle(beginPunt, rhGrootte);
 		
-		tekeningDC.DrawLine(beginPunt, eindPunt);
-		
+
+		//tekeningDC.DrawLine(beginPunt, eindPunt);
+
 		if (true == bolletje)
-			tekeningDC.DrawCircle(eindPunt, 2);
+		{
+			static const UInt32 minBreedte = 2;
+			const auto bolBreedte = MIN(minBreedte, xBreedte);
+			tekeningDC.DrawCircle(eindPunt, bolBreedte);
+		}
 		
 		if ((eind.y < vorigPunt.y - 5) || (eind.y > vorigPunt.y + 5))
 		{
@@ -721,16 +786,30 @@ void GrafiekVenster::tekenSpline(const LabelPuntLijst& punten)
 	delete[] nieuwePunten;
 }
 
-void GrafiekVenster::tekenRechthoek(const wxRect &rechthoek)
+void GrafiekVenster::tekenRechthoek(const wxRect& rechthoek, const bool vul)
 {
-	const wxRect rh(transCoord(offset+rechthoek.GetPosition()),
-	                rechthoek.GetSize());
-	
-	zetPen(tekenPen);
-	tekeningDC.DrawRectangle(rechthoek);
-	
-}
+	auto rhGrootte = rechthoek.GetSize();
+	const auto rhg = rhGrootte.GetHeight();
+	if (rhg > 0)
+		rhGrootte.SetHeight(rhg * -1);
 
+	const wxRect rh(transCoord(offset + rechthoek.GetPosition()),
+		rhGrootte);
+
+	zetPen(tekenPen);
+	if (true == vul)
+	{
+		const auto tekenBorstel(tekeningDC.GetBrush());
+		const wxBrush vulBorstel(tekenPen.GetColour(),wxBRUSHSTYLE_SOLID);
+	
+		zetBorstel(vulBorstel);
+		tekeningDC.DrawRectangle(rh);
+		zetBorstel(tekenBorstel);
+	}
+	else
+		tekeningDC.DrawRectangle(rh);
+
+}
 
 void GrafiekVenster::tekenVerticaleLijn(const wxCoord xCoord)
 {
@@ -757,18 +836,28 @@ void GrafiekVenster::tekenHorizontaleLijn(const wxCoord yCoord)
 }
 
 
-void GrafiekVenster::tekenCirkel(const wxPoint &mp, const wxCoord straal)
+void GrafiekVenster::tekenCirkel(const wxPoint &mp, const wxCoord straal, const bool vul)
 {
 	tekeningDC.SetPen(tekenPen);
-	tekeningDC.SetBrush(tekenBorstel);
 	const auto pm(transCoord(mp));
-	tekeningDC.DrawCircle(pm, straal);
+
+	if (true == vul)
+	{
+		const auto tekenBorstel(tekeningDC.GetBrush());
+		const wxBrush vulBorstel(tekenPen.GetColour(), wxBRUSHSTYLE_SOLID);
+
+		zetBorstel(vulBorstel);
+		tekeningDC.DrawCircle(pm, straal);
+		zetBorstel(tekenBorstel);
+	}
+	else
+		tekeningDC.DrawCircle(pm, straal);
 }
 
 
 void GrafiekVenster::tekenNulpunt(const wxPoint &mp, const wxCoord breedte)
 {
-	tekenCirkel(mp, breedte/2);
+	tekenCirkel(mp, breedte/2, false);
 }
 
 void GrafiekVenster::tekenPool(const wxPoint& mp, const wxCoord breedte)
@@ -864,7 +953,6 @@ bool GrafiekVenster::Layout()
 }
 
 
-
 void GrafiekVenster::teken(wxPaintEvent &event)
 {
 	wxAutoBufferedPaintDC bufferedDC(this);
@@ -887,6 +975,48 @@ void GrafiekVenster::teken(wxPaintEvent &event)
 void GrafiekVenster::veegDCLeeg(wxEraseEvent &event)
 {
 	/* Hier doen we niets , ook geen skip, zodat er geen erase aktie is.*/
+}
+
+
+void DynamischGrafiekVenster::initialiseer(const wxSize &nieuweGrootte)
+{
+	tekeningDC.SelectObject(wxNullBitmap);
+	const auto sk = 1.0; // GetDPIScaleFactor();
+	tekeningBitMap.CreateWithDIPSize(grafiekGrootte, sk);
+	tekeningDC.SelectObject(tekeningBitMap);
+	
+	wxASSERT_MSG((true == tekeningDC.IsOk()),
+	             wxT("(GrafiekVenster::GrafiekVenster) Kon geen geheugen voor DC alloceren"));
+	
+	if (true == tekeningDC.IsOk())
+	{
+		grafiekGrootte = nieuweGrootte;
+		tekeningDC.Clear();
+		tekeningDC.SetUserScale(1.0, 1.0);
+		
+		tekeningDC.SetAxisOrientation(true, false);
+	}
+}
+
+
+void DynamischGrafiekVenster::teken(wxPaintEvent &event)
+{
+	const auto ouderGrootte(wxWindow::GetClientSize());
+	wxAutoBufferedPaintDC bufferedDC(this);
+	
+	wxASSERT_MSG((bufferedDC.IsOk() == true),
+	             wxT("(GrafiekVenster::GrafiekVenster) Kon geen geheugen voor Buffered DC alloceren"));
+	
+	bufferedDC.CopyAttributes(tekeningDC);
+	
+	static const wxPoint startPunt;
+
+	if (false == bufferedDC.StretchBlit(startPunt,ouderGrootte,
+	                                    &tekeningDC,
+	                                    startPunt,grafiekGrootte,wxCOPY,true))
+	{
+		wxLogError(wxT("(GrafiekVenster::teken) kon niet strechblit uitvoeren."));
+	}
 }
 
 

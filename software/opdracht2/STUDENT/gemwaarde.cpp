@@ -4,13 +4,13 @@
 Opdracht 2 DSB practicum. Werk deze opdracht verder uit aan de hand van het kommentaar.
 Assignment 2 DSB practical work. Elaborate this assignment on the basis of the comments.
 
-@version $Rev: 313 $
+@version $Rev: 323 $
 @author $Author: ewout $
 
 @copyright Copyright 2006-2022 ir drs E.J Boks, Hogeschool van Arnhem en Nijmegen. https://ese.han.nl
 
 $URL: https://ese.han.nl/svn/dsbpracticum/trunk/2022/software/opdracht2/STUDENT/gemwaarde.cpp $
-$Id: gemwaarde.cpp 313 2023-01-30 13:54:35Z ewout $
+$Id: gemwaarde.cpp 323 2023-03-17 10:03:47Z ewout $
 ************************************************************************/
 
 #include <wx/filename.h>
@@ -19,6 +19,7 @@ $Id: gemwaarde.cpp 313 2023-01-30 13:54:35Z ewout $
 
 #include <dsbRingBuffer.h>
 #include <expAverage.h>
+#include <wx/numformatter.h>
 #include "gemwaarde.h"
 
 #ifndef OnderwijsOntwikkeling
@@ -126,7 +127,7 @@ GemWaardeVenster::GemWaardeVenster(DesktopApp &appRef, int id, const wxString& t
 		app(appRef),
 		origPen(wxPen(wxColour(wxT("RED")), 1, wxPENSTYLE_SOLID)),
 		gemWaardePen(wxPen(wxColour(wxT("BLUE")), 2, wxPENSTYLE_SOLID)),
-		grafiekGrootte(wxSize(1000,500)),
+		grafiekGrootte(2*wxGetDisplaySize()/3),
 		appConfig(app.geefAppConfig()) ,   /* verkrijg de globale config pointer */
 		DemoTekst(
 #ifndef OnderwijsOntwikkeling
@@ -138,7 +139,6 @@ GemWaardeVenster::GemWaardeVenster(DesktopApp &appRef, int id, const wxString& t
     // begin wxGlade: GemWaardeVenster::GemWaardeVenster
     SetSize(wxSize(953, 1032));
     panel_1 = new wxPanel(this, wxID_ANY);
-    scrolPaneel = new wxScrolledWindow(panel_1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxBORDER_SUNKEN|wxTAB_TRAVERSAL|wxFULL_REPAINT_ON_RESIZE);
     venster_menubar = new wxMenuBar();
     wxMenu *wxglade_tmp_menu;
     wxglade_tmp_menu = new wxMenu();
@@ -150,7 +150,7 @@ GemWaardeVenster::GemWaardeVenster(DesktopApp &appRef, int id, const wxString& t
     Bind(wxEVT_MENU, &GemWaardeVenster::eindeHandler, this, wxID_EXIT);
     venster_menubar->Append(wxglade_tmp_menu, _("File"));
     SetMenuBar(venster_menubar);
-    grafiek = new GrafiekVenster(scrolPaneel, GrafiekVensterID, grafiekGrootte);
+    grafiek = new DynamischGrafiekVenster(panel_1, GrafiekVensterID, grafiekGrootte);
     const wxString filterSelectionRadioBox_choices[] = {
         _("Standard Moving Average"),
         _("Exponential Moving Average"),
@@ -165,6 +165,8 @@ GemWaardeVenster::GemWaardeVenster(DesktopApp &appRef, int id, const wxString& t
     do_layout();
     // end wxGlade
 
+    //grafiek->Fit(); /* MOET om de grafiek goed te plaatsen. Is nu naar grafiekvenster verplaatst.*/
+    
 	appConfig->SetPath(wxT("/Configuratie"));
 
 	const wxFileName standaard(wxGetHomeDir(),wxT("dollareurokoers.valdat"));
@@ -305,7 +307,6 @@ void GemWaardeVenster::set_properties()
     // begin wxGlade: GemWaardeVenster::set_properties
     SetTitle(_("Assignment 2 : the running average"));
     SetFont(wxFont(12, wxFONTFAMILY_SWISS, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, 0, wxT("")));
-    scrolPaneel->SetScrollRate(10, 10);
     filterSelectionRadioBox->SetSelection(0);
     panel_1->SetBackgroundColour(wxColour(98, 255, 84));
     // end wxGlade
@@ -322,10 +323,7 @@ void GemWaardeVenster::do_layout()
     wxBoxSizer* sizer_5 = new wxBoxSizer(wxVERTICAL);
     wxBoxSizer* sizer_7 = new wxBoxSizer(wxHORIZONTAL);
     wxStaticBoxSizer* sizer_3 = new wxStaticBoxSizer(new wxStaticBox(panel_1, wxID_ANY, _("Averaging control parameter")), wxHORIZONTAL);
-    wxBoxSizer* sizer_4 = new wxBoxSizer(wxVERTICAL);
-    sizer_4->Add(grafiek, 1, wxEXPAND, 0);
-    scrolPaneel->SetSizer(sizer_4);
-    hoofdSizer->Add(scrolPaneel, 4, wxEXPAND, 0);
+    hoofdSizer->Add(grafiek, 1, wxEXPAND, 0);
     sizer_2->Add(filterSelectionRadioBox, 0, wxEXPAND, 0);
     sizer_3->Add(avgValueSlider, 1, wxEXPAND, 0);
     sizer_2->Add(sizer_3, 1, wxEXPAND, 0);
@@ -364,6 +362,5 @@ bool GemWaardeOpdracht::OnInit()
 	venster->Show();
 	return(true);
 }
-
 
 

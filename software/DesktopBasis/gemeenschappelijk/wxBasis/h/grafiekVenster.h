@@ -11,10 +11,10 @@
   in the Digital Signal Processing practial work assignments.
   Below the Dutch API, an English API has been constructed that offers the same functionality as the Dutch API.
 
-  @version $Rev: 4638 $
+  @version $Rev: 4707 $
   @author $Author: ewout $ 
   @copyright Copyright 2006-2019 ir drs E.J Boks Hogeschool van Arnhem en Nijmegen
-  $Id: grafiekVenster.h 4638 2022-11-16 15:53:14Z ewout $
+  $Id: grafiekVenster.h 4707 2023-03-13 16:48:15Z ewout $
 ************************************************************************/
 
 #ifndef HANESE_GRAFIEK_H
@@ -187,6 +187,12 @@ public:
 
 	void zetBorstel(const wxBrush &);  /*! @brief Zet de borstel om vlakken/cirkels e.d te vullen. */
 
+	void zetStaafBreedte(const UInt32);
+	void zetAutoStaafBreedte();
+	
+	void zetStdStaafBreedte();
+
+
 	void tekenAssenstelsel();   /*! @brief Teken een assenstelsel */
 
 	/*! @brief Teken een staaf van (coord_x,0) --> coord.
@@ -199,17 +205,17 @@ public:
 	 * @param[in] De coordinaat als wxPoint.
 	`* @param[in] Geef aan of een bolleke (true) of niet (false) wordt getekend aan het eind van de staaf. */
 	void tekenStaaf(const LabelPoint&,
-				    const bool bolletje = false);
+					const bool bolletje = false);
 
 	/*! @brief Teken een verzameling staven (in wxArray PuntLijst) van (coord_x,0) --> coord.
-	 * @param[in] De verzameling wxPoints, verzameld in een PuntLijst.
+	 * @param[in] De verzameling wxPoints, verzameld in een PuntLijst. 
 	 * @param[in] Geef aan of de grafiek autoschaling aanzet om alle staven binnen het veld te plaatsen.
 	 * @param[in] Geef aan of een bolleke (true) of niet (false) wordt getekend aan het eind van elke staaf.
 	 * @return de gebruikte schaalfaktoren in x en y richting (in een wxRealpoint).
 	 * @note Bij autoschaling wordt de grootte bepaald door de grootte (x,y) coordinaten in de PuntLijst.
 	         De staven worden automatisch geschaald naar 95% van het bereik. */
 	wxRealPoint tekenStaven(const PuntLijst &,
-	                        const bool autoschaal = false,
+							 const bool autoschaal,
 	                        const bool marker=false);
 
 	/*! @brief Teken een verzameling staven (in wxArray PuntLijst) van (coord_x,0) --> coord, en plaats de waarden van coord in mini font naast de staaf.
@@ -220,7 +226,7 @@ public:
 	 * @note Bij autoschaling wordt de grootte bepaald door de grootte (x,y) coordinaten in de PuntLijst.
 			 De staven worden automatisch geschaald naar 95% van het bereik. */
 	wxRealPoint tekenStaven(const LabelPuntLijst&,
-							const bool autoschaal = false,
+							const bool autoschaal,
 							const bool marker = false);
 
 	/*! @brief Teken een verzameling staven (in wxArray PuntLijst) van (coord_x,0) --> coord.
@@ -273,15 +279,21 @@ public:
 	void tekenSpline(const PuntLijst &);
 	void tekenSpline(const LabelPuntLijst&);
 
-	/*! @brief teken een rechthoek ergens in het tekenveld */
-	void tekenRechthoek(const wxRect &);
+	/*! @brief teken een rechthoek ergens in het tekenveld.
+		@param De afmetingen van de rechthoek.
+		@param moet de rechthoek gevuld worden? */
+	void tekenRechthoek(const wxRect &, const bool);
 
 	/*! @brief deze funkties tekenen lijnen die volledig doorlopen van begin tot eind van het tekenveld */
 	void tekenVerticaleLijn(const wxCoord);      /* x coord */
 	void tekenHorizontaleLijn(const wxCoord);    /* y coord */
 
 
-	void tekenCirkel(const wxPoint &, const wxCoord);
+	/*! @brief teken een cirkel.
+	   @param het middelpunt,
+	   @param de straal.
+	   @ Moet de cirkel met de tekenpen gevuld worden ? */
+	void tekenCirkel(const wxPoint &, const wxCoord, const bool );
 
 
 	void tekenNulpunt(const wxPoint&, const wxCoord);
@@ -302,10 +314,10 @@ public:
 
 	/*! @brief converteer de muispositie naar de grafische coordinaat */
 	wxPoint converteerMuisPositie(const wxMouseEvent &) const;
+	
+	wxSize grafiekGrootte;
 
 private:
-
-	const wxSize grafiekGrootte;
 	
 	static const wxFont microFont,miniFont,grootFont,normaalFont,kleinFont;
 	static const wxBrush doorzichtig;
@@ -313,14 +325,14 @@ private:
 
 	/* Attributen */
 	wxPen tekenPen;
-	wxBrush tekenBorstel;
 	wxPen assenstelselPen;
 	wxPoint oorsprong,offset;
-	wxBitmap tekeningBitMap;
+	
+	UInt32 staafBreedte = 1;
 
 protected:
-
 	/* opslag van de grafiek */
+	wxBitmap tekeningBitMap;
 	wxMemoryDC tekeningDC;
 
 	/* bewaar het vorige punt, indien nodig. */
@@ -335,7 +347,7 @@ protected:
 	void zetPen(const wxPen &);
 
 	bool Layout(); /* overloaded uit basisklasse */
-	void teken(wxPaintEvent  &);
+	virtual void teken(wxPaintEvent  &);
 	void veegDCLeeg(wxEraseEvent &);
 
 
@@ -343,6 +355,17 @@ DECLARE_EVENT_TABLE();
 };
 
 
+class DynamischGrafiekVenster : public GrafiekVenster
+{
+public:
+	
+	using GrafiekVenster::GrafiekVenster;
+	
+	void initialiseer(const wxSize &nieuweGrootte);
+	
+	void teken(wxPaintEvent  &) override;
+	
+};
 /* Below this line the English translation of all graphics functions can be found.
  * Please note that the Dutch versions are leading, ie they are needed at compilation time. */
 #if (InterfaceTaalEnglish)

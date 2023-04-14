@@ -2,10 +2,10 @@
 @file
 Desktop basisklasse API voor HAN ESE applikaties.
 
-@version $Rev: 4637 $
+@version $Rev: 4693 $
 @author $Author: ewout $
 @copyright Copyright 2006-2019 ir drs E.J Boks Hogeschool van Arnhem en Nijmegen
-$Id: desktopApp.h 4637 2022-11-16 13:24:37Z ewout $
+$Id: desktopApp.h 4693 2023-03-09 15:32:45Z ewout $
 */
 
 #ifndef DESKTOPAPP_H
@@ -16,6 +16,7 @@ $Id: desktopApp.h 4637 2022-11-16 13:24:37Z ewout $
 #include <wx/app.h>
 #include <wx/image.h>
 #include <wx/intl.h>
+#include <wx/filename.h>
 #include <wx/config.h>
 #include <wx/cmndata.h>
 #include <wx/snglinst.h>
@@ -80,31 +81,55 @@ public:
 
     wxString geefAppNaam() const;
 	wxWindow *geefHoofdVenster() const;
-
+	
+	/*! @brief Zet " " om een string.
+	* @param de string.
+	* @param moeten er ook spaties om de string heen worden geplaatst, binnen de quotes?
+	* @note Het " teken zelf word in de regel vervangen door een \" omdat de quotes anders plotseling eindigen.
+	* @return de uitvoerstring met "string". */
+	static wxString dubbeleQuotes(const wxString &,const bool metSpatie=false);
+	
+	/*! @brief Snelle kopie van bovenstaande funktie. */
+	static wxString dq(const wxString &str,const bool metSpatie=false)
+	{
+		const wxString uit(dubbeleQuotes(str,metSpatie));
+		return(uit);
+	};
+	
 protected:
 
-    /* Taalinstellingen */
-    wxLocale lokaliteit;
-    wxLanguage taal;
+	RetCode initLokaliteit();
+
+	/* Taalinstellingen */
+	bool taalGekozen=false;
+	/* Begin met een nullptr, in zetLokaliteit wordt deze geallokeerd. */
+	wxTranslations *vertaler = nullptr;
+	wxLocale *lokaliteit = nullptr;
+	
+	wxLanguage taal = wxLanguage::wxLANGUAGE_UNKNOWN;
+	RetCode taalGoedGezet = RetCode::Onbekend;
 	
     wxWindow *hoofdVenster = nullptr;
-	
-    wxString wxFindAppPath(const wxString& argv0, 
-                           const wxString& cwd, 
-                           const wxString& appVariableName);
     
-
-    wxString geefOSNaam(const wxOperatingSystemId ) const;   /* id --> naam in wxString */
-
-
+	/*! @brief geef het pad naar deze applikatie. */
+	wxFileName geefExePad() const;
 	
+	wxString geefOSNaam(const wxOperatingSystemId ) const;   /* id --> naam in wxString */
+ 
 private:
 
     wxConfig appConfig;
 	wxSingleInstanceChecker enkeleInstantieControle;
-    const wxString appNaam;
+    const wxString applikatieNaam;
+    
     const wxPlatformInfo platform;
-
+	wxStandardPaths stdPaden;
+	
+	RetCode initLokaliteit(wxLanguage nieuweTaal);
+	
+	RetCode zetLokaliteit(const wxLanguage nieuweTaal, const bool slaMeteenOp);
+	
+	RetCode geefLokaliteitStatus() const;
 };
 
 extern char const * const hanlogo[];

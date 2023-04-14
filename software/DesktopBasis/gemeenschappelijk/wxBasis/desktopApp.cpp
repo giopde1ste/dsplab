@@ -2,10 +2,10 @@
 @file
 Desktop basisklasse implementatie voor HAN ESE applicaties.
 
-@version $Rev: 4637 $
+@version $Rev: 4697 $
 @author $Author: ewout $
-@copyright Copyright 2006-2017 ir drs E.J Boks Hogeschool van Arnhem en Nijmegen
-$Id: desktopApp.cpp 4637 2022-11-16 13:24:37Z ewout $
+@copyright Copyright 2006-2023 ir drs E.J Boks Hogeschool van Arnhem en Nijmegen
+$Id: desktopApp.cpp 4697 2023-03-10 16:12:02Z ewout $
 */
 
 #include <cstring>
@@ -17,12 +17,15 @@ $Id: desktopApp.cpp 4637 2022-11-16 13:24:37Z ewout $
 #include <wx/filefn.h>
 #include <wx/aboutdlg.h>
 #include <wx/stdpaths.h>
+#include <wx/uilocale.h>
 
 #include <iostream>
 
 ConsoleApp::ConsoleApp(const wxString &appNaam) : wxAppConsole()
 {
-
+	/* Gebruik de lokaal instellingen van deze computer. */
+	wxUILocale::UseDefault();
+	
 	SetAppName(appNaam);
 
 	const wxString bedrijfsNaam(wxT("Hogeschool van Arnhem en Nijmegen"));
@@ -40,12 +43,13 @@ DesktopApp::DesktopApp(const wxString &an) : appConfig(an,wxT("Hogeschool van Ar
                                              enkeleInstantieControle(an+wxString::Format(wxT("-%s"),
                                                                                          wxGetUserId().c_str()),
                                                                      wxT("/tmp")),
-                                             appNaam(an)
+                                             applikatieNaam(an),
+                                             stdPaden(wxStandardPaths::Get())
 {
 	if (true == enkeleInstantieControle.IsAnotherRunning())
 		wxLogWarning(_("Please pay attention. The application is already running. Is this your intention?"));
 
-	const wxFileName standaardConfigPad(wxGetHomeDir(),appNaam);
+	const wxFileName standaardConfigPad(wxGetHomeDir(), applikatieNaam);
 	const wxFileName standaardDataDirPad(wxGetHomeDir());
 
 	const wxDateTime tijd = wxDateTime::Now();
@@ -65,118 +69,18 @@ DesktopApp::DesktopApp(const wxString &an) : appConfig(an,wxT("Hogeschool van Ar
 	appConfig.Read(wxT("/Operationeel/WerkDir"), &werkdir, wxFileName::GetHomeDir());
 	wxSetWorkingDirectory(werkdir);
 	
-	int taalWaarde; // = wxLANGUAGE_DEFAULT;
-	appConfig.Read(wxT("/Basisconfiguratie/Taal"),&taalWaarde,wxLANGUAGE_DEFAULT);
-
-	taal =static_cast<wxLanguage>(taalWaarde);
-	//taal =static_cast<wxLanguage>(wxLocale::GetSystemLanguage());
 	
-#ifdef __WXMSW__
+	static const wxString bedrijfsNaam(wxT("Hogeschool van Arnhem en Nijmegen"));
 
-	wxArrayString opzoekPaden;
-	auto  stdPaden= wxStandardPaths::Get();
-	const wxString resdir(stdPaden.GetResourcesDir());
-	opzoekPaden.Add(resdir);
-
-	
-
-// add locale search paths
-	const wxString exepad(stdPaden.GetExecutablePath());
-	const wxFileName exedir(exepad);
-	const wxString win32LokaalDir = exedir.GetPath(); // +wxT("\\share\\locale");
-	wxLocale::AddCatalogLookupPathPrefix(win32LokaalDir);
-
-	static const wxString winPaden[] = { wxT("\\share\\locale") , wxT("\\..\\share\\locale"),
-										 wxT("\\..\\Debug\\share\\locale") ,wxT("\\..\\Release\\share\\locale") };
-
-	for (auto& pad : winPaden)
-	{
-		const wxString nieuwPad(win32LokaalDir + pad);
-		opzoekPaden.Add(nieuwPad);
-	}
-
-	for (auto& op : opzoekPaden)
-	{
-		wxLocale::AddCatalogLookupPathPrefix(op);
-		wxLogDebug(wxT("Taalpad toegevoegd : ") + op);
-	}
-
-#endif
-
-
-	if (false == lokaliteit.Init(taal,wxLOCALE_LOAD_DEFAULT))
-	{
-		const wxString taalString(lokaliteit.GetLanguageName(taal));
-		wxLogDebug( wxT("Could not initialise the Locale for ") +
-		            taalString+
-		            wxT(", will opt for default English (NZ)"));
-		taal=wxLANGUAGE_ENGLISH_NEW_ZEALAND;
-		if (false == lokaliteit.Init(taal,wxLOCALE_LOAD_DEFAULT))
-		{
-			wxLogDebug( wxT("Could not initialise the Locale for ") +
-			            taalString+
-			            wxT("! No locale could be initialized."));
-		}
-	//	else
-	//		wxLogDebug(_("Locale with English (NZ) initialized."));
-	}
-	else
-	{
-		wxLogDebug( _("The application was initialized to use the system default language, which has this name:")+
-		            wxT(" \"")+lokaliteit.GetName()+wxT("\""));
-
-		//const wxOperatingSystemId os = platform.GetOperatingSystemId();
-		//wxArrayString opzoekPaden;
-
-	/*	switch (os)
-		{
-
-			case wxOS_WINDOWS_9X:
-			case wxOS_WINDOWS_NT:
-			case wxOS_WINDOWS_MICRO:
-			case wxOS_WINDOWS_CE:
-			{
-	
-				static const wxString winPaden[] = { wxT("\\share\\locale") , wxT("\\..\\share\\locale"),
-				                                     wxT("\\Debug\\share\\locale") ,wxT("\\Release\\share\\locale") };
-
-				auto  stdPaden(wxStandardPaths::Get());
-
-
-				for (auto& pad : winPaden)
-				{
-					const wxString nieuwPad(stdPaden.GetResourcesDir() + pad);
-					opzoekPaden.Add(nieuwPad);
-				}
-				
-			}
-				break;
-
-			default:
-				break;
-		}
-
-		for (auto& op : opzoekPaden)
-		{
-			lokaliteit.AddCatalogLookupPathPrefix(op);
-			wxLogDebug(wxT("Taalpad toegevoegd : ") + op);
-		}
-		*/
-		
-		lokaliteit.AddCatalog(appNaam);
-		lokaliteit.AddCatalog(wxT("DSB"));
-		lokaliteit.AddCatalog(wxT("RGT"));
-	}
-
-	wxLogDebug(wxT("Taal = ") + lokaliteit.GetCanonicalName());
-
-	const wxString bedrijfsNaam(wxT("Hogeschool van Arnhem en Nijmegen"));
-
-	SetAppName(appNaam);
-	SetAppDisplayName(appNaam);
+	SetAppName(applikatieNaam);
+	SetAppDisplayName(applikatieNaam);
 
 	SetVendorName(bedrijfsNaam);
 	SetVendorDisplayName(bedrijfsNaam);
+
+#if (!defined(__WXGTK_))
+	initLokaliteit();
+#endif
 
 #if defined(__WXMSW__)
 	/* 20.01.2022 : Zet hoge resolutie ook op Windows computers
@@ -200,9 +104,331 @@ DesktopApp::~DesktopApp()
 	appConfig.Write(wxT("/Operationeel/WerkDir"), wxGetCwd());
 	
 	appConfig.Set(Null);
-
+	
+	if (nullptr != lokaliteit)
+		delete lokaliteit;
 }
 
+wxString DesktopApp::dubbeleQuotes(const wxString &woord,const bool metSpatie)
+{
+	const wxString spatie((true==metSpatie) ? wxT(" ") : wxEmptyString);
+	const auto uit(spatie+wxT("\"")+woord+wxT("\"")+spatie);
+	return(uit);
+}
+
+RetCode DesktopApp::initLokaliteit()
+{
+	int taalvar = wxLocale::GetSystemLanguage();
+	appConfig.SetPath(wxT("/Gebruikersinstellingen"));
+	//	appConfig.Read(wxT("Encoding"), &taalvar, wxLocale::GetSystemLanguage());
+
+
+	const auto eigenTaal = static_cast<wxLanguage>(taalvar);
+	static const auto SysteemTaal = static_cast<wxLanguage>(wxLocale::GetSystemLanguage());
+
+	/* Gebruik de lokaal instellingen van deze computer. */
+	wxUILocale::UseDefault();
+
+	/* pogingen : probeer de ingelezen taal, dan de systeemtaal en als laatste Engels */
+	const wxLanguage taalPogingen[] = { eigenTaal,
+										SysteemTaal,
+										wxLANGUAGE_ENGLISH };
+
+	static const wxString meldingen[] = { wxT("The application locale could not be set according to your preferences! A reset to the default system language will be attempted."),
+										  wxT("The application locale could not be set according to the system language! The application will be reset to using the English language."),
+										  wxT("The application locale could not be set according to the English language! Is your computer configured properly?") };
+
+	auto taalGoed = RetCode::Onbekend;
+
+	auto meldingIndex = 0;
+	for (auto t : taalPogingen)
+	{
+		taalGoed = initLokaliteit(t);
+
+		if (RetCode::Ok == taalGoed)
+		{
+			taal = t;
+			break;
+		}
+		else
+		{
+			auto melding(meldingen[meldingIndex++]);
+			wxLogDebug(melding);
+			wxLogError(melding);
+			/* Er is iets foutgegaan. Zet terug naar de standaardtaal. */
+//			if (nullptr != lokaliteit)
+//			{
+//				delete lokaliteit;
+//				lokaliteit = nullptr;
+//			}
+		}
+	}
+
+	return(taalGoed);
+}
+
+RetCode DesktopApp::initLokaliteit(wxLanguage nieuweTaal)
+{
+	auto retkode = RetCode::Ok;
+	
+	const wxString appNaam(geefAppNaam());
+	
+	// voor test: nieuweTaal = wxLANGUAGE_HEBREW;
+	
+	/* maak de taalkodes aangepast aan de standaarden die Kiwanda hanteert. */
+	switch(nieuweTaal)
+	{
+		case wxLANGUAGE_CHINESE:
+			nieuweTaal = wxLANGUAGE_CHINESE_TAIWAN;
+			break;
+		
+		case wxLANGUAGE_HEBREW:
+			nieuweTaal = wxLANGUAGE_HEBREW_ISRAEL;
+			break;
+		
+		case wxLANGUAGE_JAPANESE:
+			nieuweTaal = wxLANGUAGE_JAPANESE_JAPAN;
+			break;
+		
+		case wxLANGUAGE_KOREAN:
+			nieuweTaal = wxLANGUAGE_KOREAN_KOREA;
+			break;
+		
+		case wxLANGUAGE_SWEDISH:
+			nieuweTaal = wxLANGUAGE_SWEDISH_SWEDEN;
+			break;
+		
+		default:
+			/* laat de rest ongemoeid. */
+			break;
+	}
+
+//	 wxLANGUAGE_JAPANESE_JAPAN)) //
+	if (RetCode::Ok != zetLokaliteit(nieuweTaal,false))
+	{
+		wxLogError(wxT("Could not initialise the Internationalization Locale system for ") +
+		           dq(appNaam) + wxT("."));
+		taalGoedGezet = retkode = RetCode::Fout;
+	}
+	else
+	{
+		
+		const wxOperatingSystemId os = platform.GetOperatingSystemId();
+		wxArrayString opzoekPaden;
+		
+		const wxString resdir(stdPaden.GetResourcesDir());
+		opzoekPaden.Add(resdir);
+		
+		switch (os)
+		{
+			
+			case wxOS_WINDOWS_9X:
+			case wxOS_WINDOWS_NT:
+			case wxOS_WINDOWS_MICRO:
+			case wxOS_WINDOWS_CE:
+			{
+				// add locale search paths
+				const auto uitvoerpad(geefExePad());
+				
+				const wxString win32LokaalDir = uitvoerpad.GetPath(); // +wxT("\\share\\locale");
+				wxFileTranslationsLoader::AddCatalogLookupPathPrefix(win32LokaalDir);
+
+				wxLogDebug(wxT("Windows exe pad:") + uitvoerpad.GetFullPath());
+
+#ifndef NDEBUG
+				static const wxString winPaden[] = {wxT("\\share\\locale"),
+				                                    wxT("\\..\\share\\locale")};
+#else
+				static const wxString winPaden[] = { wxT("\\share\\locale") ,
+														wxT("\\..\\share\\locale") };
+#endif
+				
+				
+				for (auto &pad : winPaden)
+				{
+					const wxString nieuwPad(win32LokaalDir + pad);
+					opzoekPaden.Add(nieuwPad);
+				}
+			}
+				break;
+			
+			case wxOS_UNIX_FREEBSD:
+			case wxOS_UNIX_OPENBSD:
+			case wxOS_UNIX_NETBSD:
+			case wxOS_UNIX_SOLARIS:
+			case wxOS_UNIX_AIX:
+			case wxOS_UNIX_HPUX:
+			case wxOS_UNIX_LINUX:
+			{
+				const wxString taalAfkorting(wxLocale::GetLanguageCanonicalName(nieuweTaal));
+				const wxString stdResources(stdPaden.GetResourcesDir());
+				const auto uitvoerpad(geefExePad());
+				const wxString uitvoerdir(uitvoerpad.GetPath());
+				
+				wxLogDebug(wxT("Taalpad (BSD/Solaris/AIX/Linux) toegevoegd."));
+				wxLogDebug(wxT("WerkDir = ")+wxFileName::GetCwd());
+                wxLogDebug(wxT("Uitvoeringspad = ")+uitvoerdir);
+
+				opzoekPaden.Add(stdResources + wxT("/Kiwanda/") + applikatieNaam + wxT("/locale"));
+				opzoekPaden.Add(stdResources + wxT("/../Kiwanda/") + applikatieNaam + wxT("/locale"));
+				
+				opzoekPaden.Add(stdResources + wxT("/locale"));
+				opzoekPaden.Add(uitvoerdir + wxT("/share/Kiwanda/") + applikatieNaam + wxT("/locale"));
+				opzoekPaden.Add(uitvoerdir + wxT("/../share/Kiwanda/") + applikatieNaam + wxT("/locale"));
+			}
+				break;
+			
+			default:
+				/* op Apple is alles automatisch al goed */
+				break;
+			
+		}
+		
+		for (auto &op : opzoekPaden)
+		{
+			//wxLocale::AddCatalogLookupPathPrefix(op);
+			wxFileTranslationsLoader::AddCatalogLookupPathPrefix(op);
+			wxLogDebug(wxT("Taalpad toegevoegd : ") + op);
+		}
+		
+		if (nieuweTaal != wxLANGUAGE_ENGLISH)
+		{
+			const wxString taalString(wxLocale::GetLanguageName(nieuweTaal));
+			
+			/* voeg de std bieb toe. */
+			if (false == vertaler->AddStdCatalog())
+			{
+				
+				const wxString foutmelding(
+						wxT("Could not add the standard wxWidgets catalog for language ") + DesktopApp::dq(taalString));
+
+#ifdef NDEBUG
+				wxLogError(foutmelding);
+#else
+				wxLogDebug(foutmelding);
+#endif
+				taalGoedGezet = retkode = RetCode::Fout;
+			}
+			
+			const wxString katalogusNaam(wxT("DSB"));
+			
+			//KiwandaAssert(nullptr != lokaliteit);
+//			if (false == lokaliteit->AddCatalog(katalogusNaam))
+//			KiwandaAssert(nullptr != vertaler);
+			if (false == vertaler->AddCatalog(katalogusNaam))
+			{
+				
+				const wxString foutmelding(wxT("Could not add DSB catalog for language ") + DesktopApp::dq(taalString));
+#ifdef NDEBUG
+				wxLogError(foutmelding);
+#else
+				wxLogDebug(foutmelding);
+#endif
+				taalGoedGezet = retkode = RetCode::Fout;
+			}
+			else
+			{
+				wxLogDebug(wxT("DSB katalogus voor taal : ") +
+				           taalString + wxT(" met succes toegevoegd."));
+				taalGoedGezet = retkode = RetCode::Ok;
+			}
+		}
+	}
+
+#ifndef NDEBUG
+	if (RetCode::Ok == retkode)
+	{
+		const wxString taalString(wxLocale::GetLanguageName(nieuweTaal));
+		wxLogDebug(_("The internationalization locale for") +
+		           dubbeleQuotes(taalString,true) +
+		           _("was initialized successfully."));
+	}
+#endif
+	
+	return(retkode);
+}
+
+RetCode DesktopApp::zetLokaliteit(const wxLanguage nieuweTaal, const bool slaMeteenOp)
+{
+	auto retkode = RetCode::Onbekend;
+	
+	/* Zie:
+	 * https://docs.wxwidgets.org/3.2/classwx_locale.html#a37c254f20d4862b6efea2fedf63a231a
+	 */
+	//nieuweTaal = wxLANGUAGE_CHINESE;
+#ifndef __WXMAC__
+	
+	/* Schakel uit en begin opnieuw. */
+	if(nullptr != lokaliteit)
+	{
+		delete lokaliteit;
+		lokaliteit = nullptr;
+	}
+
+	lokaliteit = new wxLocale(nieuweTaal, wxLOCALE_LOAD_DEFAULT);
+	const bool taalInit = lokaliteit->IsOk(); //.Init(nieuweTaal, wxLOCALE_LOAD_DEFAULT);
+#else
+	/* This class is known to have several problems under macOS:
+	 * first of all, it is impossible to change the application UI locale after launching it under this platform
+	 * and so using this class doesn't affect the native controls and dialogs there.
+	 * Additionally, versions of macOS between 11.0 and 12.2 inclusive are affected by a bug
+	 * when changing C locale can break display of the application menus.
+	 * Because of this, it is recommended to use wxUILocale instead of this class
+	 * for the applications targeting macOS. */
+	static const bool taalInit=true;
+#endif
+	if (false == taalInit)
+	{
+		const wxString taalString(wxLocale::GetLanguageName(nieuweTaal));
+		wxLogError(_("Could not initialise the Locale for") + DesktopApp::dq(taalString,true) +wxT("."));
+		delete lokaliteit;
+		lokaliteit = nullptr;
+		retkode = RetCode::Fout;
+	}
+	else
+	{
+		if (nullptr != vertaler)
+		{
+			const wxString oudeTaalString(wxLocale::GetLanguageName(taal));
+			const wxString oudeTaalNaam(wxLocale::GetLanguageCanonicalName(taal));
+			
+			wxLogDebug(wxT("(DesktopAppBasis::zetLokaliteit) oude taalkode = %d"), static_cast<UInt32>(taal));
+			wxLogDebug(wxT("(DesktopAppBasis::zetLokaliteit) oude taalnaam = ") + oudeTaalString);
+			wxLogDebug(wxT("(DesktopAppBasis::zetLokaliteit) oude taalkort = ") + oudeTaalNaam);
+			/* wxTranslations vernietigt ons objekt want heeft ownership. */
+		}
+		
+		const wxString taalString(wxLocale::GetLanguageName(nieuweTaal));
+		const wxString taalNaam(wxLocale::GetLanguageCanonicalName(nieuweTaal));
+		
+		wxLogDebug(wxT("(DesktopAppBasis::zetLokaliteit) nieuwe taalkode = %d"), static_cast<UInt32>(nieuweTaal));
+		wxLogDebug(wxT("(DesktopAppBasis::zetLokaliteit) nieuw taalnaam = ") + taalString);
+		wxLogDebug(wxT("(DesktopAppBasis::zetLokaliteit) nieuwe taalkort = ") + taalNaam);
+		
+		vertaler = new wxTranslations();
+		vertaler->SetLanguage(nieuweTaal);
+		
+		//vertaler->
+		wxTranslations::Set(vertaler);
+		
+		
+		taalGekozen = true;
+		appConfig.Write(wxT("/Operationeel/EersteKeer/TaalGekozen"), taalGekozen);
+		appConfig.Write(wxT("/Gebruikersinstellingen/Encoding"), static_cast<int>(taal = nieuweTaal));
+		if (true == slaMeteenOp)
+			appConfig.Flush();
+		
+		retkode = RetCode::Ok;
+	}
+	
+	return(retkode);
+}
+
+RetCode DesktopApp::geefLokaliteitStatus() const
+{
+	const auto retkode = (RetCode::Ok == taalGoedGezet) ? RetCode::Ok : RetCode::Fout;
+	return(retkode);
+}
 
 
 int DesktopApp::OnExit()
@@ -210,50 +436,11 @@ int DesktopApp::OnExit()
 	return(0);
 }
 
-wxString DesktopApp::wxFindAppPath(const wxString& argv0,
-                                   const wxString& cwd,
-                                   const wxString& appVariableName)
+wxFileName DesktopApp::geefExePad() const
 {
-	wxString str;
-
-	// Try appVariableName
-	if (!appVariableName.IsEmpty())
-	{
-		str = wxGetenv(appVariableName);
-		if (!str.IsEmpty())
-			return str;
-	}
-
-#if defined(__WXMAC__) && !defined(__DARWIN__)
-	// On Mac, the current directory is the relevant one when
-    // the application starts.
-    return (cwd);
-#endif
-
-	if (wxIsAbsolutePath(argv0))
-		return wxPathOnly(argv0);
-	else
-	{
-		// Is it a relative path?
-		wxString currentDir(cwd);
-		if (currentDir.Last() != wxFILE_SEP_PATH)
-			currentDir += wxFILE_SEP_PATH;
-
-		str = currentDir + argv0;
-		if (wxFileExists(str))
-			return wxPathOnly(str);
-	}
-
-	// OK, it's neither an absolute path nor a relative path.
-	// Search PATH.
-	wxPathList pathList;
-	pathList.AddEnvList(wxT("PATH"));
-	str = pathList.FindAbsoluteValidPath(argv0);
-	if (!str.IsEmpty())
-		return(wxPathOnly(str));
-
-	// Failed
-	return(wxEmptyString);
+	const wxString exePath(stdPaden.GetExecutablePath());
+	const wxFileName pad(exePath);
+	return(pad);
 }
 
 wxString DesktopApp::geefOS() const
@@ -342,7 +529,7 @@ wxStandardPaths DesktopApp::geefStdPaden() const
 
 wxString DesktopApp::geefAppNaam() const
 {
-	const wxString uit(appNaam);
+	const wxString uit(applikatieNaam);
 	return(uit);
 }
 
@@ -471,5 +658,4 @@ wxWindow *DesktopApp::geefHoofdVenster() const
 	wxASSERT(nullptr != ptr);
 	return(ptr);
 }
-
 

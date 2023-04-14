@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DSB\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-24 18:16+0200\n"
-"PO-Revision-Date: 2022-06-24 18:17+0200\n"
+"POT-Creation-Date: 2023-03-08 15:34+0100\n"
+"PO-Revision-Date: 2023-03-08 15:34+0100\n"
 "Last-Translator: \n"
 "Language-Team: ewout@boks.com\n"
 "Language: vi\n"
@@ -14,38 +14,42 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: STM32Basis\n"
 "X-Poedit-SearchPathExcluded-1: oud\n"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:46
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:50
 msgid ""
 "Please pay attention. The application is already running. Is this your "
 "intention?"
 msgstr "Xin chú ý. Ứng dụng này đã chạy. Đây có phải là ý định của bạn?"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:125
-msgid ""
-"The application was initialized to use the system default language, which "
-"has this name:"
-msgstr ""
-"Ứng dụng đã được khởi tạo để sử dụng ngôn ngữ mặc định của hệ thống, có tên "
-"như sau:"
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:324
+msgid "The internationalization locale for"
+msgstr "Địa điểm quốc tế hóa cho"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:330
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:326
+msgid "was initialized successfully."
+msgstr "đã được khởi tạo thành công."
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:365
+msgid "Could not initialise the Locale for"
+msgstr "Không thể khởi tạo Ngôn ngữ cho"
+
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:499
 msgid "Unknown"
 msgstr "Không xác định"
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:363
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:538
 msgid "The application must now be restarted to activate the new language."
 msgstr "Bây giờ ứng dụng phải được khởi động lại để kích hoạt ngôn ngữ mới."
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:364
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:539
 msgid "Restart the application."
 msgstr "Khởi động lại ứng dụng."
 
-#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:383
+#: DesktopBasis/gemeenschappelijk/wxBasis/desktopApp.cpp:558
 msgid "Version : "
 msgstr "Phiên bản : "
 
@@ -53,253 +57,252 @@ msgstr "Phiên bản : "
 msgid "Save the image as a PNG file."
 msgstr "Lưu hình ảnh dưới dạng tệp PNG."
 
-#: opdracht2/STUDENT/gemwaarde.cpp:120
-#, c-format
-msgid "Euro %.2lf"
-msgstr "Euro% .2lf"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:152
-msgid "Open\tCtrl+O"
-msgstr "Mở\tCtrl+O"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:154
-msgid "Draw data\tCtrl+T"
-msgstr "Vẽ dữ liệu\tCtrl+T"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:156 opdracht3/STUDENT/signaal.cpp:324
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1029
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:722
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:722
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1236
-msgid "Quit\tCtrl+Q"
-msgstr "Thoát khỏi\tCtrl + Q"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:158
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1767
-msgid "File"
-msgstr "Tập tin"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:162
-msgid "Standard Moving Average"
-msgstr "Trung bình di chuyển tiêu chuẩn"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:163
-msgid "Exponential Moving Average"
-msgstr "Trung bình di chuyển theo cấp số nhân"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:167
-msgid "Draw data"
-msgstr "Vẽ dữ liệu"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:234
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4117
-msgid "Open the data file. Please supply a list of one value per line."
-msgstr "Mở tệp dữ liệu. Vui lòng cung cấp danh sách một giá trị trên mỗi dòng."
-
-#: opdracht2/STUDENT/gemwaarde.cpp:249
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4131
-msgid "Could not open :"
-msgstr "Không thể mở :"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:274
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4156
-msgid "Error reading the input value :"
-msgstr "Lỗi khi đọc giá trị đầu vào:"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:313
-msgid "Assignment 2 : the running average"
-msgstr "Bài tập 2: trung bình đang chạy"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:331
-msgid "Averaging control parameter"
-msgstr "Tham số điều khiển trung bình"
-
-#: opdracht2/STUDENT/gemwaarde.cpp:354 opdracht3/STUDENT/signaal.cpp:686
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2107
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:5105
+#: opdracht2/STUDENT/gemwaarde.cpp:151 opdracht3/STUDENT/signaal.cpp:328
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:841
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1156
 msgid "Developer"
 msgstr "Chủ đầu tư"
 
-#: opdracht2/STUDENT/gemwaarde.cpp:356 opdracht3/STUDENT/signaal.cpp:688
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2109
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:5107
+#: opdracht2/STUDENT/gemwaarde.cpp:153 opdracht3/STUDENT/signaal.cpp:330
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:843
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1158
 msgid "Demo version"
 msgstr "Phiên bản dùng thử"
 
-#: opdracht3/STUDENT/signaal.cpp:49
+#: opdracht2/STUDENT/gemwaarde.cpp:163
+msgid "Open\tCtrl+O"
+msgstr "Mở\tCtrl+O"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:165
+msgid "Draw data\tCtrl+T"
+msgstr "Vẽ dữ liệu\tCtrl+T"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:167 opdracht3/STUDENT/signaal.cpp:352
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1044
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:722
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:722
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1282
+msgid "Quit\tCtrl+Q"
+msgstr "Thoát khỏi\tCtrl + Q"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:169
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1851
+msgid "File"
+msgstr "Tập tin"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:173
+msgid "Standard Moving Average"
+msgstr "Trung bình di chuyển tiêu chuẩn"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:174
+msgid "Exponential Moving Average"
+msgstr "Trung bình di chuyển theo cấp số nhân"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:178
+msgid "Draw data"
+msgstr "Vẽ dữ liệu"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:245
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4240
+msgid "Open the data file. Please supply a list of one value per line."
+msgstr "Mở tệp dữ liệu. Vui lòng cung cấp danh sách một giá trị trên mỗi dòng."
+
+#: opdracht2/STUDENT/gemwaarde.cpp:260
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4254
+msgid "Could not open :"
+msgstr "Không thể mở :"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:285
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4279
+msgid "Error reading the input value :"
+msgstr "Lỗi khi đọc giá trị đầu vào:"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:324
+msgid "Assignment 2 : the running average"
+msgstr "Bài tập 2: trung bình đang chạy"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:342
+msgid "Averaging control parameter"
+msgstr "Tham số điều khiển trung bình"
+
+#: opdracht2/STUDENT/gemwaarde.cpp:378
+msgid "Running average of the US$ <--> € exchange rate."
+msgstr "Trung bình cộng của tỷ giá hối đoái US$ <--> €."
+
+#: opdracht3/STUDENT/signaal.cpp:50
 msgid "FFTW start of calcation"
 msgstr "FFTW bắt đầu nung"
 
-#: opdracht3/STUDENT/signaal.cpp:52
+#: opdracht3/STUDENT/signaal.cpp:53
 msgid "The signal could not be sampled, because"
 msgstr "Tín hiệu không thể được lấy mẫu, bởi vì"
 
-#: opdracht3/STUDENT/signaal.cpp:53
+#: opdracht3/STUDENT/signaal.cpp:54
 #, c-format
 msgid "the number of samples per period=%d"
-msgstr "số lượng mẫu trong mỗi kỳ =% d"
+msgstr "số lượng mẫu trong mỗi kỳ =%d"
 
-#: opdracht3/STUDENT/signaal.cpp:104
+#: opdracht3/STUDENT/signaal.cpp:114
 msgid "Not allowed."
 msgstr "Không cho phép."
 
-#: opdracht3/STUDENT/signaal.cpp:108
+#: opdracht3/STUDENT/signaal.cpp:118
 #, c-format
 msgid "(SignaalVenster::tekenReeksHandler) Wrong signal choice (%ld)."
 msgstr "(SignaalVenster :: tekenReekHandler) Lựa chọn tín hiệu sai (%ld)."
 
-#: opdracht3/STUDENT/signaal.cpp:135
+#: opdracht3/STUDENT/signaal.cpp:145
 msgid "No valid data present in the file!"
 msgstr "Không có dữ liệu hợp lệ trong tập tin!"
 
-#: opdracht3/STUDENT/signaal.cpp:146
+#: opdracht3/STUDENT/signaal.cpp:156
 #, c-format
 msgid "Number of values=%d"
 msgstr "Số lượng giá trị =%d"
 
-#: opdracht3/STUDENT/signaal.cpp:181
+#: opdracht3/STUDENT/signaal.cpp:191
 msgid "Initialisation of the FFT routines resulted in an error"
 msgstr "Khởi tạo các thói quen FFT dẫn đến một lỗi"
 
-#: opdracht3/STUDENT/signaal.cpp:182
+#: opdracht3/STUDENT/signaal.cpp:192
 msgid "FFTW Init error"
 msgstr "Lỗi khởi tạo FFTW"
 
-#: opdracht3/STUDENT/signaal.cpp:282
+#: opdracht3/STUDENT/signaal.cpp:302
 msgid "Frequency image was constructed."
 msgstr "Hình ảnh tần số đã được xây dựng."
 
-#: opdracht3/STUDENT/signaal.cpp:316
+#: opdracht3/STUDENT/signaal.cpp:344
 msgid "&About"
 msgstr "&Trong khoảng"
 
-#: opdracht3/STUDENT/signaal.cpp:318
+#: opdracht3/STUDENT/signaal.cpp:346
 msgid "&Execute FFT\tCtrl+T"
 msgstr "& Thực thi FFT\tCtrl+T"
 
-#: opdracht3/STUDENT/signaal.cpp:320
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1033
+#: opdracht3/STUDENT/signaal.cpp:348
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1048
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:726
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:726
 msgid "Export the time domain image\tCtrl+R"
 msgstr "Xuất hình ảnh miền thời gian\tCtrl+R"
 
-#: opdracht3/STUDENT/signaal.cpp:322
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1034
+#: opdracht3/STUDENT/signaal.cpp:350
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1049
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:727
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:727
 msgid "Export the frequency domain image\tCtrl+E"
 msgstr "Xuất hình ảnh miền tần số\tCtrl+E"
 
-#: opdracht3/STUDENT/signaal.cpp:326
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1030
+#: opdracht3/STUDENT/signaal.cpp:354
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1045
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:723
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:723
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1237
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1283
 msgid "Bestand"
 msgstr "Bestand"
 
-#: opdracht3/STUDENT/signaal.cpp:332
+#: opdracht3/STUDENT/signaal.cpp:360
 msgid "Signal frequency"
 msgstr "Tần số tín hiệu"
 
-#: opdracht3/STUDENT/signaal.cpp:335
+#: opdracht3/STUDENT/signaal.cpp:363
 msgid "Sampling frequency"
 msgstr "Tần số lấy mẫu"
 
-#: opdracht3/STUDENT/signaal.cpp:338
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1191
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1196
+#: opdracht3/STUDENT/signaal.cpp:366
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1206
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1211
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:759
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:759
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1763
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1770
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1847
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1854
 msgid "Cosine"
 msgstr "Cô sin"
 
-#: opdracht3/STUDENT/signaal.cpp:339
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1136
+#: opdracht3/STUDENT/signaal.cpp:367
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1151
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:748
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:748
 msgid "Triangle"
 msgstr "Tam giác"
 
-#: opdracht3/STUDENT/signaal.cpp:340
+#: opdracht3/STUDENT/signaal.cpp:368
 msgid "Square"
 msgstr "Vuông"
 
-#: opdracht3/STUDENT/signaal.cpp:341
+#: opdracht3/STUDENT/signaal.cpp:369
 msgid "Data from file"
 msgstr "Dữ liệu từ tập tin"
 
-#: opdracht3/STUDENT/signaal.cpp:344
+#: opdracht3/STUDENT/signaal.cpp:372
 msgid "Number of periods:"
 msgstr "Số tiết:"
 
-#: opdracht3/STUDENT/signaal.cpp:346
+#: opdracht3/STUDENT/signaal.cpp:374
 msgid "Show amplitude"
 msgstr "Hiển thị tần số tương tự"
 
-#: opdracht3/STUDENT/signaal.cpp:347
+#: opdracht3/STUDENT/signaal.cpp:375
 msgid "Show phase"
 msgstr "Hiển thị giai đoạn"
 
-#: opdracht3/STUDENT/signaal.cpp:348
+#: opdracht3/STUDENT/signaal.cpp:376
 msgid "Dump FFT values"
 msgstr "Kết xuất giá trị FFT"
 
-#: opdracht3/STUDENT/signaal.cpp:349
+#: opdracht3/STUDENT/signaal.cpp:377
 msgid "Execute Fast Fourier Transform"
 msgstr "Thực hiện chuyển đổi Fourier nhanh"
 
-#: opdracht3/STUDENT/signaal.cpp:501
+#: opdracht3/STUDENT/signaal.cpp:528
 msgid "Assignment 3 DSB Practicum"
 msgstr "Bài tập 3 DSB Practiceicum"
 
-#: opdracht3/STUDENT/signaal.cpp:502
+#: opdracht3/STUDENT/signaal.cpp:529
 msgid "Employ the FFTW library for generating a frequency plot."
 msgstr "Sử dụng thư viện FFTW để tạo một biểu đồ tần số."
 
-#: opdracht3/STUDENT/signaal.cpp:517
+#: opdracht3/STUDENT/signaal.cpp:544
 msgid "Open a data file with the signal values in float format)"
 msgstr "Mở tệp dữ liệu với các giá trị tín hiệu ở định dạng nổi)"
 
-#: opdracht3/STUDENT/signaal.cpp:520
+#: opdracht3/STUDENT/signaal.cpp:547
 msgid "All files (*.*)|*.*"
 msgstr "Tất cả tệp (*.*)|*.*"
 
-#: opdracht3/STUDENT/signaal.cpp:532
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1903
+#: opdracht3/STUDENT/signaal.cpp:559
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1918
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1012
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1012
 msgid "Could not open:"
 msgstr "Không thể mở:"
 
-#: opdracht3/STUDENT/signaal.cpp:557
+#: opdracht3/STUDENT/signaal.cpp:584
 msgid "Error reading the float data."
 msgstr "Lỗi đọc dữ liệu float."
 
-#: opdracht3/STUDENT/signaal.cpp:591
+#: opdracht3/STUDENT/signaal.cpp:618
 msgid "Signal sampling and frequency image"
 msgstr "Lấy mẫu tín hiệu và hình ảnh tần số"
 
-#: opdracht3/STUDENT/signaal.cpp:598
+#: opdracht3/STUDENT/signaal.cpp:625
 msgid "FFTW Status : unknown"
 msgstr "Tình trạng FFTW: không xác định"
 
-#: opdracht3/STUDENT/signaal.cpp:624
+#: opdracht3/STUDENT/signaal.cpp:651
 msgid "Frequency plot features"
 msgstr "Tính năng cốt truyện tần số"
 
-#: opdracht3/STUDENT/signaal.cpp:625
+#: opdracht3/STUDENT/signaal.cpp:652
 msgid "Time domain properties"
 msgstr "Thuộc tính miền thời gian"
 
-#: opdracht3/STUDENT/signaal.cpp:627
+#: opdracht3/STUDENT/signaal.cpp:654
 msgid "Signal properties"
 msgstr "Thuộc tính tín hiệu"
 
-#: opdracht3/STUDENT/signaal.cpp:695
+#: opdracht3/STUDENT/signaal.cpp:718
 msgid "FFT Signal test"
 msgstr "Kiểm tra tín hiệu FFT"
 
@@ -311,14 +314,14 @@ msgstr ""
 "Chương trình này yêu cầu độ phân giải màn hình tối thiểu 1024x768 pixel.\n"
 "Sự khởi đầu bị hủy bỏ."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:123
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:124
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:91
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:91
 msgid "filter berekening start."
 msgstr "lọc berekening bắt đầu."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:158
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:433
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:159
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:435
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:126
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:399
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:126
@@ -326,74 +329,65 @@ msgstr "lọc berekening bắt đầu."
 msgid "May not reach this point!!"
 msgstr "Có thể không đạt đến điểm này !!"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:398
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:400
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:364
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:364
 msgid "filter calculation start."
 msgstr "tính toán bộ lọc bắt đầu."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:646
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:639
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:639
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:649
 #, c-format
-msgid "Coefficient[%d] = %.3f (Q%d:%d)"
-msgstr "Hệ số [%d] =% .3f (Q%d:%d)"
+msgid "Coefficient[%d] = %s (Q%d:%d)"
+msgstr "Hệ số[%d] = %s (Q%d:%d)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:683
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:676
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:676
-#, c-format
-msgid "Mouse = [%.3f*pi,%.3f dB]. |H(%.3f*pi)| = %.3f dB"
-msgstr "Chuột = [%.3f * pi,%.3f dB]. | H (%.3f * pi) | =%.3f dB"
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:691
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:703
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4158
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4174
+msgid "Coordinate"
+msgstr "Điều phối"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:692
-#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:685
-#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:685
-#, c-format
-msgid "Mouse = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
-msgstr "Chuột = [%.3f Hz,%.3f dB]. | H (%.3f Hz) | =%.3f dB"
-
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:713
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:723
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1324
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1324
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4078
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4201
 msgid "Time graph entry."
 msgstr "Thời gian nhập đồ thị."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:721
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:731
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1332
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1332
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4086
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4209
 msgid "Time graph exit."
 msgstr "Biểu đồ thời gian thoát."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:723
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:745
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:733
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:755
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1334
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1356
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1334
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1356
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4088
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4110
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4211
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4233
 msgid "No coordinates"
 msgstr "Không có tọa độ"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:735
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:745
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1346
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1346
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4100
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4223
 msgid "Freq graph entry."
 msgstr "Nhập đồ thị Freq."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:743
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:753
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1354
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1354
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4108
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4231
 msgid "Freq graph exit."
 msgstr "Thoát đồ thị Freq."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:905
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1403
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:923
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1418
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:852
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1223
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:852
@@ -402,287 +396,287 @@ msgstr "Thoát đồ thị Freq."
 msgid "Orde = %d (%d taps)"
 msgstr "Orde =%d (%d vòi)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1027
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1042
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:721
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:721
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1231
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1277
 msgid "About"
 msgstr "Giới thiệu"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1028
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1043
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:728
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:728
 msgid "Write a C/CPP Header file"
 msgstr "Viết tệp Tiêu đề C / CPP"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1032
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1047
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:725
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:725
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1239
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1285
 msgid "Calculate Filter\tCtrl+B"
 msgstr "Tính toán bộ lọc\tCtrl + B"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1035
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1050
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:729
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:729
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1246
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1292
 msgid "Filter"
 msgstr "Bộ lọc"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1052
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1067
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:718
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:718
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1263
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1309
 msgid "Time domain filter impulse response"
 msgstr "Bộ lọc miền thời gian đáp ứng xung"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1059
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1074
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:732
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:732
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1271
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1317
 msgid "Time domain coordinates (Mouse over window)"
 msgstr "Tọa độ miền thời gian (Chuột trên cửa sổ)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1063
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1078
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:710
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:710
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1309
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1355
 msgid "Frequency domain representation"
 msgstr "Biểu diễn miền tần số"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1073
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1088
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:736
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:736
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1320
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1366
 msgid "Frequency domain coordinates (Mouse over window)"
 msgstr "Tọa độ miền tần số (Chuột trên cửa sổ)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1077
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1092
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:735
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:735
 msgid "Show analogue frequencies"
 msgstr "Hiển thị tần số tương tự"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1086
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1101
 msgid "Discover HAN Embedded Systems Engineering!"
 msgstr "Khám phá Kỹ thuật Hệ thống Nhúng HAN!"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1089
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1104
 msgid "Test results visualization"
 msgstr "Hình ảnh hóa kết quả kiểm tra"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1099
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1114
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:714
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:714
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1406
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1452
 msgid "Filter parameters"
 msgstr "Thông số bộ lọc"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1112
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1127
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:739
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:739
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1416
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1462
 msgid "Sampling frequency (Hz)"
 msgstr "Tần số lấy mẫu (Hz)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1116
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1122
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1131
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1137
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:740
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:742
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:740
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:742
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1421
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1467
 msgid "undetermined"
 msgstr "không xác định"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1119
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1134
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:741
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:741
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1659
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1743
 msgid "Filter order"
 msgstr "Thứ tự lọc"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1125
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1140
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:743
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:743
 msgid "Supplemental filter amplification (dB) :"
 msgstr "Khuếch đại bộ lọc bổ sung (dB):"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1131
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1146
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:745
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:745
 msgid "Window applied :"
 msgstr "Cửa sổ áp dụng:"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1135
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1139
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1150
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1154
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:747
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:747
 msgid "Rectangle"
 msgstr "Hình chữ nhật"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1137
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1152
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:749
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:749
 msgid "Hamming"
 msgstr "Hamming"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1142
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1157
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:752
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:752
 msgid "Number of bits in coding :"
 msgstr "Số bit trong mã hóa:"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1151
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1166
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:754
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:754
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1436
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1485
 msgid "Calculate filter"
 msgstr "Tính toán bộ lọc"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1157
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1172
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:755
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:755
 msgid "Dump coefficients"
 msgstr "Hệ số kết xuất"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1161
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1463
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1176
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1519
 msgid "&Quit"
 msgstr "Thoát khỏi"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1167
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1182
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:712
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:712
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1679
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1763
 msgid "Band pass begin (Hz)"
 msgstr "Băng thông bắt đầu (Hz)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1175
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1190
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:713
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:713
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1693
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1777
 msgid "Band pass end (Hz)"
 msgstr "Kết thúc băng thông (Hz)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1183
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1198
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:717
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:717
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1755
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1839
 msgid "Filter test"
 msgstr "Kiểm tra bộ lọc"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1192
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1207
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:760
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:760
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1764
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1848
 msgid "Square wave"
 msgstr "Sóng vuông"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1193
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1208
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:761
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:761
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1765
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1849
 msgid "Impulse"
 msgstr "Thúc đẩy"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1194
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1209
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:762
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:762
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1766
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1850
 msgid "Step"
 msgstr "Bước"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1205
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1220
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:715
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:715
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1779
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1863
 msgid "Test Signal frequency"
 msgstr "Kiểm tra tần số tín hiệu"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1215
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1230
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:716
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:716
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1795
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1879
 msgid "Test Signal amplitude"
 msgstr "Kiểm tra biên độ tín hiệu"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1225
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1240
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:768
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:768
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1810
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1894
 msgid "Show test signal"
 msgstr "Hiển thị tín hiệu kiểm tra"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1229
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1244
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:769
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:769
 msgid "Draw interpolation spline"
 msgstr "Vẽ spline nội suy"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1233
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1248
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:765
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:765
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1774
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1858
 msgid "Start Filter Test"
 msgstr "Bắt đầu kiểm tra bộ lọc"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1327
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1342
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1153
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1153
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2637
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2731
 msgid "Specify the sampling frequency in Hz."
 msgstr "Chỉ định tần số lấy mẫu tính bằng Hz."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1328
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1343
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1154
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1154
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2638
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2732
 msgid "Frequency:"
 msgstr "Tần số:"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1329
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1344
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1155
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1155
 msgid "The FIR filter system sampling frequency"
 msgstr "Tần số lấy mẫu hệ thống lọc FIR"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1391
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1406
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1211
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1211
 msgid "Specify the order of the filter in number of taps."
 msgstr "Chỉ định thứ tự của bộ lọc theo số lượng vòi."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1392
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1407
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1212
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1212
 msgid "Filter order:"
 msgstr "Thứ tự lọc:"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1393
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1408
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1213
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1213
 msgid "Taps in the FIR filter system"
 msgstr "Tần số lấy mẫu hệ thống lọc FIR"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1557
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1572
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1252
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1252
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3245
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3352
 msgid "The start of the pass band must be smaller than the end."
 msgstr "Điểm bắt đầu của dải thông phải nhỏ hơn điểm kết thúc."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1700
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1715
 msgid "Student version"
 msgstr "Phiên bản sinh viên"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1828
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1843
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:978
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:978
 msgid "Assignment 4 DSB Practicum"
 msgstr "Bài tập 4 DSB Practiceicum"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1829
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1844
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:979
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:979
 msgid ""
@@ -690,27 +684,27 @@ msgid ""
 msgstr ""
 "Thiết kế và triển khai một công cụ thiết kế bộ lọc FIR dựa trên hàm chân ()."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1883
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1898
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:992
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:992
 msgid "Save the filter design as a C or CPP header file"
 msgstr "Lưu thiết kế bộ lọc dưới dạng tệp tiêu đề C hoặc CPP"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:1993
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2008
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1102
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1102
 msgid "Header file written succesfully."
 msgstr "Tập tin tiêu đề viết thành công."
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2078
-#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2080
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2093
+#: opdracht4/STUDENT/ontwerper/filterDesigner.cpp:2095
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:1309
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1309
 #, c-format
 msgid "Coefficient[%d] = %d (float:%f)"
 msgstr "Hệ số [%d] =%d (float:%f)"
 
-#: opdracht4/STUDENT/ontwerper/filterDesigner.h:53
+#: opdracht4/STUDENT/ontwerper/filterDesigner.h:54
 msgid ""
 "FIR filter designer for HAN Embedded Systems Engineering Digital Signal "
 "Processing"
@@ -734,6 +728,24 @@ msgstr ""
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:1436
 msgid "Demoversion"
 msgstr "Phiên bản dùng thử"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:639
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:639
+#, c-format
+msgid "Coefficient[%d] = %.3f (Q%d:%d)"
+msgstr "Hệ số [%d] =%.3f (Q%d:%d)"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:676
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:676
+#, c-format
+msgid "Mouse = [%.3f*pi,%.3f dB]. |H(%.3f*pi)| = %.3f dB"
+msgstr "Chuột = [%.3f * pi,%.3f dB]. | H (%.3f * pi) | =%.3f dB"
+
+#: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:685
+#: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:685
+#, c-format
+msgid "Mouse = [%.3f Hz,%.3f dB]. |H(%.3f Hz)| = %.3f dB"
+msgstr "Chuột = [%.3f Hz,%.3f dB]. | H (%.3f Hz) | =%.3f dB"
 
 #: opdracht4/STUDENT/ontwerper/oud/filterOntwerper.cpp:700
 #: opdracht4/STUDENT/ontwerper/oud/wxGlade/filterOntwerper.cpp:700
@@ -762,30 +774,30 @@ msgid "Please enter one ore more floating point values."
 msgstr "Vui lòng nhập thêm một giá trị dấu phẩy động."
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:155
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1504
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1544
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1560
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1628
 msgid "&Clear"
 msgstr "クリア（＆C）"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:166
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:200
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:201
 msgid "&OK"
 msgstr "Chấp nhận"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:170
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:204
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:205
 msgid "&Cancel"
 msgstr "&Hủy bỏ"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:270
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2754
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2803
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2858
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2910
 msgid "Conversion to a floating point value of this content :"
 msgstr "Chuyển đổi sang giá trị dấu phẩy động của nội dung này:"
 
 #: opdracht6/STUDENT/designer/customdatadialoog.cpp:271
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2755
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2805
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2859
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2912
 msgid "failed."
 msgstr "thất bại."
 
@@ -793,11 +805,21 @@ msgstr "thất bại."
 msgid "Entry of custom data for the IIR filter designer."
 msgstr "Nhập dữ liệu tùy chỉnh cho trình thiết kế bộ lọc IIR."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:55
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:56
 msgid "Filter calculation start."
 msgstr "Bắt đầu tính toán bộ lọc."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:156
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:68
+msgid "The number of input coefficents must be equal to or larger than one."
+msgstr "Số lượng hệ số đầu vào phải bằng hoặc lớn hơn một."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:102
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:196
+#, c-format
+msgid "Impulse response[%d] : %s"
+msgstr "Phản hồi xung[%d] : %s"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:166
 msgid ""
 "Your did not enter any zeros and poles.\n"
 "You must provide at least one pole and one zero."
@@ -805,148 +827,155 @@ msgstr ""
 "Của bạn đã không nhập bất kỳ số không và cực.\n"
 "Bạn phải cung cấp ít nhất một cực và một số không."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:184
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:239
 #, c-format
-msgid "Impulse response[%d] : %.2f"
-msgstr "Phản hồi xung lực [%d]: %.2f"
+msgid "Impulse response scale factor : %s db"
+msgstr "Hệ số thang đo đáp ứng xung : %s db"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:224
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:405
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:502
 #, c-format
-msgid "Impulse response scale factor : %.2f db"
-msgstr "Hệ số thang đo phản ứng xung: %.2f db"
+msgid "Frequency domain[%s rad] :"
+msgstr "Miền tần số[%s rad] :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:387
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:481
-#, c-format
-msgid "Frequency domain[%.2f rad] :"
-msgstr "Miền tần số [%.2f rad]:"
-
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:519
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:541
 msgid "The entered value"
 msgstr "Giá trị đã nhập"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:519
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:541
 msgid "cannot be used for scaling the frequency plot"
 msgstr "không thể được sử dụng để mở rộng biểu đồ tần số"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:565
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:587
 msgid "The number of points must be larger than zero."
 msgstr "Số lượng điểm phải lớn hơn không."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:767
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:614
+msgid ""
+"Your coefficients are too large for proper scaling in the frequency window. "
+"Please scale down the coefficients."
+msgstr ""
+"Các hệ số của bạn quá lớn để chia tỷ lệ thích hợp trong cửa sổ tần số. Vui "
+"lòng thu nhỏ các hệ số."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:797
 msgid "Z Plane"
 msgstr "Máy bay Z"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1232
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1278
 msgid "Load a filter configuration\tCtrl+O"
 msgstr "Tải cấu hình bộ lọc\tCtrl+O"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1233
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1279
 msgid "Save the filter configuration\tCtrl+S"
 msgstr "Lưu cấu hình bộ lọc\tCtrl+S"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1235
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1281
 msgid "Reset to demo values"
 msgstr "Đặt lại về giá trị demo"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1240
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1286
 msgid "Export the time domain to an image"
 msgstr "Xuất miền thời gian thành hình ảnh"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1241
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1287
 msgid "Export the pole-zero diagram to an image"
 msgstr "Xuất biểu đồ cực không sang hình ảnh"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1242
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1288
 msgid "Export the frequency domain to an image"
 msgstr "Xuất miền tần số sang hình ảnh"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1243
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1289
 msgid "Export the test signal output to an image"
 msgstr "Xuất đầu ra tín hiệu thử nghiệm thành hình ảnh"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1245
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1291
 msgid "Export the time domain output in CSV format"
 msgstr "Xuất đầu ra miền thời gian ở định dạng CSV"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1279
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1325
 msgid "Horizontal plotting limit"
 msgstr "Giới hạn vẽ đồ thị theo chiều ngang"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1283
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1359
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1558
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1708
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1329
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1405
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1642
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1792
 msgid "Auto"
 msgstr "Tự động"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1292
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1338
 msgid "sampling moments"
 msgstr "thời điểm lấy mẫu"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1296
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1342
 msgid "Configuration name"
 msgstr "Tên cấu hình"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1300
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1346
 msgid "Generic digital fiter"
 msgstr "Bộ nối kỹ thuật số chung"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1328
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1374
 msgid "Frequency image elements"
 msgstr "Các yếu tố hình ảnh tần số"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1335
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1381
 msgid "analogue frequencies"
 msgstr "tần số tương tự"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1340
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1386
 msgid "magnitude"
 msgstr "độ lớn"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1345
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1391
 msgid "Show full sampled range"
 msgstr "Hiển thị đầy đủ phạm vi được lấy mẫu"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1350
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1396
 msgid "phase angle"
 msgstr "góc pha"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1355
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1401
 msgid "Vertical plotting limits"
 msgstr "Giới hạn vẽ biểu đồ dọc"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1371
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1417
 msgid "to"
 msgstr "đến"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1379
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1569
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1719
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1425
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1653
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1803
 msgid "dB"
 msgstr "dB"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1386
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1432
 msgid "Pole-Zero diagram"
 msgstr "Sơ đồ cực Zero"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1395
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1441
 msgid "Test signal output"
 msgstr "Kiểm tra đầu ra tín hiệu"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1425
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1471
 msgid "Filter amplification (dB) :"
 msgstr "Khuếch đại bộ lọc (dB):"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1447
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1493
+msgid "Clear filter"
+msgstr "Làm sạch bộ lọc"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1503
 msgid "Dump GUI calculations"
 msgstr "Tính toán GUI kết xuất"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1452
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1508
 msgid "Show signal value labels"
 msgstr "Hiển thị nhãn giá trị tín hiệu"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1459
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1515
 msgid ""
 "Find out what an exciting study Embedded Systems Engineering is! \n"
 "Press this button to visit the ESE web site."
@@ -954,7 +983,7 @@ msgstr ""
 "Tìm hiểu một nghiên cứu thú vị Kỹ thuật hệ thống nhúng là gì!\n"
 "Nhấn nút này để truy cập trang web ESE."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1478
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1534
 msgid ""
 "b-coefficients for \n"
 "x[n] and earlier"
@@ -962,7 +991,16 @@ msgstr ""
 "b-hệ số cho\n"
 "x [n] trở về trước"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1486
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1536
+msgid ""
+"Assume that the b coefficients are listed on the right side of the equation "
+"sign in the recursive formula, with y[n] on the left side of the equation "
+"sign."
+msgstr ""
+"Giả sử rằng các hệ số b được liệt kê ở phía bên phải của dấu phương trình "
+"trong công thức đệ quy, với y[n] ở phía bên trái của dấu phương trình."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1542
 msgid ""
 "a-coefficients for \n"
 "y[n-1]  and earlier"
@@ -970,92 +1008,114 @@ msgstr ""
 "a-hệ số cho\n"
 "y [n-1] trở về trước"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1500
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1540
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1544
+msgid ""
+"Assume that the a coefficients are listed on the right side of the equation "
+"sign in the recursive formula, with y[n] on the left side of the equation "
+"sign."
+msgstr ""
+"Giả sử rằng các hệ số a được liệt kê ở phía bên phải của dấu phương trình "
+"trong công thức đệ quy, với y[n] ở phía bên trái của dấu phương trình."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1556
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1624
 msgid "Show information about these entry fields."
 msgstr "Hiển thị thông tin về các trường nhập này."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1512
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2331
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2334
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1570
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1585
+msgid "Scale factor"
+msgstr "Hệ số tỷ lệ"
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1572
+msgid "All input coefficients are multiplied by this scaling factor."
+msgstr "Tất cả các hệ số đầu vào được nhân với hệ số tỷ lệ này."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1587
+msgid "All output coefficients are multiplied by this scaling factor."
+msgstr "Tất cả các hệ số đầu ra được nhân với hệ số tỷ lệ này."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1596
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2425
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2428
 msgid "Coefficients"
 msgstr "Hệ số"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1522
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1606
 msgid "locations of the zeros"
 msgstr "vị trí của các số không"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1528
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1612
 msgid "locations of the poles"
 msgstr "vị trí của các cực"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1554
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1704
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1638
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1788
 msgid "Gain compensation"
 msgstr "Được bồi thường"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1561
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1711
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1645
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1795
 msgid "Scale the peak output to 0 dB"
 msgstr "Chia tỷ lệ đầu ra cực đại thành 0 dB"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1565
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1715
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1649
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1799
 msgid "0"
 msgstr "0"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1573
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1657
 msgid "Purpose based pole-zero insertion"
 msgstr "Chèn cực không dựa trên mục đích"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1578
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1662
 msgid "Zero at Origin"
 msgstr "Zero at Origin"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1580
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1664
 msgid "Insert a zero in the origin."
 msgstr "Chèn một số 0 trong điểm gốc."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1584
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1668
 msgid "Pole at Origin"
 msgstr "Cực tại nguồn gốc"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1586
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1670
 msgid "Insert a pole in the origin."
 msgstr "Chèn một cực vào gốc."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1590
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1674
 msgid "Comb expression"
 msgstr "Biểu thức lược"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1592
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1676
 msgid "Insert a comb expression of either zeros or poles."
 msgstr "Chèn biểu thức lược của số không hoặc cực."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1600
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1684
 msgid "frequency (Hz)"
 msgstr "tần số (Hz)"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1613
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1697
 msgid "-3 dB band (Hz)"
 msgstr "Băng tần -3 dB (Hz)"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1623
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1707
 msgid "Insert as bandpass"
 msgstr "Chèn làm dải thông"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1625
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1709
 msgid ""
 "Insert a pair of conjugated poles that invokes the bandpass behaviour at the "
 "indicated frequency."
 msgstr ""
 "Chèn một cặp cực liên hợp tạo ra hành vi thông dải ở tần số được chỉ định."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1629
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1713
 msgid "Insert as bandstop"
 msgstr "Chèn dưới dạng bandstop"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1631
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1715
 msgid ""
 "Insert pairs of conjugated zeros and poles that invoke the bandstop "
 "behaviour at the indicated frequency."
@@ -1063,169 +1123,165 @@ msgstr ""
 "Chèn các cặp số không và cực liên hợp gọi hành vi dải băng tần ở tần số được "
 "chỉ định."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1638
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1722
 msgid "Zeros and Poles"
 msgstr "Số không và cực"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1648
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1732
 msgid "Analog filter type"
 msgstr "Loại bộ lọc tương tự"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1653
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1737
 msgid "Butterworth"
 msgstr "Bơ"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1654
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1738
 msgid "Chebyshev"
 msgstr "Ch Quashev"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1664
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1748
 msgid "2nd order"
 msgstr "Đơn hàng thứ 2"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1665
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1749
 msgid "4th order"
 msgstr "Đơn hàng thứ 4"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1666
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1750
 msgid "6th order"
 msgstr "Đơn hàng thứ 6"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1667
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1751
 msgid "8th order"
 msgstr "Đơn hàng thứ 8"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1668
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1752
 msgid "10th order"
 msgstr "Đơn hàng thứ 10"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1669
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1753
 msgid "12th order"
 msgstr "Đơn hàng thứ 12"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1670
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1754
 msgid "14th order"
 msgstr "Đơn hàng thứ 14"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1671
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1755
 msgid "16th order"
 msgstr "Đơn hàng thứ 16"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1673
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1757
 msgid "1st order"
 msgstr "Đơn hàng thứ 1"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1729
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1813
 msgid "Polar magnitude safety margin"
 msgstr "Biên độ an toàn cực"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1739
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1823
 msgid "Chebyshev ripple control"
 msgstr "Kiểm soát gợn sóng Chebyshev"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1747
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1831
 msgid "%"
 msgstr "%"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1751
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1835
 msgid "Analog filter prototype"
 msgstr "Nguyên mẫu lọc tương tự"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1768
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1852
 msgid "Custom"
 msgstr "Tùy chỉnh"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1784
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1868
 msgid "Absolute"
 msgstr "Tuyệt đối"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1785
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1869
 msgid "Shannon"
 msgstr "Shannon"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1786
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1870
 msgid "Type"
 msgstr "Loại"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1806
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1890
 msgid "Test output options"
 msgstr "Kiểm tra các tùy chọn đầu ra"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1813
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1897
 msgid "Draw the test signal also."
 msgstr "Vẽ tín hiệu kiểm tra cũng được."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1817
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1901
 msgid "Draw interpolation"
 msgstr "Vẽ nội suy"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1820
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1904
 msgid "Draw a spline that interpolates the filtered data."
 msgstr "Vẽ một đường nội suy dữ liệu đã lọc."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1824
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1908
 msgid "Post process auto scaling"
 msgstr "Đăng quy trình tự động mở rộng quy mô"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1827
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1911
 msgid "Scale automatically to show all presented data in the graph window."
 msgstr ""
 "Quy mô tự động để hiển thị tất cả dữ liệu được trình bày trong cửa sổ biểu "
 "đồ."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1834
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1918
 msgid "Input starts at:"
 msgstr "Đầu vào bắt đầu lúc:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1842
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1926
 msgid "Number of points"
 msgstr "Số điểm"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1871
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1955
 msgid "Opdracht 6 DSB Practicum Embedded Systems Engineering bij de HAN."
 msgstr "Opdracht 6 DSB Practiceicum Embedded Systems Engineering bij de HAN."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1872
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:1956
 msgid "Design and implement an IIR Filter design tool."
 msgstr "Thiết kế và triển khai công cụ thiết kế Bộ lọc IIR."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1873
-msgid "ir drs E.J Boks (docent HAN ESE) : ewout.boks@han.nl"
-msgstr "ir drs E.J Boks (tài liệu HAN ESE): ewout.boks@han.nl"
-
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:1924
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2244
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2008
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2335
 msgid "Default"
 msgstr "Mặc định"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2099
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2189
 msgid ""
 "Error creating the base directory where the Filter coefficients will be "
 "stored."
 msgstr "Lỗi khi tạo thư mục cơ sở nơi các hệ số Bộ lọc sẽ được lưu trữ."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2108
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2198
 msgid "Error opening the stream to read the Filter coefficients."
 msgstr "Lỗi khi mở luồng để đọc các hệ số Bộ lọc."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2210
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2301
 msgid "Please select an existing configuration"
 msgstr "Vui lòng chọn một cấu hình hiện có"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2210
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2374
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2301
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2468
 msgid "Configuration :"
 msgstr "Cấu hình :"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2311
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2405
 msgid "Error opening the stream to write the Filter coefficients."
 msgstr "Lỗi khi mở luồng để ghi Hệ số bộ lọc."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2318
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2412
 msgid "This file was generated automatically by application"
 msgstr "Tập tin này được tạo tự động bởi ứng dụng"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2320
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2414
 msgid ""
 "You are free to modify the data entries in this file as long as you adhere "
 "to the format used in this file."
@@ -1233,88 +1289,96 @@ msgstr ""
 "Bạn có thể tự do sửa đổi các mục nhập dữ liệu trong tệp này miễn là bạn tuân "
 "thủ định dạng được sử dụng trong tệp này."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2323
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2417
 msgid "IIR Filter configuration for user"
 msgstr "Cấu hình bộ lọc IIR cho người dùng"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2324
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2418
 msgid "on"
 msgstr "trên"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2342
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2436
 msgid "Zeros"
 msgstr "Số không"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2345
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2439
 msgid "Poles"
 msgstr "Ba Lan"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2351
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2445
 msgid "Error closing the file stream that wrote the Filter coefficients."
 msgstr "Lỗi khi đóng luồng tệp đã ghi Hệ số bộ lọc."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2374
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2468
 msgid "Please select an new configuration name."
 msgstr "Vui lòng chọn tên cấu hình mới."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2383
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2477
 msgid "This filter configuration name already exists."
 msgstr "Tên cấu hình bộ lọc này đã tồn tại."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2418
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2512
 msgid "Do you want to reset all configuration fields to demonstration values?"
 msgstr ""
 "Bạn có muốn đặt lại tất cả các trường cấu hình về giá trị trình diễn không?"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2419
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2513
 msgid "Demonstration values"
 msgstr "Giá trị trình diễn"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2456
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2550
 msgid "IIR Filter impulse response output"
 msgstr "Đầu ra đáp ứng xung bộ lọc IIR"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2477
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2571
 msgid "IIR Filter pole-zero diagram"
 msgstr "Sơ đồ cực của bộ lọc IIR"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2497
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2591
 msgid "This feature has not been implemented yet."
 msgstr "Tính năng này vẫn chưa được triển khai."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2517
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2611
 msgid "IIR Filter frequency domain output"
 msgstr "IIR Đầu ra miền tần số của bộ lọc"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2537
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2631
 msgid "IIR Filter time domain test output"
 msgstr "IIR Đầu ra kiểm tra miền thời gian bộ lọc"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2639
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2733
 msgid "The IIR Filter system sampling frequency"
 msgstr "Tần số lấy mẫu của hệ thống Bộ lọc IIR"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2763
-#, c-format
-msgid "Coefficient b_%d : %.2f was added."
-msgstr "Hệ số b_%d:%.2f đã được thêm vào."
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2844
+msgid "The multiplication factor"
+msgstr "hệ số nhân"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2765
-#, c-format
-msgid "Coefficient a_%d : %.2f was added."
-msgstr "Hệ số a_%d:%.2f đã được thêm vào."
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2844
+msgid "is not a useable number."
+msgstr "không phải là một số có thể sử dụng được."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2821
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2870
+#, c-format
+msgid "Coefficient b_%d : %s was added."
+msgstr "Hệ số b_%d : %s đã được thêm vào."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2872
+#, c-format
+msgid "Coefficient a_%d : %s was added."
+msgstr "Hệ số a_%d : %s đã được thêm vào."
+
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2928
 #, c-format
 msgid "Zero [%d] was added :"
 msgstr "Số không [%d] đã được thêm vào:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2823
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2930
 #, c-format
 msgid "Pole [%d] was added :"
 msgstr "Cực [%d] đã được thêm vào:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2837
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2944
 msgid ""
 "Your design has fewer zero points than pole points.\n"
 "In order to balance your system, an additional number of zero points in the "
@@ -1324,7 +1388,7 @@ msgstr ""
 "Để cân bằng hệ thống của bạn, một số điểm 0 bổ sung trong gốc tọa độ z đã "
 "được thêm vào hệ thống của bạn."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2850
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:2957
 msgid ""
 "Your design has fewer pole points than zero points.\n"
 "In order to balance your system, an additional number of pole points in the "
@@ -1334,31 +1398,31 @@ msgstr ""
 "Để cân bằng hệ thống của bạn, một số điểm cực bổ sung trong gốc tọa độ z đã "
 "được thêm vào hệ thống của bạn."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2965
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2967
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3072
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3074
 #, c-format
 msgid "Butterworth Pole [%d] was added :"
 msgstr "Butterworth Pole [%d] đã được thêm vào:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2969
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:2971
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3076
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3078
 #, c-format
 msgid "Butterworth Zero [%d] was added :"
 msgstr "Butterworth Zero [%d] đã được thêm vào:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3045
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3047
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3152
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3154
 #, c-format
 msgid "Chebyshev Pole [%d] was added :"
 msgstr "Chebyshev Pole [%d] đã được thêm vào:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3049
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3051
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3156
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3158
 #, c-format
 msgid "Chebyshev Zero [%d] was added :"
 msgstr "Chebyshev Zero [%d] đã được thêm vào:"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3451
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3558
 msgid ""
 "An LTI difference equation characterised by bk (for inputs) and ak (for "
 "outputs) can be entered here."
@@ -1366,7 +1430,7 @@ msgstr ""
 "Có thể nhập phương trình chênh lệch LTI được đặc trưng bởi bk (đối với đầu "
 "vào) và ak (đối với đầu ra) tại đây."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3453
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3560
 msgid ""
 "Please note that a pure convolution can be done by entering the h[n] "
 "coefficients as b-coefficients, with the a-coefficients field remaining "
@@ -1375,11 +1439,11 @@ msgstr ""
 "Xin lưu ý rằng một phép chập thuần có thể được thực hiện bằng cách nhập hệ "
 "số h [n] dưới dạng hệ số b, với trường hệ số a còn trống."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3456
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3563
 msgid "Information on entering LTI difference equation coefficients."
 msgstr "Thông tin về cách nhập hệ số phương trình chênh lệch LTI."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3466
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3573
 msgid ""
 "Enter as a, a+bj or r:[p/d]phi .\n"
 "Please insert only a single complex or polar entry.\n"
@@ -1393,74 +1457,69 @@ msgstr ""
 "chèn thêm một mục nhập cặp phức liên hợp.\n"
 "[p / d] là tùy chọn và đặt phi một góc bằng pi hoặc độ."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3471
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:3578
 msgid "Information on entering poles and zeros."
 msgstr "Thông tin về việc nhập các cực và số không."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:3997
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4104
 #, c-format
-msgid "Coefficient[%d] = %.3f"
-msgstr "Hệ số [%d] =%.3f"
+msgid "Coefficient[%d] = %s"
+msgstr "Hệ số[%d] = %s"
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4004
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4111
 msgid "Out of bounds."
 msgstr "Ngoài giới hạn."
 
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4047
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4056
-msgid "Mouse"
-msgstr "Chuột"
-
-#: opdracht6/STUDENT/designer/filterDesigner.cpp:4120
+#: opdracht6/STUDENT/designer/filterDesigner.cpp:4243
 msgid "signal data file (*.txt)|*.txt"
 msgstr "tệp dữ liệu tín hiệu (* .txt) | * .txt"
 
-#: opdracht6/STUDENT/designer/filterDesigner.h:51
+#: opdracht6/STUDENT/designer/filterDesigner.h:52
 msgid "Digital Signal Processing demonstrator"
 msgstr "Trình diễn trình xử lý tín hiệu kỹ thuật số"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:141
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:142
 msgid "Placement of a number of zeros or poles using a comb expression"
 msgstr "Vị trí của một số số không hoặc cực bằng cách sử dụng biểu thức lược"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:148
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:149
 msgid "An example of placing a comb zero expression on the unit circle."
 msgstr "Ví dụ về cách đặt biểu thức lược số 0 trên vòng tròn đơn vị."
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:156
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:157
 msgid "Zero"
 msgstr "Zero"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:157
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:158
 msgid "Pole"
 msgstr "Cây sào"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:158
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:159
 msgid "Placement"
 msgstr "Vị trí"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:163
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:164
 msgid "Radius"
 msgstr "Bo góc"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:167
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:168
 msgid "1.0"
 msgstr "1.0"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:171
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:172
 msgid "Number of elements in arc (Nyquist range)"
 msgstr "Số phần tử trong cung (phạm vi Nyquist)"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:178
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:179
 #, c-format
 msgid "Arc length as % of half circle"
 msgstr "Độ dài vòng cung bằng % o f nửa vòng tròn"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:190
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:191
 msgid "Compensate with counterpart elements in the origin"
 msgstr "Bù đắp bằng các yếu tố đối ứng trong nguồn gốc"
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:193
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:194
 msgid ""
 "When generating a number of poles or zeros in a circle, generate an equal "
 "number of zeros or poles in the origin to keep the system causal with "
@@ -1470,7 +1529,7 @@ msgstr ""
 "không hoặc cực bằng nhau trong gốc để giữ cho hệ thống có quan hệ nhân quả "
 "với độ trễ nhỏ nhất."
 
-#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:308
+#: opdracht6/STUDENT/designer/kamexpressiedialoog.cpp:309
 msgid "The entered radius number cannot be used."
 msgstr "Không thể sử dụng số bán kính đã nhập."
 
@@ -1478,10 +1537,27 @@ msgstr "Không thể sử dụng số bán kính đã nhập."
 msgid "Comb Expression"
 msgstr "Biểu thức kết hợp"
 
-#: opdracht6/STUDENT/filter/iirfilter.cpp:101
-#: opdracht6/STUDENT/filter/iirfilter.cpp:111
+#: opdracht6/STUDENT/filter/iirfilter.cpp:99
+#: opdracht6/STUDENT/filter/iirfilter.cpp:109
 msgid "Your pole has a magnitude > 1 !"
 msgstr "Cực của bạn có độ lớn> 1!"
+
+#~ msgid ""
+#~ "The application was initialized to use the system default language, which "
+#~ "has this name:"
+#~ msgstr ""
+#~ "Ứng dụng đã được khởi tạo để sử dụng ngôn ngữ mặc định của hệ thống, có "
+#~ "tên như sau:"
+
+#, c-format
+#~ msgid "Euro %.2lf"
+#~ msgstr "Euro% .2lf"
+
+#~ msgid "ir drs E.J Boks (docent HAN ESE) : ewout.boks@han.nl"
+#~ msgstr "ir drs E.J Boks (tài liệu HAN ESE): ewout.boks@han.nl"
+
+#~ msgid "Mouse"
+#~ msgstr "Chuột"
 
 #~ msgid "Application"
 #~ msgstr "Ứng dụng"
@@ -1537,9 +1613,6 @@ msgstr "Cực của bạn có độ lớn> 1!"
 #~ "Nhập dưới dạng a, a + bj hoặc r: phi.\n"
 #~ "Vui lòng chỉ chèn một mục nhập phức tạp hoặc cực.\n"
 #~ "Việc chèn như vậy ngụ ý việc chèn một mục nhập cặp phức hợp liên hợp."
-
-#~ msgid "Scaling factor"
-#~ msgstr "Yếu tố nhân rộng"
 
 #~ msgid "Automatic scaling"
 #~ msgstr "Tự động nhân rộng"
