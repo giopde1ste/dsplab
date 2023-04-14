@@ -4,4 +4,4 @@ software/*/out
 software/*/[Bb]uild
 software/*/.idea
 software/*/Executable
-
+docs/
