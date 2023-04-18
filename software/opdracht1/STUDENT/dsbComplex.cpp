@@ -38,8 +38,10 @@ using namespace std;
 #endif
 
 #if defined(InterfaceTaalNederlands)
-PolairGetal::PolairGetal(const Complex &z) : grootte(z.Mag()), fase(z.Arg())
+PolairGetal::PolairGetal(const Complex &z)
 {
+	grootte = z.Mag();
+	fase = z.Arg();
 }
 
 /*! @brief Geef de grootte (lineair) van het polaire getal.
@@ -152,12 +154,12 @@ Complex Complex::sqrt() const
 /*! @brief Conversie funkties naar grootte/argument.
 	 * @note maak deze in de cpp file aan. */
 float Complex::Mag() const  /* grootte (lineair) */ {
-	const auto pol(PolairGetal(x,y));
-	return pol.Mag();
+	const float out = ::sqrtf(x*x + y*y);
+	return out;
 }
 float Complex::Arg() const  /* fasehoek (0 .. 2*pi) */ {
-	const auto pol(PolairGetal(x,y));
-	return pol.Arg();
+	const float out = atan2f(y, x);
+	return out;
 }
 
 /*! @brief Conversie naar polaire representatie.

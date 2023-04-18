@@ -152,9 +152,10 @@ RetCode DesktopApp::initLokaliteit()
 		}
 		else
 		{
-			auto melding(meldingen[meldingIndex++]);
+/*			auto melding(meldingen[meldingIndex++]);
 			wxLogDebug(melding);
 			wxLogError(melding);
+			*/
 			/* Er is iets foutgegaan. Zet terug naar de standaardtaal. */
 //			if (nullptr != lokaliteit)
 //			{

@@ -193,20 +193,23 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 			const Complex w(out[i][0], out[i][1]);
 			auto polairOut(w.polair());
 
-			if (true == dumpFreqDomeinCheckBox->IsChecked())
+			if (dumpFreqDomeinCheckBox->IsChecked() == true)
 			{
 				PolairPrinter polp(polairOut);
 				wxLogMessage(polp.str());
 			}
 
-			fftPuntenMag.Add(wxPoint(i, static_cast<int>(polairOut.Mag() * 1000)));
-			if(polairOut.Arg() < faseToonGrens)
+			fftPuntenMag.Add(wxPoint(i, static_cast<int>(polairOut.Mag())));
+			fftPuntenMag.Add(wxPoint(-i, static_cast<int>(polairOut.Mag())));
+			if(polairOut.Mag() < faseToonGrens)
 			{
 				fftPuntenArg.Add(wxPoint(i, 0));
+				fftPuntenArg.Add(wxPoint(-i, 0));
 			}
 			else
 			{
-				fftPuntenArg.Add(wxPoint(i, static_cast<int>(polairOut.Arg() * 1000)));
+				fftPuntenArg.Add(wxPoint(i, static_cast<int>(polairOut.Arg())));
+				fftPuntenArg.Add(wxPoint(-i, static_cast<int>(polairOut.Arg())));
 				
 			}
 		}
@@ -218,15 +221,21 @@ void SignaalVenster::tekenReeksHandler(wxCommandEvent &event)
 
 		fftwGrafiek->maakSchoon();
 
+		fftwGrafiek->tekenAssenstelsel();
+
 		if(ampCheckBox->GetValue())
 		{
+			fftwGrafiek->zetTekenPen(ampPen);
 			fftwGrafiek->tekenStaven(fftPuntenMag, true);
 		}
 
 		if(faseCheckBox->GetValue())
 		{
+			fftwGrafiek->zetTekenPen(fasePen);
 			fftwGrafiek->tekenStaven(fftPuntenArg, true);
 		}
+		
+		
 
 
 		venster_statusbar->SetStatusText(_("Frequency image was constructed."));

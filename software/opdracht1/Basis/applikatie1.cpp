@@ -2,13 +2,13 @@
 @file 
 Opdracht 1 DSB practicum. Werk deze opdracht verder uit aan de hand van het kommentaar.
 Assignment 1 DSP. Complete this assignment guided by the commentary.
-@version $Rev: 316 $
+@version $Rev: 324 $
 @author $Author: ewout $ 
                                    
 @copyright Copyright 2006-2022 ir drs E.J Boks, Hogeschool van Arnhem en Nijmegen. https://ese.han.nl
   
 $URL: https://ese.han.nl/svn/dsbpracticum/trunk/2022/software/opdracht1/Basis/applikatie1.cpp $  
-$Id: applikatie1.cpp 316 2023-02-17 09:58:44Z ewout $
+$Id: applikatie1.cpp 324 2023-04-18 13:09:09Z ewout $
 ************************************************************************/
 
 #include <dsbRingBuffer.h>
@@ -18,6 +18,7 @@ $Id: applikatie1.cpp 316 2023-02-17 09:58:44Z ewout $
 #include <wx/txtstrm.h>
 #include <complex>
 #include <dsbComplexBasis.h>
+#include <wx/numformatter.h>
 
 IMPLEMENT_APP(DSBKlassenApp);
 
@@ -63,14 +64,19 @@ int DSBKlassenApp::MainLoop()
 
 	const auto deling(a / b);
     wxLogDebug(CP::str(a) + wxT("/")+CP::str(b) +wxT(" = ")+ CP::str(deling));
-	const std::complex<float> delingControle(aTest/bTest);
+	//const std::complex<float> delingControle(aTest/bTest);
 	//wxLogDebug(wxString::Format(wxT("Check : a/b = [%.3f,%.3f]"),delingControle.real(),delingControle.imag()));
 	wxASSERT((fabsf(deling.Re() - (aTest / bTest).real()) < 1E-3) &&
 		(fabsf(deling.Im() - (aTest / bTest).imag()) < 1E-3));
 
 #if defined(InterfaceTaalNederlands)
     wxLogDebug(CP::str(a) + wxT(" in polaire notatie = ")+PP::str(a.polair()));
-	wxLogDebug(wxString::Format(wxT("Check : a_pol = |%.3f|/_%.3f"),abs(aTest),arg(aTest)));
+	wxLogDebug(wxString::Format(wxT("Check : a_pol = |%s|/_%s"),
+							 wxNumberFormatter::ToString(abs(aTest),3),
+							    wxNumberFormatter::ToString(arg(aTest),3)));
+	wxASSERT(fabsf(a.polair().Mag() - abs(aTest)) < 1E-3);
+	wxASSERT(fabsf(a.polair().Arg() - arg(aTest)) < 1E-3);
+
 
     static constexpr auto aantal=7;
     StaticRingBuffer<Complex,aantal> buffer;
@@ -125,7 +131,9 @@ int DSBKlassenApp::MainLoop()
 #elif defined (InterfaceTaalEnglish)
 
 	wxLogDebug(CP::str(a) + wxT(" in polar form = ")+PP::str(a.polar()));
-	wxLogDebug(wxString::Format(wxT("Check : a_pol = |%.3f|/_%.3f"),abs(aTest),arg(aTest)));
+	wxLogDebug(wxString::Format(wxT("Check : a_pol = |%s|/_%s"),
+							 wxNumberFormatter::ToString(abs(aTest),3),
+							    wxNumberFormatter::ToString(arg(aTest),3)));
 
 	static constexpr auto bufferSize = 7;
 	StaticRingBuffer<Complex,bufferSize> buffer;
