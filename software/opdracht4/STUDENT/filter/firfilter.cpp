@@ -75,7 +75,7 @@ FilterFirInt16::FilterFirInt16(const FilterRingBuffer &coeffs,
 void FilterFirInt16::reset()
 {
 
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -86,10 +86,24 @@ void FilterFirInt16::reset()
 /* Implementatie van het filter */
 Int16 FilterFirInt16::filter(const Int16 input)
 {
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
+
+    //Vragen aan ewout of did goed is of dat de functie iets anders moet doen
+    float out = 0.0f;
+
+    filterMemory.schrijf(input);
+
+    for (int j = 0; j < filterCoeffs.geefAantal(); j++)
+    {
+        for (int i = 0; i < filterMemory.geefAantal(); i++)
+        {
+            out += filterCoeffs[i] * filterMemory[j - i];
+        }
+    }
+
+    return out;
 }
 
 

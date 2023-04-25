@@ -24,18 +24,8 @@ $URL: https://ese.han.nl/svn/dsbpracticum/trunk/2022/software/opdracht4/STUDENT/
 $Id: filterDesigner.cpp 313 2023-01-30 13:54:35Z ewout $
 ************************************************************************/
 
-#ifndef OnderwijsOntwikkeling
-#if defined(InterfaceTaalNederlands)
-/* Verwijder dit directief na het invullen van de naam en het studentnummer hieronder. */
-#error  "Student naam en nummer moeten beneden in de velden worden ingevuld."
-#elif defined (InterfaceTaalEnglish)
-/* Remove this directive after filling out name and student number below. */
-#error  "Student name and number must be entered into the fields below."
-#endif
-#endif
-
-/********  Naam/name     :               ******/
-/********  Studentnummer :               ******/
+/********  Naam/name     : Thomas van den Oever ******/
+/********  Studentnummer : 1585101              ******/
 
 // For compilers that support precompilation, includes "wx/wx.h".
 
@@ -70,30 +60,33 @@ double FilterVenster::driehoek(const Int32 n ) const
 {
 	/*! @note schrijf in deze funktie de code om de driehoek funktie te implementeren.
 	 * @warning Let op de formule in Lynn & Fürst is niet goed. */
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
+	return 0.0f;
 }
 
 
 double FilterVenster::hamming(const Int32 n ) const
 {
 	/*! @note schrijf in deze funktie de code om de Hamming funktie te implementeren. */
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
+	return 0.0f;
 }
 
 
 double FilterVenster::sinc(const double hoek )
 {
 	/*! @note schrijf in deze funktie de code om de sinc() funktie te implementeren. */
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
+	return 0.0f;
 }
 
 void FilterVenster::berekenFilter(wxCommandEvent &event)
@@ -121,7 +114,7 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 	wxLogDebug(_("filter berekening start."));
 	wxBusyCursor bezig;
 
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -137,7 +130,7 @@ void FilterVenster::berekenFreqResponsie()
 	
 	H_Omega.Clear();
 	
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -221,10 +214,11 @@ Int16 FilterVenster::berekenFixedPoint(const float flp) const
 	/*! @note Bereken in deze funktie de conversie van floating point naar fixed point
 	 * op basis van de instelling in fipBitsSpinCtrl. */
 	
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
+	return 0;
 }
 
 float FilterVenster::berekenFloatingPoint(const Int16 fixp) const
@@ -232,10 +226,11 @@ float FilterVenster::berekenFloatingPoint(const Int16 fixp) const
 	/*! @note Bereken in deze funktie de conversie van fixed point naar floating point
 	 * op basis van de instelling in fipBitsSpinCtrl. */
 	
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
+	return 0.0f;
 }
 
 
@@ -426,7 +421,7 @@ void FilterVenster::tijdViewMuisBewegingHandler(wxMouseEvent &event)
 	{
 		
 		const wxPoint mouseCoord(tijdDomeinGrafiek->converteerMuisPositie(const_cast<wxMouseEvent &>(event)));
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -443,7 +438,7 @@ void FilterVenster::freqViewMuisBewegingHandler(wxMouseEvent &event)
 	{
 		
 		const wxPoint muiscoord(freqDomeinGrafiek->converteerMuisPositie(const_cast<wxMouseEvent &>(event)));
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
