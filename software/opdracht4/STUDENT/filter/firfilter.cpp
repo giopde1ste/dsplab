@@ -90,7 +90,7 @@ Int16 FilterFirInt16::filter(const Int16 input)
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
 
-    //Vragen aan ewout of did goed is of dat de functie iets anders moet doen
+    // Discreet convolution!
     float out = 0.0f;
 
     filterMemory.schrijf(input);

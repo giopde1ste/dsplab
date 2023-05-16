@@ -64,7 +64,13 @@ double FilterVenster::driehoek(const Int32 n ) const
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
-	return 0.0f;
+	assert(-taps <= n <= taps);
+
+	double out;
+
+	out = 1 - fabs((n - taps / 2) / (taps / 2));
+	
+	return out;
 }
 
 
@@ -75,7 +81,13 @@ double FilterVenster::hamming(const Int32 n ) const
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
-	return 0.0f;
+	assert(-taps <= n <= taps);
+
+	double out;
+
+	out = 0.54 - 0.46 * cos(PI * n / taps);
+
+	return out;
 }
 
 
@@ -86,7 +98,18 @@ double FilterVenster::sinc(const double hoek )
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
-	return 0.0f;
+
+	double out;
+
+	if (hoek == 0.0)
+	{
+		out = sin(hoek) / hoek;
+	}else
+	{
+		out = 1;
+	}
+
+	return out;
 }
 
 void FilterVenster::berekenFilter(wxCommandEvent &event)
@@ -118,6 +141,22 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
+	if(vensterChoice->GetCurrentSelection() == 0)//rectangle
+	{
+		
+	}
+	
+	if (vensterChoice->GetSelection() == 1)//triangle
+	{
+
+	}
+
+	if (vensterChoice->GetSelection() == 2)//hamming
+	{
+
+	}
+
+
 	/* schakel ook de test knop nu in */
 	berekeningKlaar = true;
 }
@@ -218,7 +257,12 @@ Int16 FilterVenster::berekenFixedPoint(const float flp) const
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
-	return 0;
+
+	Int16 out;
+
+	out = round(flp * (1 << fipBitsSpinCtrl->GetValue()));
+
+	return out;
 }
 
 float FilterVenster::berekenFloatingPoint(const Int16 fixp) const
@@ -230,7 +274,11 @@ float FilterVenster::berekenFloatingPoint(const Int16 fixp) const
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
-	return 0.0f;
+	float out;
+
+	out = fixp / (1 << fipBitsSpinCtrl->GetValue());
+
+	return out;
 }
 
 
