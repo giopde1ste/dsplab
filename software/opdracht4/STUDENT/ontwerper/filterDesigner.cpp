@@ -66,10 +66,9 @@ double FilterVenster::driehoek(const Int32 n ) const
 */
 	assert(-taps <= n <= taps);
 
-	double out;
+	//double out = 1.0f - fabs((n - (taps / 2.0f)) / (taps / 2.0f));
+	double out = 1.0f - fabs((n - (taps * 2.0f / 2.0f)) / (taps * 2.0f / 2.0f));
 
-	out = 1 - fabs((n - taps / 2) / (taps / 2));
-	
 	return out;
 }
 
@@ -85,7 +84,7 @@ double FilterVenster::hamming(const Int32 n ) const
 
 	double out;
 
-	out = 0.54 - 0.46 * cos(PI * n / taps);
+	out = 0.54f - 0.46f * cos((2.0f * PI * n) / (taps * 2 - 1.0f));
 
 	return out;
 }
@@ -99,17 +98,11 @@ double FilterVenster::sinc(const double hoek )
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
 
-	double out;
-
-	if (hoek == 0.0)
+	if(hoek == 0.0)
 	{
-		out = sin(hoek) / hoek;
-	}else
-	{
-		out = 1;
+		return 1.0;
 	}
-
-	return out;
+	return (sin(hoek) / hoek);
 }
 
 void FilterVenster::berekenFilter(wxCommandEvent &event)
@@ -141,21 +134,53 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
-	if(vensterChoice->GetCurrentSelection() == 0)//rectangle
+	if(filterBegin == 0)
 	{
+		filterBegin = 1;
+	}
+	if (filterEind == 0)
+	{
+		filterEind = 1;
+	}
+
+	//Sorry voor de misleiding. - Jacob
+
+	double Omega1 = (2.0f * PI * filterBegin) / sampFreq;
+	double Omega2 = (2.0f * PI * filterEind) / sampFreq;
+	double Omega0 = (Omega1 + Omega2) / 2.0f;
+
+	std::vector<double> ldf;
+
+	for (int i = -taps; i < taps; i++)
+	{
+		if (vensterChoice->GetCurrentSelection() == 0)//rectangle
+		{
+			filterCoeffs.Add(berekenFixedPoint(1));
+		}
+
+		if (vensterChoice->GetSelection() == 1)//triangle
+		{
+			filterCoeffs.Add(berekenFixedPoint(driehoek(i + taps)));
+		}
+
+		if (vensterChoice->GetSelection() == 2)//hamming
+		{
+			filterCoeffs.Add(berekenFixedPoint(hamming(i + taps)));
+		}
+
 		
+		ldf.push_back((Omega1 / PI) * sinc(Omega1 * i));
+		impulsResponsie.Add(wxPoint(i, berekenFixedPoint(ldf[i + taps] * cos(Omega0 * i) * filterCoeffs[i + taps])));
+		//impulsResponsie.Add(wxPoint(i, filterCoeffs[i + taps]));
 	}
-	
-	if (vensterChoice->GetSelection() == 1)//triangle
+
+	for(int i = -taps; i < taps; i += 2)
 	{
-
+		//impulsResponsie.Add(wxPoint(i, berekenFixedPoint(ldf[i + taps] * cos(Omega0 * i) * filterCoeffs[i + taps])));
 	}
 
-	if (vensterChoice->GetSelection() == 2)//hamming
-	{
-
-	}
-
+	tijdDomeinGrafiek->maakSchoon();
+	tijdDomeinGrafiek->tekenStaven(impulsResponsie, true);
 
 	/* schakel ook de test knop nu in */
 	berekeningKlaar = true;
