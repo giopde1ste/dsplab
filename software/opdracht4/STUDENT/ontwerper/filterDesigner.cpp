@@ -67,7 +67,7 @@ double FilterVenster::driehoek(const Int32 n ) const
 	assert(-taps <= n <= taps);
 
 	//double out = 1.0f - fabs((n - (taps / 2.0f)) / (taps / 2.0f));
-	double out = 1.0f - fabs((n - (taps * 2.0f / 2.0f)) / (taps * 2.0f / 2.0f));
+	double out = 1.0f - fabs((n - (taps/2.0f)) / (taps/2.0f));
 
 	return out;
 }
@@ -84,7 +84,7 @@ double FilterVenster::hamming(const Int32 n ) const
 
 	double out;
 
-	out = 0.54f - 0.46f * cos((2.0f * PI * n) / (taps * 2 - 1.0f));
+	out = 0.54f + 0.46f * cos((2.0f * PI * n) / (taps));
 
 	return out;
 }
@@ -130,28 +130,12 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 	wxLogDebug(_("filter berekening start."));
 	wxBusyCursor bezig;
 
-//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
-   Dear student, this part of the software is missing. Complete this part accoording to the assignment.
-*/
-	if(filterBegin == 0)
-	{
-		filterBegin = 1;
-	}
-	if (filterEind == 0)
-	{
-		filterEind = 1;
-	}
+	double Omega0 = ((filterBegin + filterEind) / (sampFreq * 1.0f)) * PI;
+	double Omega1 = ((filterEind - filterBegin) / (sampFreq * 1.0f)) * PI;
 
-	//Sorry voor de misleiding. - Jacob
+	double ldf, shift, hnwindow;
 
-	double Omega1 = (2.0f * PI * filterBegin) / sampFreq;
-	double Omega2 = (2.0f * PI * filterEind) / sampFreq;
-	double Omega0 = (Omega1 + Omega2) / 2.0f;
-
-	std::vector<double> ldf;
-
-	for (int i = -taps; i < taps; i++)
+	for (int n = -taps/2; n < taps/2; n++)
 	{
 		if (vensterChoice->GetCurrentSelection() == 0)//rectangle
 		{
@@ -160,23 +144,21 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 
 		if (vensterChoice->GetSelection() == 1)//triangle
 		{
-			filterCoeffs.Add(berekenFixedPoint(driehoek(i + taps)));
+			filterCoeffs.Add(berekenFixedPoint(driehoek(n + taps/2)));
 		}
 
 		if (vensterChoice->GetSelection() == 2)//hamming
 		{
-			filterCoeffs.Add(berekenFixedPoint(hamming(i + taps)));
+			filterCoeffs.Add(berekenFixedPoint(hamming(n)));
 		}
 
 		
-		ldf.push_back((Omega1 / PI) * sinc(Omega1 * i));
-		impulsResponsie.Add(wxPoint(i, berekenFixedPoint(ldf[i + taps] * cos(Omega0 * i) * filterCoeffs[i + taps])));
-		//impulsResponsie.Add(wxPoint(i, filterCoeffs[i + taps]));
-	}
-
-	for(int i = -taps; i < taps; i += 2)
-	{
-		//impulsResponsie.Add(wxPoint(i, berekenFixedPoint(ldf[i + taps] * cos(Omega0 * i) * filterCoeffs[i + taps])));
+		ldf = (Omega1 / PI) * sinc(Omega1 * n);
+		shift = cos(Omega0 * n);
+		h_n.Add(ldf * shift);
+		hnwindow = ldf * shift * filterCoeffs[n + taps / 2];
+		auto uit = berekenFixedPoint(hnwindow);
+		impulsResponsie.Add(wxPoint(n, uit));
 	}
 
 	tijdDomeinGrafiek->maakSchoon();
@@ -193,11 +175,23 @@ void FilterVenster::berekenFreqResponsie()
 	 * basis van de tijddomeincoefficienten. */
 	
 	H_Omega.Clear();
-	
-//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
-   Dear student, this part of the software is missing. Complete this part accoording to the assignment.
-*/
+
+	double Omega0 = ((filterBegin + filterEind) / (sampFreq * 1.0f)) * PI;
+	double Omega1 = ((filterEind - filterBegin) / (sampFreq * 1.0f)) * PI;
+	double Som_h_k;
+
+	for (int Omega = 0; Omega < taps; Omega++) {
+		Som_h_k = 0.0f;
+		for (int k = 0; k < taps + 1; k++)
+		{
+			Som_h_k += h_n[k] * cos(k * Omega);
+		}
+		double HOmega = Omega1 / PI + 2 * Som_h_k;
+		H_Omega.Add(HOmega);
+	}
+
+
+
 }
 
 void FilterVenster::tekenFreqSpectrum() const

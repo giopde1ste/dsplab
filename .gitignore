@@ -6,3 +6,5 @@ software/*/.idea
 software/*/Executable
 software/*/.vs
 docs/
+*.zip
+Windows/

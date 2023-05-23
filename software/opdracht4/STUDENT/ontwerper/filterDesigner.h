@@ -402,6 +402,7 @@ private:
 	/* Voor studenten : Dit is een array voor de frequentie spectrum punten.
 	 * For students : This is an array for the frequency spectrum points. */
 	wxArrayDouble H_Omega;
+    wxArrayDouble h_n;
 
 	/* Voor studenten De minimale en maximale H(omega) respons. Let op H(omega) altijd 0 of kleiner !
 	 * Gebruik deze waarden om te schalen.
