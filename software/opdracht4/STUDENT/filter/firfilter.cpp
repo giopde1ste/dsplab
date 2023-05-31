@@ -79,6 +79,7 @@ void FilterFirInt16::reset()
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
+    filterMemory.reset();
 
 }
 
@@ -92,19 +93,57 @@ Int16 FilterFirInt16::filter(const Int16 input)
 
     // Discreet convolution!
     float out = 0.0f;
-
     filterMemory.schrijf(input);
 
-    for (int j = 0; j < filterCoeffs.geefAantal(); j++)
+    for (int i = 0; i < filterCoeffs.geefAantal(); i++)
     {
-        for (int i = 0; i < filterMemory.geefAantal(); i++)
-        {
-            out += filterCoeffs[i] * filterMemory[j - i];
-        }
+        out += (filterCoeffs[i] / static_cast<float>(scaleFactor)) * filterMemory.lees();
+        //filterMemory.schrijf(out);
     }
 
     return out;
 }
 
+//for (int i = 0; i < filterCoeffs.geefAantal(); i++)
+//{
+//    float coeff = filterCoeffs[i] / static_cast<float>(scaleFactor);
+//    auto nvalue = (input * coeff) * filterMemory.lees(-1);
+//    filterMemory.schrijf(nvalue);
+//}
+//out = filterMemory.lees(-1);
+//filterMemory.schrijf(0);
 
+//float FIRFilter_calc(FIRFilter* fir, float inputVal) {
+//
+//    float out = 0.0f;
+//
+//    /*Implementing CIRCULAR BUFER*/
+//    //Store the latest sample=inputVal into the circular buffer
+//    fir->buff[fir->buffIndex] = inputVal;
+//
+//    //Increase the buffer index. retrun to zero if it reach the end of the index (circular buffer)
+//    fir->buffIndex++;
+//    uint8_t sumIndex = fir->buffIndex;
+//    if (fir->buffIndex == FIR_FILTER_LENGTH) {
+//        fir->buffIndex = 0;
+//    }
+//
+//    //Compute the filtered sample with convolution
+//    fir->out = 0.0f;
+//    for (int i = 0;i < FIR_FILTER_LENGTH;i++) {
+//        //decrese sum index and warp it if necessary
+//        if (sumIndex > 0) {
+//            sumIndex--;
+//        }
+//        else {
+//            sumIndex = FIR_FILTER_LENGTH - 1;
+//        }
+//        //The convolution process: Multyply the impulse response with the SHIFTED input sample and add it to the output
+//        fir->out = fir->out + fir->buff[sumIndex] * FIR_FILTER_IMPULSE_RESPONSE[i];
+//    }
+//
+//    //return the filtered data
+//    return out;
+//
+//}
 

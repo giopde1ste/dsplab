@@ -133,36 +133,40 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 	double Omega0 = ((filterBegin + filterEind) / (sampFreq * 1.0f)) * PI;
 	double Omega1 = ((filterEind - filterBegin) / (sampFreq * 1.0f)) * PI;
 
-	double ldf, shift, hnwindow;
+	double ldf, shift, window;
 
-	for (int n = -taps/2; n < taps/2; n++)
+	for (double n = -taps/2; n < taps/2 + 1; n++)
 	{
 		if (vensterChoice->GetCurrentSelection() == 0)//rectangle
 		{
-			filterCoeffs.Add(berekenFixedPoint(1));
+			window = 1.0f;
 		}
 
 		if (vensterChoice->GetSelection() == 1)//triangle
 		{
-			filterCoeffs.Add(berekenFixedPoint(driehoek(n + taps/2)));
+			window = driehoek(n + taps / 2);
 		}
 
 		if (vensterChoice->GetSelection() == 2)//hamming
 		{
-			filterCoeffs.Add(berekenFixedPoint(hamming(n)));
+			window = hamming(n);
 		}
 
-		
 		ldf = (Omega1 / PI) * sinc(Omega1 * n);
 		shift = cos(Omega0 * n);
-		h_n.Add(ldf * shift);
-		hnwindow = ldf * shift * filterCoeffs[n + taps / 2];
-		auto uit = berekenFixedPoint(hnwindow);
-		impulsResponsie.Add(wxPoint(n, uit));
+		const auto koeff = 2 * ldf * shift * window;
+		filterCoeffs.Add(berekenFixedPoint(koeff));
+
+		impulsResponsie.Add(wxPoint(n, (filterCoeffs.Last())));
 	}
 
 	tijdDomeinGrafiek->maakSchoon();
 	tijdDomeinGrafiek->tekenStaven(impulsResponsie, true);
+
+	berekenFreqResponsie();
+	tekenFreqSpectrum();
+
+	
 
 	/* schakel ook de test knop nu in */
 	berekeningKlaar = true;
@@ -173,24 +177,40 @@ void FilterVenster::berekenFreqResponsie()
 {
 	/*! @note schrijf in deze funktie de code om het  frequentiebeeld te bereken op
 	 * basis van de tijddomeincoefficienten. */
-	
+
 	H_Omega.Clear();
 
 	double Omega0 = ((filterBegin + filterEind) / (sampFreq * 1.0f)) * PI;
 	double Omega1 = ((filterEind - filterBegin) / (sampFreq * 1.0f)) * PI;
-	double Som_h_k;
+	double Som_h_k = 0.0f;
+	double HOmega = 0.0f;
 
-	for (int Omega = 0; Omega < taps; Omega++) {
+	H_Omega_min = 0.0f;
+	H_Omega_max = 0.0f;
+
+	for (double Omega = 0; Omega < PI; Omega += (PI / FreqSpectrumPunten(taps))) {
 		Som_h_k = 0.0f;
-		for (int k = 0; k < taps + 1; k++)
+		for (int k = 1; k < orde; k++)
 		{
-			Som_h_k += h_n[k] * cos(k * Omega);
+			auto ftest = filterCoeffs[orde+k];
+			auto fttest = berekenFloatingPoint(ftest);
+			Som_h_k += fttest * cos(k * Omega);
 		}
-		double HOmega = Omega1 / PI + 2 * Som_h_k;
+		HOmega = compute_dB((Omega1 / PI) + (2 * Som_h_k));
+
 		H_Omega.Add(HOmega);
+
+		if(HOmega < H_Omega_min)
+		{
+			H_Omega_min = HOmega;
+		}
+
+		if(HOmega > H_Omega_max)
+		{
+			H_Omega_max = HOmega;
+		}
 	}
-
-
+	
 
 }
 
@@ -295,7 +315,7 @@ float FilterVenster::berekenFloatingPoint(const Int16 fixp) const
 */
 	float out;
 
-	out = fixp / (1 << fipBitsSpinCtrl->GetValue());
+	out = (float)fixp / (float)(1 << fipBitsSpinCtrl->GetValue());
 
 	return out;
 }

@@ -92,7 +92,7 @@ public:
 	/*! @brief Deze funkte geeft het aantal elementen in de buffer. */
 	unsigned short geefAantal() const
 	{
-		return geschreven;
+		return aantal;
 	};
 
 	/*! @brief Schrijf een getal naar de ringbuffer.
@@ -186,6 +186,7 @@ public:
 
 		return gemiddelde();
     };
+
 
 protected:
 
