@@ -5,6 +5,8 @@ software/*/[Bb]uild
 software/*/.idea
 software/*/Executable
 software/*/.vs
-docs/
+docs/dspboek.pdf
+docs/EN/
+dspese_example_exams.zip
 *.zip
 Windows/
