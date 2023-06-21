@@ -236,7 +236,7 @@ public:
 	                                                  writePtr(elements)
 	{
 		assert(a != 0);
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -280,7 +280,7 @@ public:
 	/*! @brief De reset function should take care of resetting the buffer to the initial state. */
 	void reset()
 	{
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+#error "Dit deel van de software ontbreekt — this part of the software is missing."
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -289,7 +289,7 @@ public:
 	/*! @brief This function gives the number of elements in the buffer. */
 	unsigned short giveSize() const
 	{
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+#error "Dit deel van de software ontbreekt — this part of the software is missing."
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -299,7 +299,7 @@ public:
 	 * @note both read and write pointer must be updated. */
 	void write(const ttype getal)
 	{
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+#error "Dit deel van de software ontbreekt — this part of the software is missing."
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -309,7 +309,7 @@ public:
 	 * @note move the readPtr. */
 	ttype read()
 	{
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+#error "Dit deel van de software ontbreekt — this part of the software is missing."
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -319,7 +319,7 @@ public:
 	* @note do not move the readPtr. */
 	ttype read(const unsigned int index) const
 	{
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+#error "Dit deel van de software ontbreekt — this part of the software is missing."
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -330,7 +330,7 @@ public:
 	 * @note monitor the buffer limits in the function. */
 	ttype operator [](const unsigned int index) const
 	{
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+#error "Dit deel van de software ontbreekt — this part of the software is missing."
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -340,7 +340,7 @@ public:
 	 * @return the sum value. */
 	ttype sum() const
 	{
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+#error "Dit deel van de software ontbreekt — this part of the software is missing."
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -352,7 +352,7 @@ public:
 	 */
 	ttype average() const
 	{
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+#error "Dit deel van de software ontbreekt — this part of the software is missing."
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
@@ -364,7 +364,7 @@ public:
     * @note use the average() function defined above. */
     ttype average(const ttype inputvalue) const
     {
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+#error "Dit deel van de software ontbreekt — this part of the software is missing."
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */

@@ -63,7 +63,7 @@ PolarNumber::PolarNumber(const Complex &z) : magnitude(z.Mag()),
 {
 }
 
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+#error "Dit deel van de software ontbreekt — this part of the software is missing."
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */

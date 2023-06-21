@@ -2,17 +2,17 @@
 # CMake script voor wxWidgets CMake software bouwen.
 # Copyright 2004-2019 Hogeschool van Arnhem en Nijmegen
 # Opleiding Embedded Systems Engineering
-# $Id: CMakeLists.txt 313 2023-01-30 13:54:35Z ewout $
+# $Id: CMakeLists.txt 328 2023-06-02 11:37:30Z ewout $
 #************************************************************************/
 
 cmake_minimum_required(VERSION 3.10.4)
 
-include(${CMAKE_CURRENT_SOURCE_DIR}/../DesktopBasis/buildsystem/InitDesktop.cmake)
-
 if(NOT PROJEKTNAAM)
-	set(PROJEKTNAAM "DSPESEL1")
-	option(DesktopProjekt "Dit is een desktop projekt" ON)
 
+	include(${CMAKE_CURRENT_SOURCE_DIR}/../DesktopBasis/buildsystem/InitDesktop.cmake)
+
+	set(PROJEKTNAAM "DSPESEL1")
+	
 	project(${PROJEKTNAAM})
 
 	include(${PROJECT_SOURCE_DIR}/../DSB.cmake)

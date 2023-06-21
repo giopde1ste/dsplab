@@ -1,0 +1,39 @@
+"D:\Clion\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - MinGW Makefiles" D:\S6DSPL\software\opdracht5
+-- ARM Cortex M architectuur toolchain selektie.
+-- Windows platform gedetekteerd.
+HAN Embedded Systems Engineering DSPESEL/DSBPr practicum.
+Docent: ir drs E.J Boks (ewout.boks@han.nl)
+(c)2006-2023 ir drs E.J Boks
+Opleiding Embedded Systems Engineering
+Hogeschool van Arnhem en Nijmegen
+-- Versiesubondernummer niet gezet. Versiesubondernummer is nu 0
+
+Systeeminspektie : pointer grootte is : 4 bytes.
+-- 32 bit architectuur gedetecteerd.
+-- Uitvoer dir is : D:/S6DSPL/software/opdracht5/Executable/x86
+-- Installatie dir is : D:/S6DSPL/software/opdracht5/Executable/x86/Release/
+-- Microsoft Windows wordt gebouwd.
+-- Naam van de ontwikkelaar : Thomas
+HAN ESE wxWidgets software.
+-- wxWidgets wordt gebouwd met optimalisatie opties
+-- wxWidgets (Static Release) wordt gebruikt.
+-- wxWidgets gevonden op : C:/wxWidgets-3.2.1
+-- Desktop bouw met MinGW omgeving.
+-- wxWidgets versie   : 
+-- wxWidgets Root Dir : C:/wxWidgets-3.2.1
+-- wxWidgets statisch : ON
+-- wxWidgets debug    : OFF
+CMake Error at D:/Clion/CLion 2019.3.2/bin/cmake/win/share/cmake-3.15/Modules/FindPackageHandleStandardArgs.cmake:137 (message):
+  Could NOT find wxWidgets (missing: wxWidgets_LIBRARIES
+  wxWidgets_INCLUDE_DIRS core base adv)
+Call Stack (most recent call first):
+  D:/Clion/CLion 2019.3.2/bin/cmake/win/share/cmake-3.15/Modules/FindPackageHandleStandardArgs.cmake:378 (_FPHSA_FAILURE_MESSAGE)
+  D:/Clion/CLion 2019.3.2/bin/cmake/win/share/cmake-3.15/Modules/FindwxWidgets.cmake:990 (find_package_handle_standard_args)
+  D:/S6DSPL/software/DesktopBasis/buildsystem/BasisWXWidgets.cmake:218 (find_package)
+  D:/S6DSPL/software/DSB.cmake:72 (include)
+  CMakeLists.txt:31 (include)
+
+
+-- Configuring incomplete, errors occurred!
+See also "D:/S6DSPL/software/opdracht5/CLion/Release/CMakeFiles/CMakeOutput.log".
+See also "D:/S6DSPL/software/opdracht5/CLion/Release/CMakeFiles/CMakeError.log".

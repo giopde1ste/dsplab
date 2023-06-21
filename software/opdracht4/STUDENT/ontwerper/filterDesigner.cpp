@@ -67,7 +67,7 @@ double FilterVenster::driehoek(const Int32 n ) const
 	assert(-taps <= n <= taps);
 
 	//double out = 1.0f - fabs((n - (taps / 2.0f)) / (taps / 2.0f));
-	double out = 1.0f - fabs((n - (taps/2.0f)) / (taps/2.0f));
+	double out = 1.0f - fabs((n - (orde)) / (orde));
 
 	return out;
 }
@@ -135,7 +135,7 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 
 	double ldf, shift, window;
 
-	for (double n = -taps/2; n < taps/2 + 1; n++)
+	for (double n = -orde; n < orde + 1; n++)
 	{
 		if (vensterChoice->GetCurrentSelection() == 0)//rectangle
 		{
@@ -144,7 +144,7 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 
 		if (vensterChoice->GetSelection() == 1)//triangle
 		{
-			window = driehoek(n + taps / 2);
+			window = driehoek(n + orde);
 		}
 
 		if (vensterChoice->GetSelection() == 2)//hamming
@@ -172,18 +172,17 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 	berekeningKlaar = true;
 }
 
-
 void FilterVenster::berekenFreqResponsie()
 {
 	/*! @note schrijf in deze funktie de code om het  frequentiebeeld te bereken op
 	 * basis van de tijddomeincoefficienten. */
 
 	H_Omega.Clear();
-
-	double Omega0 = ((filterBegin + filterEind) / (sampFreq * 1.0f)) * PI;
-	double Omega1 = ((filterEind - filterBegin) / (sampFreq * 1.0f)) * PI;
+	
+	double Omega1devpi = static_cast<double>(filterEind - filterBegin) / static_cast<double>(sampFreq);
 	double Som_h_k = 0.0f;
 	double HOmega = 0.0f;
+	double HOmegaAmp = 0.f;
 
 	H_Omega_min = 0.0f;
 	H_Omega_max = 0.0f;
@@ -192,26 +191,28 @@ void FilterVenster::berekenFreqResponsie()
 		Som_h_k = 0.0f;
 		for (int k = 1; k < orde; k++)
 		{
-			auto ftest = filterCoeffs[orde+k];
-			auto fttest = berekenFloatingPoint(ftest);
-			Som_h_k += fttest * cos(k * Omega);
+			auto filterCoef = filterCoeffs[orde+k];
+			auto filterFloating = berekenFloatingPoint(filterCoef);
+			Som_h_k += filterFloating * cos(k * Omega);
 		}
-		HOmega = compute_dB((Omega1 / PI) + (2 * Som_h_k));
+		auto help = Omega1devpi;
+		auto help2 = 2 * Som_h_k;
+		HOmega = (Omega1devpi) + (2 * Som_h_k);
 
-		H_Omega.Add(HOmega);
+		HOmegaAmp = compute_dB(HOmega);
 
-		if(HOmega < H_Omega_min)
+		H_Omega.Add(HOmegaAmp);
+
+		if(HOmegaAmp < H_Omega_min)
 		{
-			H_Omega_min = HOmega;
+			H_Omega_min = HOmegaAmp;
 		}
 
-		if(HOmega > H_Omega_max)
+		if(HOmegaAmp > H_Omega_max)
 		{
-			H_Omega_max = HOmega;
+			H_Omega_max = HOmegaAmp;
 		}
 	}
-	
-
 }
 
 void FilterVenster::tekenFreqSpectrum() const
@@ -291,15 +292,12 @@ Int16 FilterVenster::berekenFixedPoint(const float flp) const
 {
 	/*! @note Bereken in deze funktie de conversie van floating point naar fixed point
 	 * op basis van de instelling in fipBitsSpinCtrl. */
-	
-//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
-   Dear student, this part of the software is missing. Complete this part accoording to the assignment.
-*/
 
 	Int16 out;
 
-	out = round(flp * (1 << fipBitsSpinCtrl->GetValue()));
+	auto bitflip = (1 << (fipBitsSpinCtrl->GetValue() - 1));
+	Int16 beforeRound = flp * bitflip;
+	out = round(beforeRound);
 
 	return out;
 }
@@ -308,14 +306,10 @@ float FilterVenster::berekenFloatingPoint(const Int16 fixp) const
 {
 	/*! @note Bereken in deze funktie de conversie van fixed point naar floating point
 	 * op basis van de instelling in fipBitsSpinCtrl. */
-	
-//#error “Dit deel van de software ontbreekt — this part of the software is missing.”
-/* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
-   Dear student, this part of the software is missing. Complete this part accoording to the assignment.
-*/
+
 	float out;
 
-	out = (float)fixp / (float)(1 << fipBitsSpinCtrl->GetValue());
+	out = (float)fixp / (float)(1 << fipBitsSpinCtrl->GetValue() - 1);
 
 	return out;
 }

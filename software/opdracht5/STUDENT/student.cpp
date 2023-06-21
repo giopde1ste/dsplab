@@ -12,16 +12,14 @@ $Id: student.cpp 313 2023-01-30 13:54:35Z ewout $
 
 #ifndef OnderwijsOntwikkeling
 #if defined(InterfaceTaalNederlands)
-/* Verwijder dit directief na het invullen van de naam en het studentnummer hieronder. */
-#error  "Student naam en nummer moeten beneden in de velden worden ingevuld."
 #elif defined (InterfaceTaalEnglish)
 /* Remove this directive after filling out name and student number below. */
 #error  "Student name and number must be entered into the fields below."
 #endif
 #endif
 
-/********  Naam/name     :               ******/
-/********  Studentnummer :               ******/
+/********  Naam/name     :Thomas van den Oever ******/
+/********  Studentnummer :1585101              ******/
 
 #include <student.h>
 #include <firfilterexport.h>   /* Dit MOET aanwezig zijn in de map / this MUST be present in the directory.  */
@@ -46,10 +44,19 @@ void STM32FilterApp::runFilter()
 		- The filter returns a value, which is then loaded into the DA converter.
 	 */
 
-#error “Dit deel van de software ontbreekt — this part of the software is missing.”
+//#error "Dit deel van de software ontbreekt — this part of the software is missing."
 /* Beste leerling, dit deel van de software ontbreekt. Vul dit deel aan volgens de opdracht.  
    Dear student, this part of the software is missing. Complete this part accoording to the assignment.
 */
+    ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64);
+    ads131a02.start();
+    max5136.start(MAX5136::Kanaal::AlleKanalen);
+    ads131a02.wachtOpDataReady();
+    ADS131A02::ADCData data;
+    ads131a02.laadConversieData(data);
+    Int16 filterdata;
+    filterdata = filter.filter(data[0]);
+    max5136.dacSpanning(filterdata);
 
 	/* Hier mag de uitvoering niet komen! / execution should not reach this point! */
 	StopHier();
