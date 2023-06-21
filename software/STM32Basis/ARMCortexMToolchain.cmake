@@ -141,7 +141,7 @@ if(NOT ARMCortexMToolchainGevonden)
 				foreach(mvvar ${mv})
 					foreach(ovvar ${ov})
 						set(MinGWVersieTest "${hvvar}.${mvvar}.${ovvar}")
-						set(MINGWGCCLibdirTest "C:/MinGW/lib/gcc/mingw32/${MinGWVersieTest}")
+						set(MINGWGCCLibdirTest "D:/mingw-w64/mingw32/lib/gcc/i686-w64-mingw32/${MinGWVersieTest}")
 						#message(STATUS "[Debug] MingGW test op : ${MINGWGCCLibdirTest}")
 						if(EXISTS ${MINGWGCCLibdirTest})
 							message(STATUS "MingGW gevonden op : ${MINGWGCCLibdirTest}")
@@ -189,7 +189,8 @@ if(NOT ARMCortexMToolchainGevonden)
 				    "11.2\ 2022.02"
 				    "11.3\ rel1"
 				    "12.2\ mpacbti-bet1"
-				    "12.2\ rel1)
+				    "12.2\ rel1"
+					"12.2\ mpacbti-rel1")
 
 				foreach(GNUARMWINVersie in ${GNUARMWINVersies})
 					set(GNUARMWINDir ${GNUARMWinBasisdir}/${GNUARMWINVersie})
@@ -246,7 +247,5 @@ endif(NOT ARMCortexMToolchainGevonden)
 
 
 if(NOT ARMCortexMToolchainGevonden)
-	message(FATAL_ERROR "De ARM Cortex-M toolchain is niet gevonden.
-	Installeer de compiler suite vanaf :
-	https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm")
+	message(FATAL_ERROR "De ARM Cortex-M toolchain is niet gevonden. Installeer de compiler suite vanaf : https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm")
 endif(NOT ARMCortexMToolchainGevonden)

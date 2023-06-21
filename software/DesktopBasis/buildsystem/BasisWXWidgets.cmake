@@ -146,7 +146,7 @@ elseif(WIN32)
 		endif(EXISTS ${wxRootDirTest})
 
 	else(NOT MINGW)
-		set(wxRootDirTest "C:/Program\ Files\ (x86)\\wxWidgets")
+		set(wxRootDirTest "C:/wxWidgets-3.2.1")
 		if(EXISTS ${wxRootDirTest})
 			message(STATUS "wxWidgets gevonden op : ${wxRootDirTest}")
 			set(wxWidgets_ROOT_DIR ${wxRootDirTest})
