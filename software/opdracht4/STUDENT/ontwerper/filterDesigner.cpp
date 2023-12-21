@@ -133,6 +133,9 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 	double Omega0 = ((filterBegin + filterEind) / (sampFreq * 1.0f)) * PI;
 	double Omega1 = ((filterEind - filterBegin) / (sampFreq * 1.0f)) * PI;
 
+	//filterCoeffs.reserve(taps);
+	//filterCoeffs.resize(taps);
+
 	double ldf, shift, window;
 
 	for (double n = -orde; n < orde + 1; n++)
@@ -161,6 +164,7 @@ void FilterVenster::berekenFilter(wxCommandEvent &event)
 	}
 
 	tijdDomeinGrafiek->maakSchoon();
+	tijdDomeinGrafiek->tekenAssenstelsel();
 	tijdDomeinGrafiek->tekenStaven(impulsResponsie, true);
 
 	berekenFreqResponsie();
@@ -182,24 +186,24 @@ void FilterVenster::berekenFreqResponsie()
 	double Omega1devpi = static_cast<double>(filterEind - filterBegin) / static_cast<double>(sampFreq);
 	double Som_h_k = 0.0f;
 	double HOmega = 0.0f;
-	double HOmegaAmp = 0.f;
+	double HOmegaAmp = 0.0f;
 
 	H_Omega_min = 0.0f;
 	H_Omega_max = 0.0f;
 
 	for (double Omega = 0; Omega < PI; Omega += (PI / FreqSpectrumPunten(taps))) {
 		Som_h_k = 0.0f;
-		for (int k = 1; k < orde; k++)
+		for (int k = 1; k <= orde; k++)
 		{
-			auto filterCoef = filterCoeffs[orde+k];
+			auto filterCoef = filterCoeffs[orde + k];
 			auto filterFloating = berekenFloatingPoint(filterCoef);
 			Som_h_k += filterFloating * cos(k * Omega);
 		}
-		auto help = Omega1devpi;
-		auto help2 = 2 * Som_h_k;
+		//auto help = Omega1devpi;
+		//auto help2 = 2 * Som_h_k;
 		HOmega = (Omega1devpi) + (2 * Som_h_k);
 
-		HOmegaAmp = compute_dB(HOmega);
+		HOmegaAmp = compute_dB(HOmega) + maxVersterkingSpinCtrl->GetValue();
 
 		H_Omega.Add(HOmegaAmp);
 
@@ -309,7 +313,7 @@ float FilterVenster::berekenFloatingPoint(const Int16 fixp) const
 
 	float out;
 
-	out = (float)fixp / (float)(1 << fipBitsSpinCtrl->GetValue() - 1);
+	out = static_cast<float>(fixp) / (float)(1 << fipBitsSpinCtrl->GetValue() - 1);
 
 	return out;
 }
