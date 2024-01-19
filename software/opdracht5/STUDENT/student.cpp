@@ -51,16 +51,21 @@ void STM32FilterApp::runFilter()
     ads131a02.zetSampFreq(ADS131A02::ICLK::ICLK8, ADS131A02::FMOD::FMOD8, ADS131A02::ODR::ODR64);
     ads131a02.start();
     max5136.start(DSB_DAC_Channel);
-while(1) {
-    ads131a02.wachtOpDataReady();
-    ADS131A02::ADCData data;
-    ads131a02.laadConversieData();
-    auto spanning = ads131a02.konverteer(DSB_ADC_Channel) * 10.0f;
-    Int16 filterdata;
-    filterdata = filter.filter(spanning);
-    auto DACspanning = max5136.dacSpanning(filterdata);
-    max5136.zetSpanning(DSB_DAC_Channel, DACspanning);
-}
+    while(1) {
+        ads131a02.wachtOpDataReady();
+        ads131a02.laadConversieData();
+        auto spanningdirect = (ads131a02[DSB_ADC_Channel] >> 8);//| 0x00ff;
+        auto spanningshift = static_cast<Int16>(spanningdirect);
+        auto filterwaarde = filter.filter(spanningshift);
+
+        if(filterwaarde < minWaarde){
+            minWaarde = filterwaarde;
+        }
+        filterwaarde -= minWaarde;
+
+        auto DACspanning = max5136.dacSpanning(filterwaarde);
+        max5136.zetSpanning(DSB_DAC_Channel, DACspanning);
+    }
 
 	/* Hier mag de uitvoering niet komen! / execution should not reach this point! */
 	StopHier();

@@ -171,8 +171,7 @@ public:
 	* @return het gemiddelde. */
 	ttype gemiddelde() const
 	{
-		const auto s = som();
-		const auto gem = s / geschreven;
+		const ttype gem = som() / geschreven;
 		return gem;
 	};
 

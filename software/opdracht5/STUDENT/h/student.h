@@ -51,6 +51,8 @@ private:
 	 * This is the filter that you implemented in assignment 4. */
 	FilterFirInt16 filter;
 
+	float minWaarde = 0.0f;
+
 
 	char tekstbuffer[100];
 	static constexpr auto DSB_ADC_Channel=ADS131A02::Kanaal::K2;

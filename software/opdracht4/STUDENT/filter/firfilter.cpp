@@ -97,7 +97,7 @@ Int16 FilterFirInt16::filter(const Int16 input)
 
     for (int i = 0; i < filterCoeffs.geefAantal(); i++)
     {
-        auto temp = filterCoeffs[i];
+        //auto temp = filterCoeffs[i];
         out += (filterCoeffs[i] / static_cast<float>(scaleFactor)) * filterMemory.lees();
         //filterMemory.schrijf(out);
     }

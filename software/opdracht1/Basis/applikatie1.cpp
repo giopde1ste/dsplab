@@ -83,7 +83,7 @@ int DSBKlassenApp::MainLoop()
 
     buffer.schrijf(a);
     buffer.schrijf(b);
-    
+
     for (auto i=0;i<2*aantal;i++)
     {
         a+=Complex(4.0f*i,4.0f*i+5);
@@ -113,6 +113,16 @@ int DSBKlassenApp::MainLoop()
 
 	wxASSERT(controle3 == buffer[2]);
 	wxASSERT(controle4 == buffer[5]);
+
+	StaticRingBuffer<int, aantal> intBuffer;
+
+	intBuffer.schrijf(5);
+	intBuffer.schrijf(5);
+	intBuffer.schrijf(5);
+	intBuffer.schrijf(5);
+
+	wxASSERT(20 == intBuffer.som());
+	wxASSERT(5 == intBuffer.gemiddelde());
 
 	Complex controle5,controle6;
     for (auto i=0;i<2*aantal;i++)

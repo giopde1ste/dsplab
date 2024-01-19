@@ -183,7 +183,7 @@ void FilterVenster::berekenFreqResponsie()
 
 	H_Omega.Clear();
 	
-	double Omega1devpi = static_cast<double>(filterEind - filterBegin) / static_cast<double>(sampFreq);
+	double Omega1devpi = 2.0f * static_cast<double>(filterEind - filterBegin) / static_cast<double>(sampFreq);
 	double Som_h_k = 0.0f;
 	double HOmega = 0.0f;
 	double HOmegaAmp = 0.0f;

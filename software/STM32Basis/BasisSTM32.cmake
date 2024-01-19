@@ -70,7 +70,7 @@
 	set (CMAKE_ASM_CM3VLAGGEN "-mcpu=cortex-m3 ${CMAKE_ASM_BASISVLAGGEN}")
 	set (CMAKE_ASM_CM4VLAGGEN "-mcpu=cortex-m4 ${CMAKE_ASM_BASISVLAGGEN}")
 	# -Wa,-adhlns=${OBJECT}.lst
-	set (CMAKE_C_BASISVLAGGEN "--std=c++14 -Wall -Wpointer-arith -Wswitch -Wredundant-decls -Wreturn-type -Wshadow -Wunused -Werror -Wno-psabi -mthumb -mno-unaligned-access -mapcs-frame -pipe -funsigned-char -ffunction-sections -fdata-sections")
+	set (CMAKE_C_BASISVLAGGEN "--std=c++14 -Wall -Wpointer-arith -Wswitch -Wredundant-decls -Wreturn-type -Wshadow -Wunused -Wno-psabi -mthumb -mno-unaligned-access -mapcs-frame -pipe -funsigned-char -ffunction-sections -fdata-sections")
 	set (CMAKE_C_CM0VLAGGEN "-msoft-float -mcpu=cortex-m0 ${CMAKE_C_BASISVLAGGEN} ")
 	set (CMAKE_C_CM3VLAGGEN "-msoft-float -mcpu=cortex-m3 -mfix-cortex-m3-ldrd ${CMAKE_C_BASISVLAGGEN} ")
 	set (CMAKE_C_CM4FVLAGGEN "-mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -mfix-cortex-m3-ldrd ${CMAKE_C_BASISVLAGGEN} ")
